@@ -23,6 +23,11 @@ task :init do
 	system "git push origin source"
 end
 
+desc 'generate site and push'
+task :gen do
+	system "jekyll && cp _site.git _site/.git && git add -A && git commit -m \"update site\""
+end
+
 desc 'Delete generated _site files'
 task :clean do
   system "rm -fR _site2"
