@@ -1,0 +1,59 @@
+desc 'Initialise the git repository'
+task :init do
+	system "git init"
+	system "git checkout -b source"
+	system "git remote add origin https://github.com/liamzebedee/liamz.co.git"
+	system "git add -A"
+	system "git commit -m \"initial\""
+	system "git push --force origin source:source"
+	system "git symbolic-ref HEAD refs/heads/gh-pages"
+	system "rm .git/index"
+	system "git clean -fdx"
+	system "touch index.html"
+	system "git add index.html"
+	system "git commit -m \"Blank new gh-pages branch\""
+	system "git push --force origin gh-pages"
+	system "git checkout source"
+	system "git submodule add -b gh-pages https://github.com/liamzebedee/liamz.co.git _site"
+	system "git submodule init"
+	system "git submodule update"
+	system "cp _site/.git _site.git"
+	system "git add _site .gitmodules"
+	system "git commit -m \"Added _site as submodule\""
+	system "git push origin source"
+end
+
+desc 'Delete generated _site files'
+task :clean do
+  system "rm -fR _site2"
+  system "git submodule update"
+  system "cd _site && git checkout source . && git clean -df"
+end
+  
+desc 'Run the jekyll dev server'
+task :server do
+  system "jekyll --server"
+end
+  
+desc 'Clean temporary files and run the server'
+task :compile => :clean do
+  system "jekyll"
+end
+
+desc 'generate the jekyll site and then copy to staging area'
+task :generate => :compile do
+  system "cp -R _site2/* _site/"
+  system "rm -R _site2"
+end
+  
+desc 'commit and push to github'
+task :deploy, [:commit_message] => :generate do |t, args|
+  if args.commit_message
+    puts "Committing and pushing with commit message: #{args.commit_message}"
+    system "cd _site && git add . && git commit -m \"#{args.commit_message}\" && git push"
+    system "git add _site"
+    system "git commit -m \"updating submodule reference to master\" && git push"
+  else
+    puts "Missing commit_message"
+  end
+end

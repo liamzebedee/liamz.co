@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<id>urn:uuid:</id>
+<title>Home of Liam (liamzebedee) Edwards-Playne</title>
+<subtitle>I live life.</subtitle>
+<updated>2013-03-24T10:43:40Z</updated>
+<link type="text/html" href="liamz.co"/>
+<icon>/assets/icon.png</icon>
+
+<rights>Copyright Liam Edwards-Playne 2013</rights>
+
+
+
+<entry>
+	<title>Test post</title>
+	<id>urn:uuid:</id>
+	<link rel="alternate" type="text/html" href="liamz.co/articles/2013/03/21/test+post/"/>
+	<updated></updated>
+	<published>2013-03-21T00:00:00Z</published>
+	<summary></summary>
+	
+		<category term="articles" />
+	
+	<content type="html">&lt;h1 id='test_post'&gt;Test post&lt;/h1&gt;
+
+&lt;p&gt;Wow I am tired right now. Test post over.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Zzz.&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+</entry>
+
+
+</feed>

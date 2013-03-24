@@ -1,0 +1,19 @@
+#container {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#container header {
+	/*font-family: , "Georgia", "Times New Roman", serif;*/
+	font-family: "adelle", 'Skolar Bold', arial, helvetica, 'Helvetica Neue', sans-serif;
+}
+
+/* Portrait tablet to landscape and desktop... */
+@media (min-width: 768px) {
+	@import url("screen.css");
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	@import url("mobile.css")
+}
