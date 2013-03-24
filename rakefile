@@ -25,7 +25,8 @@ end
 
 desc 'generate site and push'
 task :gen do
-	system "jekyll && cp _site.git _site/.git && git add -A && git commit -m \"update site\""
+	system "jekyll && cp _site.git _site/.git && cd _site && git add -A && git commit -m \"update site\" && git push origin gh-pages:gh-pages"
+	system "cd .. && git add -A && git commit -m \"update _site\" && git push origin source:source"
 end
 
 desc 'Delete generated _site files'
