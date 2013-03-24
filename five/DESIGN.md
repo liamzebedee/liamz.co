@@ -2,7 +2,10 @@
 Generate site locally, push the static site to Github. Host both the jekyll source and the generated site in one repo. Jekyll site data (_layouts, _posts etc.) is stored in **source** branch and the **gh-pages** branch is pushed to through a submodule associated with the *\_site* directory.. 
 
 ## Setup
-1. Create main branch to store site data. `git checkout -b source`
+1. Initialise repo and create main branch to store site data. Add your remote.
+	git init
+	git checkout -b source
+	git remote add origin https://github.com/liamzebedee/xxx.git
 2. Add everything in this new branch, commit and push. 
 	git add -A
 	git commit -m "initial"
@@ -18,17 +21,25 @@ Generate site locally, push the static site to Github. Host both the jekyll sour
 4. Switch back to the source branch. 
 	git checkout source
 5. Add a submodule, which is really our **gh-pages** branch, to the path _site. Replace the URL with the location of your repository.
-	git submodule add https://github.com/liamzebedee/site.com.git _site
+	git submodule add -b gh-pages https://github.com/liamzebedee/site.com.git _site
+	git submodule init
 	git submodule update
-	git add _site
+	cp _site/.git _site.git
+	git add _site .gitmodules
 	git commit -m "Added _site as submodule"
-7. Last step is to generate our first instance of jekyll then push it to the repository. 
+	git push origin source
+7. Last step is to generate our first instance of jekyll then push it to the repository. Here I will explain why we copied the .git file in _site into our root directory. When we run jekyll to generate a new site, it purges the _site directory of everything, including our git config (.git). We keep a backup of this .git file to restore **after** jekyll has generated the site. 
 	jekyll
+	cp _site.git _site/.git
 	cd _site
+	git checkout gh-pages
 	git add -A
 	git commit -m "initial generation of site"
 	git push
-	
+	cd ..
+	git add _site
+	git commit -m "updated _site"
+	git push
 
 # Site layout
 HTML5 site using Bootstrap. Built for mobile and desktop/tablet. 3 types of content:
