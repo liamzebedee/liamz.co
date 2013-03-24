@@ -1,0 +1,15 @@
+# Title of site, to appear in atom feed
+title: "Home of Liam (liamzebedee) Edwards-Playne"
+
+# Server
+host: "liamz.co"
+
+# Description for <meta> and atom feed
+description: "I live life."
+
+# License/Copyright information
+rights: "Copyright Liam Edwards-Playne 2013"
+
+permalink: pretty
+
+exclude: five
