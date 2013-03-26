@@ -1,0 +1,10 @@
+/* Portrait tablet to landscape and desktop... */
+@media (min-width: 768px) {
+
+#masthead,
+#navigation-menu,
+#content {	
+	
+}
+
+}

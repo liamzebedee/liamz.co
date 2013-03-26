@@ -1,3 +1,7 @@
+task :run do
+	system "jekyll --server --auto"
+end
+
 desc 'Initialise the git repository'
 task :init do 
 	system "git init && git checkout -b source"

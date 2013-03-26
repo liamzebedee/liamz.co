@@ -1,7 +1,0 @@
----
-layout: post
-description: Just a short and sweet test post
-categories: articles
----
-# Test post
-This better work

@@ -2,7 +2,8 @@
 layout: base
 ---
 <article>
-	<header>
+	<header class="content-meta">
+		{% if false %}
 		{% if page.categories %}
 		<ul class="categories">
 			{% for category in page.categories %}
@@ -18,12 +19,13 @@ layout: base
 			{% endfor %}
 		</ul>
 		{% endif %}
-		
-		<time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>Posted on {{ page.date | date: "%B %d, %Y" }}</time>
+		{% endif %}
+		<div class="page-header">
+			<h1>{{ page.title }} <small><time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time></small></h1>
+		</div>
 	</header>
 	
-	<h1>{{ page.title }}</h1>
-	<div class="content">{{ page.content }}</div>
+	<div class="content">{{ content }}</div>
 	
 	<footer>
 		<nav>
