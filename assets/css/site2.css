@@ -60,12 +60,7 @@ body {
 }
 
 #thegrey #navigation-menu .nav-inline {
-	/list-style: none;
 	margin: 0;
-}
-
-#thegrey #navigation-menu .nav-inline > li {
-	/float: left;
 }
 
 #thegrey #navigation-menu .nav-inline > li > a {
@@ -114,9 +109,6 @@ article .content-meta .page-header time[pubdate] {
 	line-height: 200%;
 }
 
-article #content img {
-	max-width: 100%;
-}
 
 
 /* Util styles */
