@@ -3,7 +3,7 @@
 
 	<url>
 		<loc>http://liamz.co/</loc>
-		<lastmod>2013-03-26</lastmod>
+		<lastmod>2013-03-27</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -40,9 +40,18 @@
 
 	
 	<url>
+		<loc>http://liamz.co/about/</loc>
+		
+		<lastmod>2013-03-27</lastmod>
+		
+		
+		
+	</url>
+	
+	<url>
 		<loc>http://liamz.co/index.html</loc>
 		
-		<lastmod>2013-03-26</lastmod>
+		<lastmod>2013-03-27</lastmod>
 		
 		
 		
@@ -51,7 +60,7 @@
 	<url>
 		<loc>http://liamz.co/atom.xml</loc>
 		
-		<lastmod>2013-03-26</lastmod>
+		<lastmod>2013-03-27</lastmod>
 		
 		
 		
@@ -60,7 +69,16 @@
 	<url>
 		<loc>http://liamz.co/sitemap.xml</loc>
 		
-		<lastmod>2013-03-26</lastmod>
+		<lastmod>2013-03-27</lastmod>
+		
+		
+		
+	</url>
+	
+	<url>
+		<loc>http://liamz.co/assets/css/site.css</loc>
+		
+		<lastmod>2013-03-27</lastmod>
 		
 		
 		

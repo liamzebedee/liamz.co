@@ -8,8 +8,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="/assets/css/site.css" rel="stylesheet" media="screen">
 	<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -31,42 +29,48 @@
 </head>
 <body>
 
-<div class="container-fluid" id="container">	
-	<div id="background" class="row-fluid">
-	<header id="masthead" class="offset1 span10 jumbotron">
+<div id="container">	
+	<div id="background">
+	<header id="masthead">
 		<h1>LIAMZ.CO</h1>
 		<h2>Home of Liam (liamzebedee) Edwards-Playne</h2>
 	</header>
 	</div>
 	
-	<div id="thegrey-wrapper"><div id="thegrey" class="row-fluid">
-	<nav id="navigation-menu" class="offset1 span10"><ul class="inline nav-inline" role="menu">
+	<div id="thegrey-wrapper"><div id="thegrey">
+	<nav id="navigation-menu"><ul role="menu">
 		<!-- TODO -->
-		<li><a class="calm-link" href="/"><i class="icon-home"></i></a>
-		<li><a class="calm-link" href="/about/">About</a>
-		<li><a class="calm-link" href="/portfolio/">Portfolio</a>
-		<li><a class="calm-link" href="/articles/">Articles</a>
-		<li><a class="calm-link" href="/thebrey/">The Brey</a>
+		<li><a href="/"><i class="icon-home"></i></a>
+		<li><a href="/about/">About</a>
+		<li><a href="/portfolio/">Portfolio</a>
+		<li><a href="/articles/">Articles</a>
+		<li><a href="/thebrey/">The Brey</a>
 	</ul></nav>
 	</div></div>
 	
-	<div id="main" class="row-fluid">
-		<div id="content" class="offset1 span10"><article>
-	<header class="content-meta">
+	<div id="main">
+		<div id="content"><article id="post">
+	<header>
 		
-		<div class="page-header">
-			<h1>First post. <small><time datetime="2013-03-22T00:00:00Z" pubdate>March 22, 2013</time></small></h1>
-		</div>
+		<div class="page-header"><h1>First post. <small><time datetime="2013-03-22T00:00:00Z" pubdate>March 22, 2013</time></small></h1></div>
 	</header>
 	
-	<div class="content"><p>First post on Liamz.co, so firstly, an introduction. This site is my only site now. I'm writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I've built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain.</p>
-</div>
+	<p>First post on Liamz.co, so firstly, an introduction. This site is my only site now. I'm writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I've built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain.</p>
+
+<p>All my posts are based on my beliefs and thoughts, so I've categorised them into two groups according to how I structure the ideas:
+ a) Articles are structured pieces
+ b) Notes are lossy collections of ideas</p>
+
 	
 	<footer>
-		<nav>
-			
-			<li><a href="/articles/2013/03/23/inspirations/" rel="next">Next Post</a>
-		</nav>
+		<nav><ul class="pager">
+			<li class="previous disabled">
+				<a href="" rel="prev">&larr; Previous</a>
+			</li>
+			<li class="next ">
+				<a href="/articles/2013/03/23/inspirations/" rel="next">Next &rarr;</a>
+			</li>
+		</ul></nav>
 	</footer>
 </article>
 </div>
