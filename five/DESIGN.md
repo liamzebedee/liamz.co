@@ -17,5 +17,7 @@ HTML5 site using Bootstrap. Built for mobile and desktop/tablet. 3 types of cont
 ## CSS Layout
 Header, menu then content. 
 
+I employ LESS for modern HTML5 styling. I use the Jekyll plugin
+
 # Comments
 I like to refine my ideas and views, so if you have any comments don't hesitate to sent me a message.

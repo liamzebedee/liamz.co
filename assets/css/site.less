@@ -1,0 +1,150 @@
+---
+---
+
+@import "assets/css/_bootstrap/bootstrap.less";
+@import "assets/css/_bootstrap/responsive.less";
+@import "assets/css/_bootstrap/mixins.less";
+@import "assets/css/_bootstrap/type.less";
+
+/*
+ * THE BIG 3: masthead, menu and content.
+ */
+
+#container {
+	.container-fluid;
+	padding: 0 0 0 0;
+}
+
+#background,
+#thegrey,
+#main {
+	#grid > .fluid > .row-fluid;
+}
+
+#background {
+	#gradient > .directional(#020031 0%, #6d3353 100%);
+	@shadow: 0px 3px 7px rgba(0, 0, 0, 0.2) inset, 0px -3px 7px rgba(0, 0, 0, 0.2) inset;
+	.box-shadow(@shadow);
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	
+	#masthead {
+		font-family: 'PT Serif', serif;	
+		text-align: left;
+		padding-top: 20px;
+		position: relative;
+		color: #fff;
+		text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+		
+		h1 {
+			font-size: 80px;
+			font-weight: bold;
+			line-height: 1;
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				// WebKit browsers render the Web Fonts strangely
+				letter-spacing: 2px; 
+			}
+		}
+		
+		h2 {
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 1.25;
+		}
+	}
+}
+
+#thegrey {
+	background-color: #f5f5f5;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+	
+	.affix {
+		position: fixed;
+		top: 0;
+		width: 100%
+	}
+	
+	#navigation-menu {
+			
+		ul {
+			// XXX when BS implements .unstyled and .inline as mixins, replace this code:
+			margin-left: 0px;
+			margin-bottom: 0px;
+			list-style: none;
+			> li {
+				display: inline-block;
+				.ie7-inline-block();
+				padding-left: 5px;
+				padding-right: 5px;
+				
+				> a {
+					.calm-link;
+					padding-top: 8px;
+					padding-bottom: 8px;
+					margin-top: 2px;
+					margin-bottom: 2px;
+					padding-right: 12px;
+					padding-left: 12px;
+					margin-right: 2px;
+					line-height: 14px;
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+#main {
+	padding-top: 1em;
+	
+	#content {
+		
+		#posts {
+			.post-item {
+				float: left;
+				clear: left;
+				margin-bottom: 0.5em;
+				
+				.date {
+					.muted;
+					float: left;
+					clear: right;
+					padding-right: 1em;
+				}
+				.title { .calm-link }
+				.info { float: left; }
+			}
+			
+			#notes { clear: left; }
+		}
+		
+		#post {
+			header h1 small {
+				display: inline-block;
+				/*time[pubdate] {
+					/* When we pull the <small> right, the line height stuffs up. HACK 
+					line-height: 200%;
+				}*/
+			}
+		}
+	}
+}
+
+/*
+ * Utility.
+ */
+
+.calm-link() {
+	color: #444;
+	font-weight: bold;
+	
+	&:hover {
+		.transition(0.25s);
+		text-decoration: none;
+		color: #08c;
+	}
+}
+
+@import "assets/css/screen.less";
+@import "assets/css/mobile.less";

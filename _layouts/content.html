@@ -1,8 +1,8 @@
 ---
 layout: base
 ---
-<article>
-	<header class="content-meta">
+<article id="post">
+	<header>
 		{% if false %}
 		{% if page.categories %}
 		<ul class="categories">
@@ -20,17 +20,19 @@ layout: base
 		</ul>
 		{% endif %}
 		{% endif %}
-		<div class="page-header">
-			<h1>{{ page.title }} <small><time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time></small></h1>
-		</div>
+		<div class="page-header"><h1>{{ page.title }} <small><time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time></small></h1></div>
 	</header>
 	
-	<div class="content">{{ content }}</div>
+	{{ content }}
 	
 	<footer>
-		<nav>
-			{% if page.prev %}<li><a href="{{ page.prev.url }}" rel="prev">Previous Post</a>{% endif %}
-			{% if page.next %}<li><a href="{{ page.next.url }}" rel="next">Next Post</a>{% endif %}
-		</nav>
+		<nav><ul class="pager">
+			<li class="previous {% if page.previous == null %}disabled{% endif %}">
+				<a href="{{ page.previous.url }}" rel="prev">&larr; Previous</a>
+			</li>
+			<li class="next {% if page.next == null %}disabled{% endif %}">
+				<a href="{{ page.next.url }}" rel="next">Next &rarr;</a>
+			</li>
+		</ul></nav>
 	</footer>
 </article>

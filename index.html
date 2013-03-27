@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Home of Liam (liamzebedee) Edwards-Playne
-description: "I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas."
+description: "I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas. - these things and more."
 ---
 <ul class="unstyled" id="posts">
 <ul class="unstyled" id="articles">
@@ -9,9 +9,9 @@ description: "I met a man with a dollar. We exchanged dollars. We each still had
 {% for post in site.posts %}
 {% if post.categories contains 'articles' %}
 <li class="post-item">
-	<div class="date muted">{{ post.date | date_to_string }}</div>
+	<div class="date">{{ post.date | date_to_string }}</div>
 	<div class="info">
-		<a class="title calm-link" href="{{ post.url }}">{{ post.title }}</a><br>
+		<a class="title" href="{{ post.url }}">{{ post.title }}</a><br>
 		<span class="description">{{ post.description }}</span>
 	</div>
 </li>
@@ -24,8 +24,8 @@ description: "I met a man with a dollar. We exchanged dollars. We each still had
 {% for post in site.posts %}
 {% if post.categories contains 'notes' %}
 <li class="post-item">
-	<div class="date muted">{{ post.date | date_to_string }}</div>
-	<a class="title calm-link" href="{{ post.url }}">{{ post.title }}</a>
+	<div class="date">{{ post.date | date_to_string }}</div>
+	<a class="title" href="{{ post.url }}">{{ post.title }}</a>
 </li>
 {% endif %}
 {% endfor %}
