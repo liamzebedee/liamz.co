@@ -13,5 +13,5 @@ rights: "Copyright Liam Edwards-Playne 2013"
 permalink: pretty
 
 exclude: five
-markdown: rdiscount
+markdown: redcarpet
 lessc: "/usr/bin/lessc"
