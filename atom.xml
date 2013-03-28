@@ -4,13 +4,125 @@
 <id>urn:uuid:</id>
 <title>Home of Liam (liamzebedee) Edwards-Playne</title>
 <subtitle>I live life.</subtitle>
-<updated>2013-03-27T21:46:30Z</updated>
+<updated>2013-03-28T21:15:55Z</updated>
 <link type="text/html" href="liamz.co"/>
 <icon>/assets/icon.png</icon>
 
 <rights>Copyright Liam Edwards-Playne 2013</rights>
 
 
+
+<entry>
+	<title>Ultimate introduction to Jekyll.</title>
+	<id>urn:uuid:</id>
+	<link rel="alternate" type="text/html" href="liamz.co/articles/2013/03/28/jekyll-guide/"/>
+	<updated></updated>
+	<published>2013-03-28T00:00:00Z</published>
+	<summary></summary>
+	
+		<category term="articles" />
+	
+	<content type="html">&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt; is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser &lt;strong&gt;without additional processing&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Jekyll at its core is a text transformation engine that operates on files. A Jekyll site is &lt;strong&gt;stored on the filesystem&lt;/strong&gt; and processed by the &lt;code&gt;jekyll&lt;/code&gt; executable to produce a static site, found in the &lt;code&gt;_site&lt;/code&gt; directory. Jekyll takes files it deems to be content (which can be written in multiple markup languages), and churns them through a templating engine to produce a webpage. &lt;/p&gt;
+
+&lt;p&gt;Because the site is stored on the filesystem, there are multiple traits you can observe to distinguish the purposes of each file. &lt;/p&gt;
+
+&lt;h3&gt;Special files&lt;/h3&gt;
+
+&lt;p&gt;These are files that begin with an underscore &lt;em&gt;_&lt;/em&gt;. Jekyll will ignore any files that begin with an underscore. &lt;/p&gt;
+
+&lt;p&gt;I call these files &amp;#39;special files&amp;#39; because usually they have some purpose in site generation, but aren&amp;#39;t part of the final site.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;So we are building a site with Jekyll. We start with an empty directory, &lt;code&gt;website&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;After running &lt;code&gt;jekyll&lt;/code&gt;, a directory is produced: &lt;code&gt;_site&lt;/code&gt;. This directory contains nothing.&lt;/p&gt;
+
+&lt;p&gt;Why did the directory contain nothing? Because nothing amounts to nothing. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The moral of this story is that the &lt;code&gt;website&lt;/code&gt; directory contains content - when there is no content, no website is made. &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This time you have done something - you&amp;#39;ve made a very simple &amp;quot;Hello World&amp;quot; webpage, which is saved as &lt;code&gt;index.html&lt;/code&gt;. You run &lt;code&gt;jekyll&lt;/code&gt; and what do you know, that very page has now been copied to &lt;code&gt;_site/index.html&lt;/code&gt;. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Jekyll will copy all files that &lt;strong&gt;do not begin with an underscore&lt;/strong&gt;, and &lt;strong&gt;need not be processed&lt;/strong&gt;, to the &lt;code&gt;_site&lt;/code&gt; directory. &lt;/p&gt;
+
+&lt;h3&gt;YAML Front Matter&lt;/h3&gt;
+
+&lt;p&gt;But how does Jekyll know what files need to be churned through the templating engine? It is very simple actually, each file that needs to be processed starts with what we call &lt;strong&gt;YAML Front Matter&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;YAML Front Matter&lt;/strong&gt; is a header at the top of a file, written in &lt;a href=&quot;https://en.wikipedia.org/wiki/YAML&quot;&gt;YAML&lt;/a&gt;, and encased in three dashes at the top and bottom, that determines how a file is processed. An example file, &lt;code&gt;capitalism.md&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;---
+layout: post
+---
+How is **capitalism** shaping government?
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;strong&gt;YAML Front Matter&lt;/strong&gt; is used for setting:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;predefined variables&lt;/li&gt;
+&lt;li&gt;custom data of your own&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now we will move on to discuss the predefined &lt;code&gt;layout&lt;/code&gt; variable. &lt;/p&gt;
+
+&lt;h3&gt;Templating engine: basics&lt;/h3&gt;
+
+&lt;p&gt;Every file that contains &lt;strong&gt;YAML Front Matter&lt;/strong&gt; is processed by the templating engine. The templating language used is Liquid, which is a very simple and safe language for simple manipulation of data. &lt;/p&gt;
+
+&lt;p&gt;Now back to the &lt;code&gt;layout&lt;/code&gt; variable. When we specify this variable, a file will attempted to be loaded from a special directory called &lt;strong&gt;_layouts&lt;/strong&gt;. In the above example, we specified &amp;#39;post&amp;#39; to be our layout. When &lt;code&gt;capitalism.md&lt;/code&gt; is run through the templating engine, everything except the &lt;strong&gt;YAML Front Matter&lt;/strong&gt; will be stored in a &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;template variable&lt;/a&gt; &lt;code&gt;content&lt;/code&gt;. So for the layout &lt;code&gt;post&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;&amp;lt;article id=&amp;quot;post&amp;quot;&amp;gt;
+
+&amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The file generated, &lt;code&gt;_site/capitalism.html&lt;/code&gt;, will look like:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;&amp;lt;article id=&amp;quot;post&amp;quot;&amp;gt;
+How is &amp;lt;b&amp;gt;capitalism&amp;lt;/b&amp;gt; shaping government?
+&amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What have we learned?&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Jekyll processes all files with YAML Front Matter&lt;/li&gt;
+&lt;li&gt;Processed files are structured in a layout heirachy, where their content is assigned to the variable &lt;code&gt;content&lt;/code&gt;. The variable &lt;code&gt;layout&lt;/code&gt; determines how the file is rendered. &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Depending on the markup language of the file, additional conversions may happen. &lt;/p&gt;
+
+&lt;p&gt;In the previous example, capitalism.html had the word capitalism in bold. The layout that the post used was written in HTML, but the post itself was written in Markdown. This exemplifies despite its simplicity, the powerful nature of Jekyll.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In this section we created a &lt;strong&gt;page&lt;/strong&gt; &lt;code&gt;capitalism.md&lt;/code&gt; and a &lt;strong&gt;layout&lt;/strong&gt; &lt;code&gt;post&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Templating engine: advanced&lt;/h3&gt;
+
+&lt;p&gt;So far we have learnt about the basics of Jekyll templating. Now we should learn some more about the filesystem structure.&lt;/p&gt;
+
+&lt;p&gt;There are three special files that are yet to be discussed: &lt;code&gt;_config.yml&lt;/code&gt;, &lt;code&gt;_includes&lt;/code&gt; and &lt;code&gt;_posts/&lt;/code&gt;. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;_config.yml&lt;/code&gt; - this file specifies site-wide variables &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;that are used by both Jekyll&lt;/a&gt; and can be used by templates. It&amp;#39;s like a global YAML Front Matter. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_includes&lt;/code&gt; - this directory contains templates that can be used by layouts and posts/pages alike. &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;_posts&lt;/code&gt; - this is the &amp;#39;blog-aware&amp;#39; feature of Jekyll. This directory contains posts (e.g. &lt;code&gt;capitalism.md&lt;/code&gt;) that are accessible via variables (e.g. they can be iterated) and can also have other meta data tweaked (such as permalink structure and categories). &lt;/p&gt;
+
+&lt;p&gt;Each file in the &lt;code&gt;_posts&lt;/code&gt; directory must follow the format of &lt;code&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;. Each post can set YAML Front Matter &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;global variables&lt;/a&gt;, of which the following are most popular:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;title&lt;/strong&gt; - the title of the post (overrides such specified in the filename)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;date&lt;/strong&gt; - the date when the post was published (overrides such specified in the filename)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;categories&lt;/strong&gt; - a list of categories the post belongs to (which can also be specified in the directory structure of _posts, but that&amp;#39;s rather unecessary for small blogs)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;layout&lt;/strong&gt; - layout to which the post is inserted into&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lastly, to use Jekyll effectively you should learn how to use the &lt;a href=&quot;https://github.com/shopify/liquid/wiki/liquid-for-designers&quot;&gt;Liquid templating language&lt;/a&gt;, what powers Jekyll templates.&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;In this guide I have covered the basic concepts needed to understand how Jekyll websites are implemented. Jekyll is a text transformation engine that operates on files, and uses a combination of the Liquid templating language, YAML Front Matter and underscores to provide a powerful yet simplistic alternative to popular CMSs. Its usage of text files instead of databases is what has garnered the title of &amp;quot;hacker&amp;#39;s blogging framework&amp;quot;, allowing everyone to use their favorite editor. &lt;/p&gt;
+</content>
+</entry>
 
 <entry>
 	<title>Careers, money and my opinion of work in general.</title>
@@ -22,8 +134,7 @@
 	
 		<category term="articles" />
 	
-	<content type="html">
-</content>
+	<content type="html"></content>
 </entry>
 
 <entry>
@@ -36,7 +147,7 @@
 	
 		<category term="notes" />
 	
-	<content type="html">&lt;p&gt;I'm utterly fascinated by the beautiful. We, as humans, love to compare and categorise things.&lt;/p&gt;
+	<content type="html">&lt;p&gt;I&amp;#39;m utterly fascinated by the beautiful. We, as humans, love to compare and categorise things. &lt;/p&gt;
 
 &lt;p&gt;I want to share some works deemed brilliant:&lt;/p&gt;
 
@@ -44,7 +155,6 @@
 &lt;li&gt;In Search of Lost Time. À la recherche du temps perdu&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Proust_Questionnaire&quot;&gt;Proust Questionnaire&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 </content>
 </entry>
 
@@ -58,14 +168,13 @@
 	
 		<category term="articles" />
 	
-	<content type="html">&lt;p&gt;Good artists copy, great artists steal. Let's see some websites I have stolen from while developing this one:&lt;/p&gt;
+	<content type="html">&lt;p&gt;Good artists copy, great artists steal. Let&amp;#39;s see some websites I have stolen from while developing this one:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://twitter.github.com/bootstrap/&quot;&gt;Twitter Bootstrap Docs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.jupo.org/&quot;&gt;Stephen McDonald&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.corincole.com/&quot;&gt;Corin Cole&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 </content>
 </entry>
 
@@ -79,9 +188,9 @@
 	
 		<category term="articles" />
 	
-	<content type="html">&lt;p&gt;First post on Liamz.co, so firstly, an introduction. This site is my only site now. I'm writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I've built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain.&lt;/p&gt;
+	<content type="html">&lt;p&gt;First post on Liamz.co, so firstly, an introduction. This site is my only site now. I&amp;#39;m writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I&amp;#39;ve built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain. &lt;/p&gt;
 
-&lt;p&gt;All my posts are based on my beliefs and thoughts, so I've categorised them into two groups according to how I structure the ideas:
+&lt;p&gt;All my posts are based on my beliefs and thoughts, so I&amp;#39;ve categorised them into two groups according to how I structure the ideas:
  a) Articles are structured pieces
  b) Notes are lossy collections of ideas&lt;/p&gt;
 </content>
