@@ -1266,7 +1266,7 @@ blockquote.pull-right small:before{content:'';}
 blockquote.pull-right small:after{content:'\00A0 \2014';}
 q:before,q:after,blockquote:before,blockquote:after{content:"";}
 address{display:block;margin-bottom:20px;font-style:normal;line-height:20px;}
-#container{padding-right:20px;padding-left:20px;*zoom:1;padding:0 0 0 0;}#container:before,#container:after{display:table;content:"";line-height:0;}
+#container{padding-right:20px;padding-left:20px;*zoom:1;padding:0 0 0 0;font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial;}#container:before,#container:after{display:table;content:"";line-height:0;}
 #container:after{clear:both;}
 #container:before,#container:after{display:table;content:"";line-height:0;}
 #container:after{clear:both;}
@@ -1951,11 +1951,11 @@ address{display:block;margin-bottom:20px;font-style:normal;line-height:20px;}
 #background #masthead h2{font-weight:300;line-height:1.25;}
 #thegrey{background-color:#f5f5f5;border-top:1px solid #fff;border-bottom:1px solid #ddd;}#thegrey.affix{position:fixed;top:0;width:100%;}
 #thegrey #navigation-menu ul{margin-left:0px;margin-bottom:0px;list-style:none;}#thegrey #navigation-menu ul>li{display:inline-block;*display:inline;*zoom:1;padding-left:5px;padding-right:5px;}#thegrey #navigation-menu ul>li>a{color:#444;font-weight:bold;padding-top:8px;padding-bottom:8px;margin-top:2px;margin-bottom:2px;padding-right:12px;padding-left:12px;margin-right:2px;line-height:14px;display:block;}#thegrey #navigation-menu ul>li>a:hover{-webkit-transition:0.25s;-moz-transition:0.25s;-o-transition:0.25s;transition:0.25s;text-decoration:none;color:#08c;}
-#main{padding-top:1em;}#main #content #posts .post-item{float:left;clear:left;margin-bottom:0.5em;}#main #content #posts .post-item .date{color:#999999;float:left;clear:right;padding-right:1em;}
+#main{padding-top:1em;}#main #content #posts .post-item{float:left;clear:left;margin-bottom:0.5em;width:100%;}#main #content #posts .post-item .date{color:#999999;float:left;width:20%;}
+#main #content #posts .post-item .info{float:left;width:80%;text-align:left;}
 #main #content #posts .post-item .title{color:#444;font-weight:bold;}#main #content #posts .post-item .title:hover{-webkit-transition:0.25s;-moz-transition:0.25s;-o-transition:0.25s;transition:0.25s;text-decoration:none;color:#08c;}
-#main #content #posts .post-item .info{float:left;}
 #main #content #posts ul{display:inline-block;}
 #main #content #posts #articles{width:48.61878453038674%;*width:48.56559304102504%;}
 #main #content #posts #notes{width:48.61878453038674%;*width:48.56559304102504%;}
 #main #content #post header h1 small{display:inline-block;}
-@media (min-width:768px){#background{padding-bottom:20px;}#background #masthead{padding-top:20px;margin-left:82px;margin-left:11.32596685082873%;*margin-left:11.219583872105325%;width:82.87292817679558%;*width:82.81973668743387%;}#background #masthead h1{font-size:80px;} #background #masthead h2{font-size:24px;} #thegrey #navigation-menu{margin-left:82px;margin-left:11.32596685082873%;*margin-left:11.219583872105325%;width:82.87292817679558%;*width:82.81973668743387%;} #main #content{margin-left:82px;margin-left:11.32596685082873%;*margin-left:11.219583872105325%;width:82.87292817679558%;*width:82.81973668743387%;}#main #content #post{width:65.74585635359117%;*width:65.69266486422946%;}}@media (max-width:767px){}
+@media (min-width:768px){#background{padding-bottom:20px;}#background #masthead{padding-top:20px;margin-left:82px;margin-left:11.32596685082873%;*margin-left:11.219583872105325%;width:82.87292817679558%;*width:82.81973668743387%;}#background #masthead h1{font-size:80px;} #background #masthead h2{font-size:24px;} #thegrey #navigation-menu{margin-left:82px;margin-left:11.32596685082873%;*margin-left:11.219583872105325%;width:82.87292817679558%;*width:82.81973668743387%;} #main #content{margin-left:82px;margin-left:11.32596685082873%;*margin-left:11.219583872105325%;width:82.87292817679558%;*width:82.81973668743387%;}#main #content #post{width:65.74585635359117%;*width:65.69266486422946%;font-size:16px;}}@media (max-width:767px){}
