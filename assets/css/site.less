@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "assets/css/_bootstrap/bootstrap.less";
 @import "assets/css/_bootstrap/responsive.less";
 @import "assets/css/_bootstrap/mixins.less";
@@ -12,6 +13,7 @@
 #container {
 	.container-fluid;
 	padding: 0 0 0 0;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
 }
 
 #background,
@@ -100,15 +102,21 @@
 				float: left;
 				clear: left;
 				margin-bottom: 0.5em;
+				width: 100%;
 				
 				.date {
 					.muted;
 					float: left;
-					clear: right;
-					padding-right: 1em;
+					//clear: right;
+					width: 20%;
+				}
+				
+				.info {
+					float: left;
+					width: 80%;
+					text-align: left;
 				}
 				.title { .calm-link }
-				.info { float: left; }
 			}
 			
 			ul {
