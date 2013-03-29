@@ -4,7 +4,7 @@
 <id>urn:uuid:</id>
 <title>Home of Liam (liamzebedee) Edwards-Playne</title>
 <subtitle>I live life.</subtitle>
-<updated>2013-03-28T22:36:58Z</updated>
+<updated>2013-03-29T20:54:13Z</updated>
 <link type="text/html" href="liamz.co"/>
 <icon>/assets/icon.png</icon>
 
@@ -125,61 +125,7 @@ How is &amp;lt;b&amp;gt;capitalism&amp;lt;/b&amp;gt; shaping government?
 </entry>
 
 <entry>
-	<title>Careers, money and my opinion of work in general.</title>
-	<id>urn:uuid:</id>
-	<link rel="alternate" type="text/html" href="liamz.co/articles/2013/03/24/what-are-you-to-do/"/>
-	<updated></updated>
-	<published>2013-03-24T00:00:00Z</published>
-	<summary></summary>
-	
-		<category term="articles" />
-	
-	<content type="html"></content>
-</entry>
-
-<entry>
-	<title>Fascinations and challenges</title>
-	<id>urn:uuid:</id>
-	<link rel="alternate" type="text/html" href="liamz.co/notes/2013/03/24/challenging-fascinations/"/>
-	<updated></updated>
-	<published>2013-03-24T00:00:00Z</published>
-	<summary></summary>
-	
-		<category term="notes" />
-	
-	<content type="html">&lt;p&gt;I&amp;#39;m utterly fascinated by the beautiful. We, as humans, love to compare and categorise things. &lt;/p&gt;
-
-&lt;p&gt;I want to share some works deemed brilliant:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;In Search of Lost Time. À la recherche du temps perdu&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Proust_Questionnaire&quot;&gt;Proust Questionnaire&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-</entry>
-
-<entry>
-	<title>My inspirations for this site</title>
-	<id>urn:uuid:</id>
-	<link rel="alternate" type="text/html" href="liamz.co/articles/2013/03/23/inspirations/"/>
-	<updated></updated>
-	<published>2013-03-23T00:00:00Z</published>
-	<summary></summary>
-	
-		<category term="articles" />
-	
-	<content type="html">&lt;p&gt;Good artists copy, great artists steal. Let&amp;#39;s see some websites I have stolen from while developing this one:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://twitter.github.com/bootstrap/&quot;&gt;Twitter Bootstrap Docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.jupo.org/&quot;&gt;Stephen McDonald&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.corincole.com/&quot;&gt;Corin Cole&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-</entry>
-
-<entry>
-	<title>First post.</title>
+	<title>First post (boring).</title>
 	<id>urn:uuid:</id>
 	<link rel="alternate" type="text/html" href="liamz.co/articles/2013/03/22/first-post/"/>
 	<updated></updated>
@@ -188,11 +134,13 @@ How is &amp;lt;b&amp;gt;capitalism&amp;lt;/b&amp;gt; shaping government?
 	
 		<category term="articles" />
 	
-	<content type="html">&lt;p&gt;First post on Liamz.co, so firstly, an introduction. This site is my only site now. I&amp;#39;m writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I&amp;#39;ve built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain. &lt;/p&gt;
+	<content type="html">&lt;p&gt;This is my first post on Liamz.co, so firstly, I shall begin with an introduction. This site is my only site now. I&amp;#39;m writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I&amp;#39;ve built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain. &lt;/p&gt;
 
-&lt;p&gt;All my posts are based on my beliefs and thoughts, so I&amp;#39;ve categorised them into two groups according to how I structure the ideas:
- a) Articles are structured pieces
- b) Notes are lossy collections of ideas&lt;/p&gt;
+&lt;p&gt;Now, to the content. All my posts are based on my beliefs and thoughts, so I&amp;#39;ve categorised them into two groups according to how I structure the ideas:
+ a) &lt;strong&gt;Articles&lt;/strong&gt; are structured pieces
+ b) &lt;strong&gt;Notes&lt;/strong&gt; are lossy collections of ideas&lt;/p&gt;
+
+&lt;p&gt;My last point is about the design of this site. I&amp;#39;ve stepped up my game, and low and behold, produced a mobile version of this site. &lt;/p&gt;
 </content>
 </entry>
 
