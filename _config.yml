@@ -10,8 +10,15 @@ description: "I live life."
 # License/Copyright information
 rights: "Copyright Liam Edwards-Playne 2013"
 
-permalink: pretty
+menu:
+- text: "Home."
+  url: /index.html
+- text: "About me."
+  url: /aboutme/
+- text: "Contact."
+  url: /contact/
 
+permalink: pretty
 exclude: five
 markdown: redcarpet
 lessc: "/usr/bin/lessc"

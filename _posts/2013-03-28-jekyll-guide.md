@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Ultimate introduction to Jekyll.
-description: A detailed introduction and guide for those who've had no prior experience with Jekyll. The missing tutorial. 
+description: A detailed introduction and guide for those who've had no prior experience with Jekyll - the magnificent beast which powers both this website and many others. 
 categories: articles
 ---
 **Jekyll** is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser **without additional processing**.

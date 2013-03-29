@@ -3,6 +3,7 @@ layout: content
 title: My inspirations for this site
 description: What is the purpose of an idea if it isn't shared? 
 categories: articles
+published: false
 ---
 Good artists copy, great artists steal. Let's see some websites I have stolen from while developing this one:
 

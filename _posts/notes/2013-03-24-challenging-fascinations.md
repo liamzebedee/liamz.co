@@ -3,6 +3,7 @@ layout: content
 title: Fascinations and challenges
 description: What is the meaning of life?
 categories: notes
+published: false
 ---
 I'm utterly fascinated by the beautiful. We, as humans, love to compare and categorise things. 
 
