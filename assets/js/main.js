@@ -12,4 +12,6 @@ $(document).ready(function() {
 	$('#masthead h2').fitText({
 		maximumFontSize: 24,
 	});
+	
+	$('body').noisy();
 });

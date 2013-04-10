@@ -2,7 +2,7 @@
 layout: content
 title: About me, Liam (liamzebedee) Edwards-Playne
 ---
-Hi, my name is **Liam Edwards-Playne** and on the net I'm known as **liamzebedee**. I'm a teenager and I've been coding since I was 11 with my friend Jack. I don't fuck around with superficial crap on my about page, I'd rather you make your own image of me. So here's some stuff from my life to help you out.
+<p class="lead">Hi, my name is <strong>Liam Edwards-Playne</strong> and on the net I'm known as <strong>liamzebedee</strong>. I'm a teenager and I've been coding since I was 11 with my friend <a href="//hetra.co">Jack</a>. I don't fuck around with superficial crap on my about page, I'd rather you form your own opinion of me. So here's some stuff from my life to help you out.</p>
 
 ## Free open-source software (FOSS)
 I'm a supporter of and contributor to [free and open-source software](http://www.gnu.org/philosophy/free-sw.html) (that's free as in libre). While I understand that propietary software has its benefits ([dictatorships are effective]({% post_url 2013-04-01-dictatorships %})) I truly believe that FOSS culture is viable.
