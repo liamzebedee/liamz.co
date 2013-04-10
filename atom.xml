@@ -4,7 +4,7 @@
 <id>urn:uuid:</id>
 <title>Home of Liam (liamzebedee) Edwards-Playne</title>
 <subtitle>I live life.</subtitle>
-<updated>2013-03-29T20:54:13Z</updated>
+<updated>2013-04-10T22:18:01Z</updated>
 <link type="text/html" href="liamz.co"/>
 <icon>/assets/icon.png</icon>
 
@@ -24,37 +24,23 @@
 	
 	<content type="html">&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt; is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser &lt;strong&gt;without additional processing&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Jekyll at its core is a text transformation engine that operates on files. A Jekyll site is &lt;strong&gt;stored on the filesystem&lt;/strong&gt; and processed by the &lt;code&gt;jekyll&lt;/code&gt; executable to produce a static site, found in the &lt;code&gt;_site&lt;/code&gt; directory. Jekyll takes files it deems to be content (which can be written in multiple markup languages), and churns them through a templating engine to produce a webpage. &lt;/p&gt;
+&lt;p&gt;Jekyll at its core is a text transformation engine that operates on files. A Jekyll site is &lt;strong&gt;stored on the filesystem&lt;/strong&gt; and processed by the &lt;strong&gt;jekyll&lt;/strong&gt; executable to produce a static site, found in the &lt;em&gt;_site&lt;/em&gt; directory. Jekyll takes files it deems to be content (which can be written in multiple markup languages), and churns them through a templating engine to produce a webpage. &lt;/p&gt;
 
 &lt;p&gt;Because the site is stored on the filesystem, there are multiple traits you can observe to distinguish the purposes of each file. &lt;/p&gt;
 
 &lt;h3&gt;Special files&lt;/h3&gt;
 
-&lt;p&gt;These are files that begin with an underscore &lt;em&gt;_&lt;/em&gt;. Jekyll will ignore any files that begin with an underscore. &lt;/p&gt;
+&lt;p&gt;These are files that begin with an underscore. Jekyll will ignore any files that begin with an underscore. I call these files &amp;#39;special files&amp;#39; because usually they have some purpose in site generation, but aren&amp;#39;t part of the final site.&lt;/p&gt;
 
-&lt;p&gt;I call these files &amp;#39;special files&amp;#39; because usually they have some purpose in site generation, but aren&amp;#39;t part of the final site.&lt;/p&gt;
+&lt;p&gt;So we are building a site with Jekyll. We start with an empty directory, &lt;em&gt;website&lt;/em&gt;. After running &lt;strong&gt;jekyll&lt;/strong&gt;, a directory is produced: &lt;em&gt;_site&lt;/em&gt;. This directory contains nothing. Why did the directory contain nothing? Because nothing amounts to nothing. The moral of this story is that the &lt;em&gt;website&lt;/em&gt; directory contains content - when there is no content, no website is made. &lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;So we are building a site with Jekyll. We start with an empty directory, &lt;code&gt;website&lt;/code&gt;. &lt;/p&gt;
-
-&lt;p&gt;After running &lt;code&gt;jekyll&lt;/code&gt;, a directory is produced: &lt;code&gt;_site&lt;/code&gt;. This directory contains nothing.&lt;/p&gt;
-
-&lt;p&gt;Why did the directory contain nothing? Because nothing amounts to nothing. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The moral of this story is that the &lt;code&gt;website&lt;/code&gt; directory contains content - when there is no content, no website is made. &lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This time you have done something - you&amp;#39;ve made a very simple &amp;quot;Hello World&amp;quot; webpage, which is saved as &lt;code&gt;index.html&lt;/code&gt;. You run &lt;code&gt;jekyll&lt;/code&gt; and what do you know, that very page has now been copied to &lt;code&gt;_site/index.html&lt;/code&gt;. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Jekyll will copy all files that &lt;strong&gt;do not begin with an underscore&lt;/strong&gt;, and &lt;strong&gt;need not be processed&lt;/strong&gt;, to the &lt;code&gt;_site&lt;/code&gt; directory. &lt;/p&gt;
+&lt;p&gt;This time you have done something - you&amp;#39;ve made a very simple &amp;quot;Hello World&amp;quot; webpage, which is saved as &lt;em&gt;index.html&lt;/em&gt;. You run &lt;strong&gt;jekyll&lt;/strong&gt; and what do you know, that very page has now been copied to &lt;em&gt;_site/index.html&lt;/em&gt;. Jekyll will copy all files that &lt;strong&gt;do not begin with an underscore&lt;/strong&gt;, and &lt;strong&gt;need not be processed&lt;/strong&gt;, to the &lt;em&gt;_site&lt;/em&gt; directory. &lt;/p&gt;
 
 &lt;h3&gt;YAML Front Matter&lt;/h3&gt;
 
 &lt;p&gt;But how does Jekyll know what files need to be churned through the templating engine? It is very simple actually, each file that needs to be processed starts with what we call &lt;strong&gt;YAML Front Matter&lt;/strong&gt;. &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;YAML Front Matter&lt;/strong&gt; is a header at the top of a file, written in &lt;a href=&quot;https://en.wikipedia.org/wiki/YAML&quot;&gt;YAML&lt;/a&gt;, and encased in three dashes at the top and bottom, that determines how a file is processed. An example file, &lt;code&gt;capitalism.md&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;YAML Front Matter&lt;/strong&gt; is a header at the top of a file, written in &lt;a href=&quot;https://en.wikipedia.org/wiki/YAML&quot;&gt;YAML&lt;/a&gt;, and encased in three dashes at the top and bottom, that determines how a file is processed. An example file, &lt;em&gt;capitalism.md&lt;/em&gt;:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;---
 layout: post
 ---
@@ -67,18 +53,18 @@ How is **capitalism** shaping government?
 &lt;li&gt;custom data of your own&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Now we will move on to discuss the predefined &lt;code&gt;layout&lt;/code&gt; variable. &lt;/p&gt;
+&lt;p&gt;Now we will move on to discuss the predefined &lt;em&gt;layout&lt;/em&gt; variable. &lt;/p&gt;
 
 &lt;h3&gt;Templating engine: basics&lt;/h3&gt;
 
 &lt;p&gt;Every file that contains &lt;strong&gt;YAML Front Matter&lt;/strong&gt; is processed by the templating engine. The templating language used is Liquid, which is a very simple and safe language for simple manipulation of data. &lt;/p&gt;
 
-&lt;p&gt;Now back to the &lt;code&gt;layout&lt;/code&gt; variable. When we specify this variable, a file will attempted to be loaded from a special directory called &lt;strong&gt;_layouts&lt;/strong&gt;. In the above example, we specified &amp;#39;post&amp;#39; to be our layout. When &lt;code&gt;capitalism.md&lt;/code&gt; is run through the templating engine, everything except the &lt;strong&gt;YAML Front Matter&lt;/strong&gt; will be stored in a &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;template variable&lt;/a&gt; &lt;code&gt;content&lt;/code&gt;. So for the layout &lt;code&gt;post&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Now back to the &lt;em&gt;layout&lt;/em&gt; variable. When we specify this variable, a file will attempted to be loaded from a special directory called &lt;strong&gt;_layouts&lt;/strong&gt;. In the above example, we specified &amp;#39;post&amp;#39; to be our layout. When &lt;em&gt;capitalism.md&lt;/em&gt; is run through the templating engine, everything except the &lt;strong&gt;YAML Front Matter&lt;/strong&gt; will be stored in a &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;template variable&lt;/a&gt; &lt;em&gt;content&lt;/em&gt;. So for the layout &lt;em&gt;post&lt;/em&gt;:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;&amp;lt;article id=&amp;quot;post&amp;quot;&amp;gt;
-
+{\{ content }}
 &amp;lt;/article&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The file generated, &lt;code&gt;_site/capitalism.html&lt;/code&gt;, will look like:&lt;/p&gt;
+&lt;p&gt;The file generated, &lt;em&gt;_site/capitalism.html&lt;/em&gt;, will look like:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;&amp;lt;article id=&amp;quot;post&amp;quot;&amp;gt;
 How is &amp;lt;b&amp;gt;capitalism&amp;lt;/b&amp;gt; shaping government?
 &amp;lt;/article&amp;gt;
@@ -87,27 +73,27 @@ How is &amp;lt;b&amp;gt;capitalism&amp;lt;/b&amp;gt; shaping government?
 
 &lt;ol&gt;
 &lt;li&gt;Jekyll processes all files with YAML Front Matter&lt;/li&gt;
-&lt;li&gt;Processed files are structured in a layout heirachy, where their content is assigned to the variable &lt;code&gt;content&lt;/code&gt;. The variable &lt;code&gt;layout&lt;/code&gt; determines how the file is rendered. &lt;/li&gt;
+&lt;li&gt;Processed files are structured in a layout heirachy, where their content is assigned to the variable &lt;em&gt;content&lt;/em&gt;. The variable &lt;em&gt;layout&lt;/em&gt; determines how the file is rendered. &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Depending on the markup language of the file, additional conversions may happen. &lt;/p&gt;
 
 &lt;p&gt;In the previous example, capitalism.html had the word capitalism in bold. The layout that the post used was written in HTML, but the post itself was written in Markdown. This exemplifies despite its simplicity, the powerful nature of Jekyll.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;In this section we created a &lt;strong&gt;page&lt;/strong&gt; &lt;code&gt;capitalism.md&lt;/code&gt; and a &lt;strong&gt;layout&lt;/strong&gt; &lt;code&gt;post&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In this section we created a &lt;strong&gt;page&lt;/strong&gt; &lt;em&gt;capitalism.md&lt;/em&gt; and a &lt;strong&gt;layout&lt;/strong&gt; &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h3&gt;Templating engine: advanced&lt;/h3&gt;
 
 &lt;p&gt;So far we have learnt about the basics of Jekyll templating. Now we should learn some more about the filesystem structure.&lt;/p&gt;
 
-&lt;p&gt;There are three special files that are yet to be discussed: &lt;code&gt;_config.yml&lt;/code&gt;, &lt;code&gt;_includes&lt;/code&gt; and &lt;code&gt;_posts/&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;There are three special files that are yet to be discussed: &lt;em&gt;_config.yml&lt;/em&gt;, &lt;em&gt;_includes&lt;/em&gt; and &lt;em&gt;_posts/&lt;/em&gt;. &lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;_config.yml&lt;/code&gt; - this file specifies site-wide variables &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;that are used by both Jekyll&lt;/a&gt; and can be used by templates. It&amp;#39;s like a global YAML Front Matter. &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;_includes&lt;/code&gt; - this directory contains templates that can be used by layouts and posts/pages alike. &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;_posts&lt;/code&gt; - this is the &amp;#39;blog-aware&amp;#39; feature of Jekyll. This directory contains posts (e.g. &lt;code&gt;capitalism.md&lt;/code&gt;) that are accessible via variables (e.g. they can be iterated) and can also have other meta data tweaked (such as permalink structure and categories). &lt;/p&gt;
-
-&lt;p&gt;Each file in the &lt;code&gt;_posts&lt;/code&gt; directory must follow the format of &lt;code&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;. Each post can set YAML Front Matter &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;global variables&lt;/a&gt;, of which the following are most popular:&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;The config file specifies site-wide variables &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;that are used by both Jekyll&lt;/a&gt; and can be used by templates. It&amp;#39;s like a global YAML Front Matter. &lt;/li&gt;
+&lt;li&gt;The includes directory contains templates that can be used by layouts and posts/pages alike. &lt;/li&gt;
+&lt;li&gt;This is the &amp;#39;blog-aware&amp;#39; feature of Jekyll. The posts directory contains posts (e.g. &lt;em&gt;capitalism.md&lt;/em&gt;) that are accessible via variables (e.g. they can be iterated) and can also have other meta data tweaked (such as permalink structure and categories). &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;Each file in the &lt;em&gt;_posts&lt;/em&gt; directory must follow the format of &lt;em&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/em&gt;. Each post can set YAML Front Matter &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;global variables&lt;/a&gt;, of which the following are most popular:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;title&lt;/strong&gt; - the title of the post (overrides such specified in the filename)&lt;/li&gt;
