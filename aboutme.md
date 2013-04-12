@@ -1,6 +1,6 @@
 ---
 layout: content
-title: About me, Liam (liamzebedee) Edwards-Playne
+title: About me
 ---
 <p class="lead">Hi, my name is <strong>Liam Edwards-Playne</strong> and on the net I'm known as <strong>liamzebedee</strong>. I'm a teenager and I've been coding since I was 11 with my friend <a href="//hetra.co">Jack</a>. I don't fuck around with superficial crap on my about page, I'd rather you form your own opinion of me. So here's some stuff from my life to help you out.</p>
 
