@@ -4,13 +4,39 @@
 <id>urn:uuid:</id>
 <title>Home of Liam Z. — learner, hacker, dreamer.</title>
 <subtitle>I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</subtitle>
-<updated>2013-04-27T13:09:12Z</updated>
+<updated>2013-04-27T21:34:34Z</updated>
 <link type="text/html" href="liamz.co"/>
 <icon>/assets/icon.png</icon>
 
 <rights>Copyright Liam (liamzebedee) Edwards-Playne 2012–2013</rights>
 
 
+
+<entry>
+	<title>We: a magnificent piece of dystopia</title>
+	<id>urn:uuid:</id>
+	<link rel="alternate" type="text/html" href="//liamz.co/post/2013/04/27/we-zamaytin/"/>
+	<updated></updated>
+	<published>2013-04-27T00:00:00Z</published>
+	<summary></summary>
+	
+		<category term="post" />
+	
+	<content type="html">&lt;p&gt;While camping I read a dystopian novel called &lt;a href=&quot;https://en.wikipedia.org/wiki/We_%28novel%29&quot;&gt;We&lt;/a&gt;. I&amp;#39;ve read the classics of the genre – 1984, Brave New World, Animal Farm – but this novel, it was something else. &lt;/p&gt;
+
+&lt;p&gt;A particularly fascinating idea I found in &lt;em&gt;We&lt;/em&gt;, which I also seem to remember in Huxley&amp;#39;s &lt;em&gt;Brave New World&lt;/em&gt; (when the Savage speaks with Mustapha Mond, ~211), is the pursuit of happiness. Definitely my favourite part of the text was the protagonist D-503&amp;#39;s chat with the ruler of the &amp;#39;One State&amp;#39; the Benefactor, where he ridicules D for opposing mankind&amp;#39;s historic aim – to be happy. &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If this means you are in agreement with me – then let&amp;#39;s talk like grownups, when the children have gone to bed: about everything right down to the end.&lt;/p&gt;
+
+&lt;p&gt;I ask you: what have people – from the very cradle – prayed for, dreamed about, and agonised over? They have wanted someone, anyone, to tell them once and for all what happiness is – and then attach them to this happiness with a chain... What are we doing now, if it isn&amp;#39;t this?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The beauty in this extract is the atmosphere that preceds it. To have the protagonist, a character constructed to be absolutely conformist and oblivious to the system in which he is imprisoned, speaking to the very orchestrator of this process. One who understands the purpose behind it all – a semblance of omnipotence.&lt;/p&gt;
+
+&lt;p&gt;I am in a state of awe, but for why it is hard to describe. I just find this novel particularly brilliant. &lt;/p&gt;
+</content>
+</entry>
 
 <entry>
 	<title>Ultimate introduction to Jekyll.</title>
