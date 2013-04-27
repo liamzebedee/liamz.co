@@ -1,0 +1,23 @@
+---
+layout: base
+permalink: /:year/jan/:title
+categories: essay
+---
+<header class="page-header">
+	<h1>{{ page.title }} <small><time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time></small></h1>
+</header>
+
+{{ content }}
+
+<footer>
+	{% unless page.responses == null %}
+	<section id="responses">
+	<h2>Responses.</h2>
+	<ul>
+		{% for item in page.responses %}
+		<li><a href="{{item.link}}">{{item.text}}</a></li>
+		{% endfor %}
+	</ul>
+	</section>
+	{% endunless %}
+</footer>

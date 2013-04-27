@@ -1,0 +1,17 @@
+---
+layout: base
+title: Essays.
+---
+
+<header class="page-header"><h1>{{ page.title }}</h1></header>
+<ul class="unstyled archives">
+	{% for post in site.categories.essay %}
+		<li>
+			<div class="date-published">{{ post.date | date_to_string }}</div>
+			<div class="info">
+				<a class="title" href="{{ post.url }}">{{ post.title }}</a><br>
+				<span class="description">{{ post.description }}</span>
+			</div>
+		</li>
+	{% endfor %}
+</ul>

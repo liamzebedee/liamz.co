@@ -1,0 +1,4 @@
+- convert feed-icon to CSS3
+- get wanted permalink structure working (see README)
+- remove robots.txt restrictions
+- fix the moving container issue

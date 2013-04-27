@@ -1,8 +1,8 @@
 ---
-layout: content
+layout: post
 title: First post (boring).
 description: "The first post ever on Liamz.co. Let's discuss."
-categories: articles
+category: post
 ---
 This is my first post on Liamz.co, so firstly, I shall begin with an introduction. This site is my only site now. I'm writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I've built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain. 
 

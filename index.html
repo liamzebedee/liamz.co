@@ -1,33 +1,29 @@
 ---
 layout: base
-title: Home of Liam (liamzebedee) Edwards-Playne
-description: "I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas. - these things and more."
+categories: page
 ---
-<ul class="unstyled" id="posts">
-	<ul class="unstyled" id="articles">
-		<h3>Posts</h3>
-		{% for post in site.posts %}
-		{% if post.categories contains 'articles' %}
-		<li class="post-item">
-			<div class="date">{{ post.date | date_to_string }}</div>
-			<div class="info">
-				<a class="title" href="{{ post.url }}">{{ post.title }}</a><br>
-				<span class="description">{{ post.description }}</span>
-			</div>
-		</li>
-		{% endif %}
-		{% endfor %}
-	</ul>
+{% javascript_asset_tag global %}
+- "_assets/js/qotd.js"
+{% endjavascript_asset_tag %}
 
-	<ul class="unstyled" id="notes">
-		<h3>Notes</h3>
-		{% for post in site.posts %}
-		{% if post.categories contains 'notes' %}
-		<li class="post-item">
-			<div class="date">{{ post.date | date_to_string }}</div>
-			<a class="title" href="{{ post.url }}">{{ post.title }}</a>
-		</li>
-		{% endif %}
-		{% endfor %}
-	</ul>
+<section id="intro">
+<p class="lead">This is a place where I post my thoughts and insights. I'm <abbr title="Liam Edwards-Playne / @liamzebedee">Liam Z.</abbr> — learner, hacker, dreamer.</p>
+</section>
+
+<section id="select-posts">
+<h3>Interesting.</h3>
+Nothing here yet.
+</section>
+
+<section id="latest-posts">
+<h3>Latest. <a class="pull-right" href="/atom.xml" title="Atom feed"><div class="iconx-feed"></div></a></h3>
+<ul>
+{% for post in site.posts limit: 5 %}
+<li><span class="label label-info">{{ post.category }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
 </ul>
+</section>
+
+<section id="quote-of-the-day" class="well well-small">
+<q>I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</q>
+</section>

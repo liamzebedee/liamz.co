@@ -1,15 +1,23 @@
+---
+---
 <!DOCTYPE html>
+<!--
+Looking at my code hey? No need to be discreet, it's all
+open-source. Take a look:
+
+https://github.com/liamzebedee/liamz.co
+-->
 <html lang="en">
 <head>
-	<title>{{ page.title }}</title>
+	<title>{% if page.title == null %} {{ site.title }} {% else %} {{ page.title }} — Liam Z. {% endif %}</title>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link href="/assets/css/site.css" rel="stylesheet" media="screen">
-	<link href='//fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    {% css_asset_tag global %}
+    - "/_assets/css/site.css.less"
+    {% endcss_asset_tag %}
 	
 	<meta name="description" content="{% if page.description %} {{ page.description | trim(' ') }} {% else %} {{ site.description | trim(' ') }} {% endif %}">
 	{% if page.date %}
@@ -28,13 +36,14 @@
 </head>
 <body>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 {{ content }}
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/jquery.fittext.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.1/jquery.noisy.min.js"></script>
-<script src="/assets/js/main.js"></script>
+{% javascript_asset_tag global %}
+- "/_assets/js/bootstrap.min.js"
+- "/_assets/js/main.js"
+{% endjavascript_asset_tag %}
 
 </body>
 </html>

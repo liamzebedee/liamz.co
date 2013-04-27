@@ -1,12 +1,11 @@
-#
-# Less to CSS converter for Jekyll.
-# In your less file, add two lines of --- at the top.
-#
-module Jekyll
-  class LessConverter < Converter
-    safe true
-    priority :high
+require 'jekyll_asset_pipeline'
+
+# LESS to CSS
+# Recognises .less files only
+module JekyllAssetPipeline
+  class LessConverter < JekyllAssetPipeline::Converter
     
+    # Loads some libraries with error checking
     def setup
       return if @setup
       require 'less'
@@ -17,20 +16,16 @@ module Jekyll
       raise FatalException.new("Missing dependency: less")
     end
     
-    def matches(ext)
-      ext =~ /less|lcss/i
+    def self.filetype
+      ".less"
     end
     
-    def output_ext(ext)
-      ".css"
-    end
-    
-    def convert(content)
+    def convert
       setup
       begin
-        parser = Less::Parser.new                                                                    
-        tree = parser.parse(content)
-        tree.to_css(:compress => true)
+        parser = Less::Parser.new :relativeUrls => true
+        tree = parser.parse(@content)
+        tree.to_css
       rescue => e
         puts "Less Exception: #{e.message}"
       end

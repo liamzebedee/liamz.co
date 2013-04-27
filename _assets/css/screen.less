@@ -1,0 +1,67 @@
+/* Portrait tablet to landscape and desktop... */
+@media (min-width: 33em) {
+
+#container {
+	.container;
+	// see www.maxdesign.com.au/articles/em/
+	max-width: 33em;
+}
+
+#masthead {
+	#grid > .fluid > .row-fluid;
+	
+	#menu {
+		li {
+			padding: 0 0 0 0;
+			
+			* {
+				padding-left: 0.5em;
+				padding-right: 0.5em;
+				vertical-align: middle;
+			}
+			
+			a {
+				font-size: 85%;
+			}
+			
+			&:after { content: "·"; }
+			&:last-child:after { content: none; }
+		}
+	}
+}
+
+#content {
+	#grid > .fluid > .row-fluid;
+	
+	#select-posts {
+		#grid > .fluid > .span(6);
+		display: inline-block;
+	}
+	#latest-posts {
+		#grid > .fluid > .span(6);
+		display: inline-block;
+	}
+	
+	.archives {
+		li {
+			float: left;
+			clear: left;
+			margin-bottom: 0.5em;
+			width: 100%;
+			
+			.date-published {
+				.muted;
+				float: left;
+				width: 20%;
+			}
+	
+			.info {
+				float: left;
+				width: 80%;
+				text-align: left;
+			}
+		}
+	}
+}
+
+}

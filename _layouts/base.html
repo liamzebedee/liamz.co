@@ -2,36 +2,34 @@
 layout: default
 ---
 <div id="container">
-	<nav id="menu" class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner"><ul class="nav" role="menu">
-			{% for link in site.menu %}
-				{% assign current = false %}
-				{% if page.url == link.url %}
-					{% assign current = true %}
-				{% endif %}
-				
-				{% if link.text == "Articles" and page.categories contains 'articles' %}
-					{% assign current = true %}
-				{% endif %}
-				{% if link.text == "Notes" and page.categories contains 'notes' %}
-					{% assign current = true %}
-				{% endif %}
 
-				<li{% if current %} class="active"{% endif %}>
-					<a href="{{ link.url }}">{{ link.text }}</a>
-				</li>
-			{% endfor %}
-		</ul></div>
-	</nav>
-	
-	<div id="background">
-	<header id="masthead">
-		<h1>Home of <a href="/aboutme/" title="About me">Liam</a>.</h1>
-		<h2><q id="quote-of-the-day">I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</q></h2>
-	</header>
-	</div>
-	
-	<div id="main">
-		<div id="content">{{ content }}</div>
-	</div>
+<header id="masthead">
+<nav id="menu">
+	<ul class="inline" role="menu">
+	<li class="brand"><h1>LIAMZEBEDEE</h1></li>
+	{% for link in site.menu %}
+		{% assign current = false %}
+		{% if page.url == link.url %}
+			{% assign current = true %}
+		{% endif %}
+		
+		{% if link.text == "essays" and page.categories == "essay" %}
+			{% assign current = true %}
+		{% endif %}
+		{% if link.text == "posts" and page.categories == "post" %}
+			{% assign current = true %}
+		{% endif %}
+
+		<li {% if current %}class="active"{% endif %}>
+			<a href="{{ link.url }}">{{ link.text }}</a>
+		</li>
+	{% endfor %}
+	</ul>
+</nav>
+</header>
+
+<article id="content" class="{{ page.categories }}">
+{{ content }}
+</article>
+
 </div>

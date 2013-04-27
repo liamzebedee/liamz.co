@@ -1,8 +1,8 @@
 ---
-layout: content
+layout: post
 title: Ultimate introduction to Jekyll.
-description: A detailed introduction and guide for those who've had no prior experience with Jekyll - the magnificent beast which powers both this website and many others. 
-categories: articles
+description: "A detailed introduction and guide for those who've had no prior experience with Jekyll - the magnificent beast which powers both this website and many others."
+category: post
 ---
 **Jekyll** is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser **without additional processing**.
 
@@ -40,7 +40,7 @@ Every file that contains **YAML Front Matter** is processed by the templating en
 Now back to the *layout* variable. When we specify this variable, a file will attempted to be loaded from a special directory called **_layouts**. In the above example, we specified 'post' to be our layout. When *capitalism.md* is run through the templating engine, everything except the **YAML Front Matter** will be stored in a [template variable](https://github.com/mojombo/jekyll/wiki/Template-Data) *content*. So for the layout *post*:
 
 	<article id="post">
-	{\{ content }}
+	{% raw %}{{ content }}{% endraw %}
 	</article>
 
 The file generated, *_site/capitalism.html*, will look like:

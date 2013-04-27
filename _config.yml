@@ -1,28 +1,28 @@
 # Title of site, to appear in atom feed
-title: "Home of Liam (liamzebedee) Edwards-Playne"
+title: "Home of Liam Z. — learner, hacker, dreamer."
 
 # Server
 host: "liamz.co"
 
 # Description for <meta> and atom feed
-description: "."
+description: "I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas."
 
 # License/Copyright information
-rights: "Copyright Liam (liamzebedee) Edwards-Playne"
+rights: "Copyright Liam (liamzebedee) Edwards-Playne 2012–2013"
 
 menu:
-- text: "Home"
+- text: "home"
   url: /index.html
-- text: "About me"
-  url: /aboutme/
-- text: "Contact"
+- text: "about"
+  url: /about/
+- text: "contact"
   url: /contact/
-- text: "Articles"
-  url: /articles/
-- text: "Notes"
-  url: /notes/
+- text: "posts"
+  url: /posts/
+- text: "essays"
+  url: /essays/
 
 permalink: pretty
-exclude: five
+exclude: README.md
 markdown: redcarpet
 lessc: "/usr/bin/lessc"

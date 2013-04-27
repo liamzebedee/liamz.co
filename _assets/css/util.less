@@ -1,0 +1,27 @@
+/*
+ * Utility.
+ */
+
+.calm-link {
+	color: #444;
+	font-weight: bold;
+	
+	&:hover {
+		.transition(0.25s);
+		text-decoration: none;
+		color: #08c;
+	}
+}
+
+// iconx because Bootstrap has a selector for icon-*
+.iconx-feed {
+	@length: 20px;
+	background-size: @length @length;
+	// Source: https://en.wikipedia.org/wiki/File:Feed-icon.svg
+	// XXX make this dynamic. I got it working in Chrome with SVG background-image
+	// but not in FF. Probably best to use CSS3. 
+	background-image: url("/assets/img/icon-feed.gif");
+	display: inline-block;
+	width: @length;
+	height: @length;
+}
