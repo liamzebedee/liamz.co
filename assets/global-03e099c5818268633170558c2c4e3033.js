@@ -1,19 +1,5 @@
+// Quote of the day
 $(document).ready(function() {
-	// Auto-affix
-	/*$('#thegrey-wrapper').height($("#thegrey-wrapper").height());
-	$('#thegrey').affix({
-		offset: $('#thegrey').position()
-	});*/
-	
-	// Responsive masthead
-	/*$('#masthead h1').fitText({
-		maximumFontSize: 80,
-	});
-	$('#masthead h2').fitText({
-		maximumFontSize: 24,
-	});*/
-	
-	// Quote of the day
 	var quotes = [
 		'Money is simply a unit of exchange.',
 		'Psalm 137:9 - Happy is the one who seizes your infants and dashes them against the rocks.',

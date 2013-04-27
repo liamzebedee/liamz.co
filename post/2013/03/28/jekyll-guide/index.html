@@ -1,15 +1,20 @@
 <!DOCTYPE html>
+<!--
+Looking at my code hey? No need to be discreet, it's all
+open-source. Take a look:
+
+https://github.com/liamzebedee/liamz.co
+-->
 <html lang="en">
 <head>
-	<title>Ultimate introduction to Jekyll.</title>
+	<title> Ultimate introduction to Jekyll. — Liam Z. </title>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link href="/assets/css/site.css" rel="stylesheet" media="screen">
-	<link href='//fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='/assets/global-ef147ff82aaf8733d18d63251cb9e2bc.css' rel='stylesheet' type='text/css' />
+
 	
 	<meta name="description" content=" A detailed introduction and guide for those who've had no prior experience with Jekyll - the magnificent beast which powers both this website and many others. ">
 	
@@ -28,80 +33,77 @@
 </head>
 <body>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <div id="container">
-	<nav id="menu" class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner"><ul class="nav" role="menu">
-			
-				
-				
-				
-				
-				
 
-				<li>
-					<a href="/index.html">Home</a>
-				</li>
-			
-				
-				
-				
-				
-				
-
-				<li>
-					<a href="/aboutme/">About me</a>
-				</li>
-			
-				
-				
-				
-				
-				
-
-				<li>
-					<a href="/contact/">Contact</a>
-				</li>
-			
-				
-				
-				
-				
-					
-				
-				
-
-				<li class="active">
-					<a href="/articles/">Articles</a>
-				</li>
-			
-				
-				
-				
-				
-				
-
-				<li>
-					<a href="/notes/">Notes</a>
-				</li>
-			
-		</ul></div>
-	</nav>
+<header id="masthead">
+<nav id="menu">
+	<ul class="inline" role="menu">
+	<li class="brand"><h1>LIAMZEBEDEE</h1></li>
 	
-	<div id="background">
-	<header id="masthead">
-		<h1>Home of <a href="/aboutme/" title="About me">Liam</a>.</h1>
-		<h2><q id="quote-of-the-day">I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</q></h2>
-	</header>
-	</div>
-	
-	<div id="main">
-		<div id="content"><article id="post">
-	<header>
 		
-		<div class="page-header"><h1>Ultimate introduction to Jekyll. <small><time datetime="2013-03-28T00:00:00Z" pubdate>March 28, 2013</time></small></h1></div>
-	</header>
+		
+		
+		
+		
+
+		<li >
+			<a href="/index.html">home</a>
+		</li>
 	
-	<p><strong>Jekyll</strong> is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser <strong>without additional processing</strong>.</p>
+		
+		
+		
+		
+		
+
+		<li >
+			<a href="/about/">about</a>
+		</li>
+	
+		
+		
+		
+		
+		
+
+		<li >
+			<a href="/contact/">contact</a>
+		</li>
+	
+		
+		
+		
+		
+		
+			
+		
+
+		<li class="active">
+			<a href="/posts/">posts</a>
+		</li>
+	
+		
+		
+		
+		
+		
+
+		<li >
+			<a href="/essays/">essays</a>
+		</li>
+	
+	</ul>
+</nav>
+</header>
+
+<article id="content" class="post">
+<header class="page-header">
+	<h1>Ultimate introduction to Jekyll. <small><time datetime="2013-03-28T00:00:00Z" pubdate>March 28, 2013</time></small></h1>
+</header>
+
+<p><strong>Jekyll</strong> is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser <strong>without additional processing</strong>.</p>
 
 <p>Jekyll at its core is a text transformation engine that operates on files. A Jekyll site is <strong>stored on the filesystem</strong> and processed by the <strong>jekyll</strong> executable to produce a static site, found in the <em>_site</em> directory. Jekyll takes files it deems to be content (which can be written in multiple markup languages), and churns them through a templating engine to produce a webpage. </p>
 
@@ -140,7 +142,7 @@ How is **capitalism** shaping government?
 
 <p>Now back to the <em>layout</em> variable. When we specify this variable, a file will attempted to be loaded from a special directory called <strong>_layouts</strong>. In the above example, we specified &#39;post&#39; to be our layout. When <em>capitalism.md</em> is run through the templating engine, everything except the <strong>YAML Front Matter</strong> will be stored in a <a href="https://github.com/mojombo/jekyll/wiki/Template-Data">template variable</a> <em>content</em>. So for the layout <em>post</em>:</p>
 <div class="highlight"><pre><code class="text">&lt;article id=&quot;post&quot;&gt;
-{\{ content }}
+{{ content }}
 &lt;/article&gt;
 </code></pre></div>
 <p>The file generated, <em>_site/capitalism.html</em>, will look like:</p>
@@ -187,30 +189,29 @@ How is &lt;b&gt;capitalism&lt;/b&gt; shaping government?
 
 <p>In this guide I have covered the basic concepts needed to understand how Jekyll websites are implemented. Jekyll is a text transformation engine that operates on files, and uses a combination of the Liquid templating language, YAML Front Matter and underscores to provide a powerful yet simplistic alternative to popular CMSs. Its usage of text files instead of databases is what has garnered the title of &quot;hacker&#39;s blogging framework&quot;, allowing everyone to use their favorite editor. </p>
 
+
+<footer>
 	
 	
-	<footer>
-		<nav><ul class="pager">
-			<li class="previous">
-				<a href="/articles/2013/03/22/first-post/" rel="prev">&larr; Previous</a>
-			</li>
-			<li class="next disabled">
-				<a  rel="next">Next &rarr;</a>
-			</li>
-		</ul></nav>
-	</footer>
 	
+	<nav><ul class="pager">
+		<li class="previous">
+			<a href="/post/2013/03/22/first-post/" rel="prev" title="First post (boring).">&larr; Previous</a>
+		</li>
+		<li class="next disabled">
+			<a  rel="next" title="">Next &rarr;</a>
+		</li>
+	</ul></nav>
+	
+</footer>
+
 </article>
-</div>
-	</div>
+
 </div>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/jquery.fittext.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.1/jquery.noisy.min.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src='/assets/global-402a4e3934bcc38100c6dc78f4994727.js' type='text/javascript'></script>
+
 
 </body>
 </html>

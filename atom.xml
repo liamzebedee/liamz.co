@@ -2,25 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 <id>urn:uuid:</id>
-<title>Home of Liam (liamzebedee) Edwards-Playne</title>
-<subtitle>.</subtitle>
-<updated>2013-04-12T13:55:24Z</updated>
+<title>Home of Liam Z. — learner, hacker, dreamer.</title>
+<subtitle>I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</subtitle>
+<updated>2013-04-27T13:09:12Z</updated>
 <link type="text/html" href="liamz.co"/>
 <icon>/assets/icon.png</icon>
 
-<rights>Copyright Liam (liamzebedee) Edwards-Playne</rights>
+<rights>Copyright Liam (liamzebedee) Edwards-Playne 2012–2013</rights>
 
 
 
 <entry>
 	<title>Ultimate introduction to Jekyll.</title>
 	<id>urn:uuid:</id>
-	<link rel="alternate" type="text/html" href="liamz.co/articles/2013/03/28/jekyll-guide/"/>
+	<link rel="alternate" type="text/html" href="//liamz.co/post/2013/03/28/jekyll-guide/"/>
 	<updated></updated>
 	<published>2013-03-28T00:00:00Z</published>
 	<summary></summary>
 	
-		<category term="articles" />
+		<category term="post" />
 	
 	<content type="html">&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt; is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser &lt;strong&gt;without additional processing&lt;/strong&gt;.&lt;/p&gt;
 
@@ -61,7 +61,7 @@ How is **capitalism** shaping government?
 
 &lt;p&gt;Now back to the &lt;em&gt;layout&lt;/em&gt; variable. When we specify this variable, a file will attempted to be loaded from a special directory called &lt;strong&gt;_layouts&lt;/strong&gt;. In the above example, we specified &amp;#39;post&amp;#39; to be our layout. When &lt;em&gt;capitalism.md&lt;/em&gt; is run through the templating engine, everything except the &lt;strong&gt;YAML Front Matter&lt;/strong&gt; will be stored in a &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;template variable&lt;/a&gt; &lt;em&gt;content&lt;/em&gt;. So for the layout &lt;em&gt;post&lt;/em&gt;:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;&amp;lt;article id=&amp;quot;post&amp;quot;&amp;gt;
-{\{ content }}
+{{ content }}
 &amp;lt;/article&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The file generated, &lt;em&gt;_site/capitalism.html&lt;/em&gt;, will look like:&lt;/p&gt;
@@ -113,12 +113,12 @@ How is &amp;lt;b&amp;gt;capitalism&amp;lt;/b&amp;gt; shaping government?
 <entry>
 	<title>First post (boring).</title>
 	<id>urn:uuid:</id>
-	<link rel="alternate" type="text/html" href="liamz.co/articles/2013/03/22/first-post/"/>
+	<link rel="alternate" type="text/html" href="//liamz.co/post/2013/03/22/first-post/"/>
 	<updated></updated>
 	<published>2013-03-22T00:00:00Z</published>
 	<summary></summary>
 	
-		<category term="articles" />
+		<category term="post" />
 	
 	<content type="html">&lt;p&gt;This is my first post on Liamz.co, so firstly, I shall begin with an introduction. This site is my only site now. I&amp;#39;m writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I&amp;#39;ve built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain. &lt;/p&gt;
 
