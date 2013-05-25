@@ -1,5 +1,5 @@
 task :run do
-	system "jekyll --server --auto"
+	system "jekyll serve --watch"
 end
 
 desc 'Initialise the git repository'

@@ -6,7 +6,7 @@ layout: default
 <header id="masthead">
 <nav id="menu">
 	<ul class="inline" role="menu">
-	<li class="brand"><h1>LIAMZEBEDEE</h1></li>
+	<li role="presentation" class="brand"><h1>LIAMZEBEDEE</h1></li>
 	{% for link in site.menu %}
 		{% assign current = false %}
 		{% if page.url == link.url %}
@@ -20,7 +20,7 @@ layout: default
 			{% assign current = true %}
 		{% endif %}
 
-		<li {% if current %}class="active"{% endif %}>
+		<li role="menuitem" {% if current %}class="active"{% endif %}>
 			<a href="{{ link.url }}">{{ link.text }}</a>
 		</li>
 	{% endfor %}

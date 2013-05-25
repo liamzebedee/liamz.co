@@ -1,8 +1,8 @@
 # Title of site, to appear in atom feed
-title: "Home of Liam Z. — learner, hacker, dreamer."
+title: "Home of Liam Z. — learner, hacker, thinker."
 
 # Server
-host: "liamz.co"
+hostname: "liamz.co"
 
 # Description for <meta> and atom feed
 description: "I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas."
@@ -22,7 +22,8 @@ menu:
 - text: "essays"
   url: /essays/
 
-permalink: pretty
-exclude: README.md
+exclude: 
+- README.md
+- rakefile
 markdown: redcarpet
-lessc: "/usr/bin/lessc"
+permalink: pretty

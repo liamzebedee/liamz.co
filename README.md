@@ -11,8 +11,8 @@ I use the Jekyll Asset Pipeline to facilitate automatic compilation of .less and
 # Site layout
 HTML5 site using Bootstrap. Built for mobile and desktop/tablet. 3 types of content:
 * Pages - /about-me
-* Essays - /2013/jan/my-life-in-january
-* Posts - /post/note-name
+* Essays - /essay/my-life-in-january
+* Posts - /blog/note-name
 
 ## Layouts
 * default
@@ -20,22 +20,3 @@ HTML5 site using Bootstrap. Built for mobile and desktop/tablet. 3 types of cont
 * default/base
 * default/base/post
 * default/base/essay
-
-# Design Philosophy
-My ephiphany came back when I looked at my website, and thought - I don't that this is the "Home of Liam" every time I visit a page. And then I saw [Paul Graham's website](http://www.paulgraham.com/), and I had my lightbulb moment. 
-
-Content is king. Home page serves to a) introduce the reader to me (the author) and b) get them to read posts. Each post links to at least 3 other posts, to encourage further reading. 
-
-Index:
-* LIAMZEBEDEE · home · about · contact · posts · essays
-* introduction to me
-* range of posts on different topics
-* latest posts and essays
-* quote of the day
-
-Content:
-* LIAMZEBEDEE · home · about · contact · posts · essays
-* Title, Date
-* Content
-* Related (previous, next, stimulated by, in response to)
-* Responses
