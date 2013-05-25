@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 	<url>
-		<loc>http://liamz.co/</loc>
-		<lastmod>2013-04-27</lastmod>
+		<loc>http://0.0.0.0/</loc>
+		<lastmod>2013-05-25</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 
 	
 	<url>
-		<loc>http://liamz.co/post/2013/04/27/we-zamaytin/</loc>
+		<loc>http://0.0.0.0/blog/we-zamaytin/</loc>
 		
 		<lastmod>2013-04-27</lastmod>
 		
 	</url>
 	
 	<url>
-		<loc>http://liamz.co/post/2013/03/28/jekyll-guide/</loc>
+		<loc>http://0.0.0.0/blog/jekyll-guide/</loc>
 		
 		<lastmod>2013-03-28</lastmod>
 		
 	</url>
 	
 	<url>
-		<loc>http://liamz.co/post/2013/03/22/first-post/</loc>
+		<loc>http://0.0.0.0/blog/first-post/</loc>
 		
 		<lastmod>2013-03-22</lastmod>
 		
@@ -33,63 +33,72 @@
 
 	
 	<url>
-		<loc>http://liamz.co/about/</loc>
+		<loc>http://0.0.0.0/about/</loc>
 		
-		<lastmod>2013-04-27</lastmod>
-		
-		
-		
-	</url>
-	
-	<url>
-		<loc>http://liamz.co/contact/</loc>
-		
-		<lastmod>2013-04-27</lastmod>
+		<lastmod>2013-05-25</lastmod>
 		
 		
 		
 	</url>
 	
 	<url>
-		<loc>http://liamz.co/index.html</loc>
+		<loc>http://0.0.0.0/rss.xml</loc>
 		
-		<lastmod>2013-04-27</lastmod>
-		
-		
-		
-	</url>
-	
-	<url>
-		<loc>http://liamz.co/essays/</loc>
-		
-		<lastmod>2013-04-27</lastmod>
+		<lastmod>2013-05-25</lastmod>
 		
 		
 		
 	</url>
 	
 	<url>
-		<loc>http://liamz.co/atom.xml</loc>
+		<loc>http://0.0.0.0/contact/</loc>
 		
-		<lastmod>2013-04-27</lastmod>
-		
-		
-		
-	</url>
-	
-	<url>
-		<loc>http://liamz.co/posts/</loc>
-		
-		<lastmod>2013-04-27</lastmod>
+		<lastmod>2013-05-25</lastmod>
 		
 		
 		
 	</url>
 	
 	<url>
-		<loc>http://liamz.co/sitemap.xml</loc>
+		<loc>http://0.0.0.0/</loc>
 		
-		<lastmod>2013-04-27</lastmod>
+		<lastmod>2013-05-25</lastmod>
+		
+		
+		
+	</url>
+	
+	<url>
+		<loc>http://0.0.0.0/essays/</loc>
+		
+		<lastmod>2013-05-25</lastmod>
+		
+		
+		
+	</url>
+	
+	<url>
+		<loc>http://0.0.0.0/atom.xml</loc>
+		
+		<lastmod>2013-05-25</lastmod>
+		
+		
+		
+	</url>
+	
+	<url>
+		<loc>http://0.0.0.0/posts/</loc>
+		
+		<lastmod>2013-05-25</lastmod>
+		
+		
+		
+	</url>
+	
+	<url>
+		<loc>http://0.0.0.0/sitemap.xml</loc>
+		
+		<lastmod>2013-05-25</lastmod>
 		
 		
 		

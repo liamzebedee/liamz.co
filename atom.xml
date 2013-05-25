@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 <id>urn:uuid:</id>
-<title>Home of Liam Z. — learner, hacker, dreamer.</title>
+<title>Home of Liam Z. — learner, hacker, thinker.</title>
 <subtitle>I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</subtitle>
-<updated>2013-04-27T21:34:34Z</updated>
-<link type="text/html" href="liamz.co"/>
+<updated>2013-05-25T20:17:57Z</updated>
+<link type="text/html" href="http://liamz.co"/>
 <icon>/assets/icon.png</icon>
 
 <rights>Copyright Liam (liamzebedee) Edwards-Playne 2012–2013</rights>
@@ -15,10 +15,10 @@
 <entry>
 	<title>We: a magnificent piece of dystopia</title>
 	<id>urn:uuid:</id>
-	<link rel="alternate" type="text/html" href="//liamz.co/post/2013/04/27/we-zamaytin/"/>
+	<link rel="alternate" type="text/html" href="http://liamz.co/blog/we-zamaytin/"/>
 	<updated></updated>
 	<published>2013-04-27T00:00:00Z</published>
-	<summary></summary>
+	
 	
 		<category term="post" />
 	
@@ -41,10 +41,10 @@
 <entry>
 	<title>Ultimate introduction to Jekyll.</title>
 	<id>urn:uuid:</id>
-	<link rel="alternate" type="text/html" href="//liamz.co/post/2013/03/28/jekyll-guide/"/>
+	<link rel="alternate" type="text/html" href="http://liamz.co/blog/jekyll-guide/"/>
 	<updated></updated>
 	<published>2013-03-28T00:00:00Z</published>
-	<summary></summary>
+	
 	
 		<category term="post" />
 	
@@ -139,18 +139,20 @@ How is &amp;lt;b&amp;gt;capitalism&amp;lt;/b&amp;gt; shaping government?
 <entry>
 	<title>First post (boring).</title>
 	<id>urn:uuid:</id>
-	<link rel="alternate" type="text/html" href="//liamz.co/post/2013/03/22/first-post/"/>
+	<link rel="alternate" type="text/html" href="http://liamz.co/blog/first-post/"/>
 	<updated></updated>
 	<published>2013-03-22T00:00:00Z</published>
-	<summary></summary>
+	
 	
 		<category term="post" />
 	
-	<content type="html">&lt;p&gt;This is my first post on Liamz.co, so firstly, I shall begin with an introduction. This site is my only site now. I&amp;#39;m writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I&amp;#39;ve built, hosted on Github Pages for free, which means I only have to pay the hefty fee for the domain. &lt;/p&gt;
+	<content type="html">&lt;p&gt;This is my first post on Liamz.co, so firstly, I shall begin with an introduction. This site is my only site now. I&amp;#39;m writing this post now in my favorite text editor thanks to Jekyll, the framework on which this site is built. It also happens to be the cheapest site I&amp;#39;ve built, hosted on Github Pages for free, which means I only have to pay the fee for the domain. &lt;/p&gt;
 
 &lt;p&gt;Now, to the content. All my posts are based on my beliefs and thoughts, so I&amp;#39;ve categorised them into two groups according to how I structure the ideas:
- a) &lt;strong&gt;Articles&lt;/strong&gt; are structured pieces
- b) &lt;strong&gt;Notes&lt;/strong&gt; are lossy collections of ideas&lt;/p&gt;
+ a) &lt;strong&gt;Essays&lt;/strong&gt; are structured pieces
+ b) &lt;strong&gt;Posts&lt;/strong&gt; are lossy collections of ideas&lt;/p&gt;
+
+&lt;p&gt;To further illustrate the difference between essays and posts, I&amp;#39;ve changed the URL structure for posts to be under &amp;#39;blog&amp;#39; - the casual connotations of blog are stronger than that of post. &lt;/p&gt;
 
 &lt;p&gt;My last point is about the design of this site. I&amp;#39;ve stepped up my game, and low and behold, produced a mobile version of this site. &lt;/p&gt;
 </content>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+
+<title>Home of Liam Z. — learner, hacker, thinker.</title>
+<description>I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</description>
+<link>liamz.co</link>
+<lastBuildDate>Sat, 25 May 2013 20:17:57 +1000</lastBuildDate>
+<language>en-AU</language>
+
+
+
+<item>
+	<title>We: a magnificent piece of dystopia</title>
+	<link>http://liamz.co/blog/we-zamaytin/</link>
+	<guid>urn:uuid:</guid>
+	<pubDate>2013-04-27 00:00:00 +1000</pubDate>
+	
+</item>
+
+<item>
+	<title>Ultimate introduction to Jekyll.</title>
+	<link>http://liamz.co/blog/jekyll-guide/</link>
+	<guid>urn:uuid:</guid>
+	<pubDate>2013-03-28 00:00:00 +1000</pubDate>
+	
+</item>
+
+<item>
+	<title>First post (boring).</title>
+	<link>http://liamz.co/blog/first-post/</link>
+	<guid>urn:uuid:</guid>
+	<pubDate>2013-03-22 00:00:00 +1000</pubDate>
+	
+</item>
+
+
+
+</channel>
+</rss>

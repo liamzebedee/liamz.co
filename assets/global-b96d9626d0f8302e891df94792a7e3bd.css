@@ -7957,6 +7957,10 @@ a.badge:focus {
 #content #quote-of-the-day {
   margin-top: 1em;
 }
+#content #quote-of-the-day #all-quotes {
+  display: none;
+  visibility: hidden;
+}
 .post header h1 small time[pubdate],
 .essay header h1 small time[pubdate] {
   display: block;
