@@ -4,14 +4,8 @@ module Jekyll
 	
 		def generate(site)
 			# Until Jekyll allows me to use :slug, I have to resort to this
-
-			site.categories['post'].each do |item|
-				# /blog/this-is-a-title
-				item.data['permalink'] = '/blog/' + item.slug + '/'
-			end
-			site.categories['essay'].each do |item|
-				# /essay/this-is-a-title
-				item.data['permalink'] = '/essay/' + item.slug + '/'
+			site.posts.each do |item|
+				item.data['permalink'] = '/' + item.slug + '/'
 			end
 		end
 	end

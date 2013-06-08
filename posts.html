@@ -10,6 +10,7 @@ title: Posts.
 			<div class="date-published">{{ post.date | date_to_string }}</div>
 			<div class="info">
 				<a class="title" href="{{ post.url }}">{{ post.title }}</a><br>
+				<span class="description">{{ post.description }}</span>
 			</div>
 		</li>
 	{% endfor %}

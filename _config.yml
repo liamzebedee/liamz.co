@@ -11,19 +11,23 @@ description: "I met a man with a dollar. We exchanged dollars. We each still had
 rights: "Copyright Liam (liamzebedee) Edwards-Playne 2012–2013"
 
 menu:
-- text: "home"
+- text: "Home"
   url: /index.html
-- text: "about"
+- text: "About"
   url: /about/
-- text: "contact"
+- text: "Contact"
   url: /contact/
-- text: "posts"
+- text: "Posts"
   url: /posts/
-- text: "essays"
-  url: /essays/
 
 exclude: 
 - README.md
 - rakefile
-markdown: redcarpet
+- CNAME
+- TODO
+
+# Misc.
+markdown: maruku
+# We still need this line below, for _plugins/permalink.rb
 permalink: pretty
+timezone: 'Australia/Brisbane'

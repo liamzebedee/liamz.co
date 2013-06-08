@@ -22,9 +22,7 @@
 	}
 }
 
-#content {
-	//font-family: Georgia,Cambria,"Times New Roman",Times,serif;
-	
+#content {	
 	// Holy shit this is awesome.
 	a[href^="/"] {
 		.calm-link;
@@ -54,14 +52,16 @@
 	}
 }
 
-.post,
-.essay {
-	header {
-		h1 small time[pubdate] {
-			display: block;
-			.clearfix;
-			padding-top: 0.5em;
-		}
+.post {
+	a[rel^="footnote"] {
+		color: @grayLight;
+	}
+	h3 {
+		font-size: 17.5px;
+		margin-top: 2em;
+	}
+	.footnotes {
+		ol li p { display: inline; }
 	}
 }
 
