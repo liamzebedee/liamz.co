@@ -27,7 +27,7 @@ Another idea is to set-up a public signalling server. We already have public ser
 But the only real solution is **changing the WebRTC API to suit us**, so we could do do signalling by directly communicating with the other peer. I've looked into this and it [isn't possible](http://stackoverflow.com/questions/16954585/is-it-possible-to-directly-connect-using-ice-and-then-do-direct-peer-to-peer-sig) right now, but I think it should be. 
 
 ### Conclusion
-I don't claim to have all the answers — if someone knows how to achieve this, and refutes what I have said, then great! I don't care about being right, I just want to know the correct information. Until then, **something needs to be done**.
+I don't claim to have all the answers — if someone knows how to achieve this, and refutes what I have said, then great! Until then, **something needs to be done**.
 
 [^addIceCandidate]: the WebRTC API has few tutorials for people coming from a BSD sockets background, but basically how this works is you use the [addIceCandidate](http://www.w3.org/TR/webrtc/#widl-RTCPeerConnection-addIceCandidate-void-RTCIceCandidate-candidate) function to add a remote endpoint (RTCIceCandidate object) for the peer you will be connecting to.
 [^createOffer]: see the [createAnswer](http://dev.w3.org/2011/webrtc/editor/webrtc.html#widl-RTCPeerConnection-createOffer-void-RTCSessionDescriptionCallback-successCallback-RTCPeerConnectionErrorCallback-failureCallback-MediaConstraints-constraints) documentation
