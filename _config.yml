@@ -23,7 +23,6 @@ menu:
 exclude: 
 - README.md
 - rakefile
-- CNAME
 - TODO
 
 # Misc.
