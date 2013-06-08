@@ -4,7 +4,7 @@ title: WebRTC is not truly peer-to-peer
 ---
 <p class='lead'>Why should you care? Because, we are hindering exciting innovation in browser-based P2P, that which might provide magnificently simple solutions to problems such as <a href="https://xkcd.com/949/" title="relevant xkcd">sharing documents</a></p>
 
-*In short:* WebRTC renders the bootstrapping process of peer-to-peer applications (wherein you join the network by initially connecting to a node and asking them for peers) unusable because the initial connection setup is dependent on **centralised** servers.
+*In short:* WebRTC renders the bootstrapping process of peer-to-peer applications (wherein you join the network by initially connecting to a node and asking them for peers) unusable because the initial connection set-up is dependent on **centralised** servers.
 
 I think very highly of WebRTC as a platform for a range of cool new innovations, but it is wrong to give it the status of supporting peer-to-peer (P2P) network models.
 
@@ -20,7 +20,7 @@ RTCPeerConnection is the interface whereby peers (browsers) may connect to each 
 Both of these steps require a **signalling channel**. My question is why?
 
 ### Solutions
-You could write a terrible hack to make use of IRC web chat or annonymous XMPP servers to exchange signalling information. It wouldn't be ethical or appropriate to rely on Wikileaks' web IRC for decentralised signalling, so there must be an alternative.
+You could write a terrible hack to make use of IRC web chat or anonymous XMPP servers to exchange signalling information. It wouldn't be ethical or appropriate to rely on Wikileaks' web IRC for decentralised signalling, so there must be an alternative.
 
 Another idea is to set-up a public signalling server. We already have public servers available for STUN (as provided by Google and Mozilla), which is the mechanism for traversing NAT. So why don't we have them for signalling? Because they can be abused and again it is unreliable to rely on a third-party, which is the basis of this issue. 
 
