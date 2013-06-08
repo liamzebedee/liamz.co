@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WebRTC is not truly peer-to-peer
+title: WebRTC is not true peer-to-peer
 ---
 <p class='lead'>Why should you care? Because, we are hindering exciting innovation in browser-based P2P, that which might provide magnificently simple solutions to problems such as <a href="https://xkcd.com/949/" title="relevant xkcd">sharing documents</a></p>
 
