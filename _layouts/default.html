@@ -29,15 +29,17 @@
 <link rel="apple-touch-icon" href="/assets/img/icon-touch.png">
 <!-- Android -->
 <link rel="apple-touch-icon-precomposed" href="/assets/img/icon-touch-precomposed.png">
-</head>
-<body>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
 
 {{ content }}
 
 {% javascript_asset_tag global %}
+- "/_assets/js/jquery.timeago.js"
 - "/_assets/js/bootstrap.min.js"
+- "_assets/js/main.js"
 {% endjavascript_asset_tag %}
 
 </body>
