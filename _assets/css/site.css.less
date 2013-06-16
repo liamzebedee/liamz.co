@@ -22,10 +22,14 @@
 	}
 }
 
-#content {	
-	// Holy shit this is awesome.
+#content {
+	// Holy shit this is awesome. Captures all the links from this domain.
 	a[href^="/"] {
 		.calm-link;
+	}
+
+	h3 small a {
+		color: @grayLight !important;
 	}
 
 	/* Index */
@@ -52,7 +56,8 @@
 	}
 }
 
-.post {
+.post {	
+	// General
 	time abbr {
 		border-bottom: none;
 	}

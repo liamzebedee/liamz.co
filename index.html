@@ -15,7 +15,7 @@ categories: page
 </section>
 
 <section id="latest-posts">
-<h3>Latest. <a class="pull-right" href="/rss.xml" title="RSS feed"><span class="iconx-feed"></span></a></h3>
+<h3>Latest. <small><a href="/posts/">Archives</a></small><a class="pull-right" href="/rss.xml" title="RSS feed"><span class="iconx-feed"></span></a></h3>
 <ul>
 {% for post in site.posts limit: 5 %}
 <li><span class="label label-info">{{ post.category }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -23,8 +23,10 @@ categories: page
 </ul>
 </section>
 
-<section id="quote-of-the-day" class="well well-small">
-<q>I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</q>
+<section id="quote-of-the-day">
+<h3>Quote of the day. <small><a href="/quotes/">All quotes</a></small></h3>
+<!-- Default -->
+<blockquote id="quote"><p>I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</p></blockquote>
 
 {% include quotes.html %}
 

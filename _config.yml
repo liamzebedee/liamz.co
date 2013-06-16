@@ -19,6 +19,8 @@ menu:
   url: /contact/
 - text: "Posts"
   url: /posts/
+- text: "Quotes"
+  url: /quotes/
 
 exclude: 
 - README.md

@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	// Quote of the day
 	var qotd = $('#quote-of-the-day');
-	var allQuotes = $('#all-quotes li', qotd);
+	var allQuotes = $('#all-quotes li blockquote', qotd);
 	// Gets a random quote
-	var quote = allQuotes.eq(Math.floor(Math.random()*allQuotes.length)).text();
-	if(quote !== null) qotd.text(quote);
+	var quote = allQuotes.eq(Math.floor(Math.random()*allQuotes.length));
+	if(quote !== null) $('#quote', qotd).html(quote.html());
 	
 	
 	// Timeago
-	$("abbr.timeago").timeago();
+	$("time.timeago").timeago();
 });
