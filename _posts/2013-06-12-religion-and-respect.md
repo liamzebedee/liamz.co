@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Religion and Respect
+title: On religion and respect.
+description: "A description of my attitude towards religion and what form respect should come in. Also some  personal history."
 ---
 My attitude towards religion is that of **critical acceptance**.
 

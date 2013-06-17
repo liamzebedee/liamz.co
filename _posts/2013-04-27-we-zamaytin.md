@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "We: a magnificent piece of dystopia"
+title: "We: a magnificent piece of dystopia."
 description: "I ask you: what have people – from the very cradle – prayed for, dreamed about, and agonised over? They have wanted someone, anyone, to tell them once and for all what happiness is – and then attach them to this happiness with a chain... What are we doing now, if it isn't this?"
 ---
 While camping I read a dystopian novel called [We](https://en.wikipedia.org/wiki/We_%28novel%29). I've read the classics of the genre – 1984, Brave New World, Animal Farm – but this novel, it was something else. 

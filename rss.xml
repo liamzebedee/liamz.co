@@ -16,7 +16,7 @@ layout: nil
 <item>
 	<title>{{ post.title }}</title>
 	<link>http://{{ site.hostname }}{{ post.url }}</link>
-	<guid>urn:uuid:{{ post.uuid }}</guid>
+	<guid>{{ post.id }}</guid>
 	<pubDate>{{ post.date | date: date_to_rfc822 }}</pubDate>
 	{% if page.description %}<description>{{ page.description }}</description>{% endif %}
 </item>

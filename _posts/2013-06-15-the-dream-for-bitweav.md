@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Three principles for magnificence: the dream for bitWeav"
+title: "Three principles for magnificence: the dream for bitWeav."
 description: "I have devised three key objectives for bitWeav — simplicity, security and sustainability."
 published: false
 ---
