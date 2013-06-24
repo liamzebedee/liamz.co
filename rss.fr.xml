@@ -9,7 +9,7 @@ layout: nil
 <description>{{ site.description }}</description>
 <link>{{ site.hostname }}</link>
 <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-<language>en</language>
+<language>fr</language>
 
 
 {% for post in site.posts %}

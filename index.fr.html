@@ -13,16 +13,16 @@ categories: page
 </section>
 
 <section id="latest-posts">
-<h3>{%t Latest %}. <small><a href="/posts/">{%t Archives %}</a></small><a class="pull-right" href="/{{page.lang}}/rss.xml" title="{%t RSS feed %}"><span class="iconx-feed"></span></a></h3>
+<h3>{%t Latest %}. <small><a href="/{{ page.lang }}/posts/">{%t Archives %}</a></small><a class="pull-right" href="/{{page.lang}}/rss.xml" title="{%t RSS feed %}"><span class="iconx-feed"></span></a></h3>
 <ul>
 {% for post in site.tags.fr limit: 5 %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+<li><a href="/{{ page.lang }}/{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </section>
 
 <section id="quote-of-the-day">
-<h3>{%t Quote of the day %}. <small><a href="/fr/citations/">{%t All quotes %}</a></small></h3>
+<h3>{%t Quote of the day %}. <small><a href="/{{ page.lang }}/citations/">{%t All quotes %}</a></small></h3>
 <!-- Default -->
 <blockquote id="quote"><p>{%t default quote %}</p></blockquote>
 
