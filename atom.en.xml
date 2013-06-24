@@ -4,17 +4,17 @@ layout: nil
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-<id>urn:uuid:{{ page.uuid }}</id>
-<title>{{ site.title }}</title>
-<subtitle>{{ site.description }}</subtitle>
+<id>http://{{ site.hostname }}{{ page.id }}</id>
+<title>{%t site.title %}</title>
+<subtitle>{%t site.description %}</subtitle>
 <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
-<link type="text/html" href="http://{{ site.hostname }}"/>
+<link type="text/html" href="http://{{ site.hostname }}/en/"/>
 <icon>/assets/icon.png</icon>
-{% if site.rights %}
-<rights>{{ site.rights }}</rights>
-{% endif %}
+<rights>{%t site.rights %}</rights>
+<!-- TODO set lang of feed -->
 
-{% for post in site.posts %}
+
+{% for post in site.tags.en %}
 <entry>
 	<title>{{ post.title }}</title>
 	<id>{{ post.id }}</id>

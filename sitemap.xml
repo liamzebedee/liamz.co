@@ -3,14 +3,33 @@ layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+	<!-- Home -->
 	<url>
 		<loc>http://{{ site.host }}/</loc>
 		<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-		<changefreq>daily</changefreq>
+		<changefreq>yearly</changefreq>
 		<priority>1.0</priority>
 	</url>
-
+	
+	<!-- Locales -->
+	<url>
+		<loc>http://{{ site.host }}/en/</loc>
+		<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="http://{{ site.host }}/en/" />
+		<xhtml:link rel="alternate" hreflang="fr" href="http://{{ site.host }}/fr/" />
+	</url>
+	<url>
+		<loc>http://{{ site.host }}/fr/</loc>
+		<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="http://{{ site.host }}/en/" />
+		<xhtml:link rel="alternate" hreflang="fr" href="http://{{ site.host }}/fr/" />
+	</url>
+	
+	<!-- Pages and Posts -->
 	{% for page in site.posts %}
 	<url>
 		<loc>http://{{ site.host }}{{ page.url }}</loc>

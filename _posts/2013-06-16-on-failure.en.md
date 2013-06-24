@@ -2,6 +2,7 @@
 layout: post
 title: On failure.
 description: "The difference between failure and success, and the importance of making mistakes."
+tag: en
 ---
 <p class='lead'>I learnt this week the difference between failure and success, and the importance of making mistakes.</p> 
 

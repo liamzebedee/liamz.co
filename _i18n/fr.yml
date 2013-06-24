@@ -1,0 +1,29 @@
+fr:
+  lead1: "This is a place where I post my thoughts and insights. Je m'appelle"
+  lead2: "l'élève, le hacker, le penseur"
+  Interesting: 'Intéressant'
+  Latest: 'La dernière'
+  Archives: Archives
+  RSS feed: RSS Feed
+  Quote of the day: 'La citation du jour'
+  All quotes: 'Toutes les citations'
+  default quote: "I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas."
+  
+  site: 
+    title: "Le siège de Liam Z. — l'élève, le hacker, le penseur."
+    
+    description: ""
+    
+    rights: "Copyright Liam (liamzebedee) Edwards-Playne 2012–2013"
+    
+    menu:
+    - text: "Home"
+      url: /index.html
+    - text: "About"
+      url: /about/
+    - text: "Contact"
+      url: /contact/
+    - text: "Posts"
+      url: /posts/
+    - text: "Quotes"
+      url: /quotes/

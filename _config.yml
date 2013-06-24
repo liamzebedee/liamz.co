@@ -1,34 +1,18 @@
-# Title of site, to appear in atom feed
-title: "Home of Liam Z. — learner, hacker, thinker."
-
 # Server
 hostname: "liamz.co"
-
-# Description for <meta> and atom feed
-description: "I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas."
-
-# License/Copyright information
-rights: "Copyright Liam (liamzebedee) Edwards-Playne 2012–2013"
-
-menu:
-- text: "Home"
-  url: /index.html
-- text: "About"
-  url: /about/
-- text: "Contact"
-  url: /contact/
-- text: "Posts"
-  url: /posts/
-- text: "Quotes"
-  url: /quotes/
 
 exclude: 
 - README.md
 - rakefile
 - TODO
+- test.html
 
 # Misc.
 markdown: maruku
 # We still need this line below, for _plugins/permalink.rb
 permalink: pretty
 timezone: 'Australia/Brisbane'
+
+asset_pipeline:
+  bundle: true
+  compress: true

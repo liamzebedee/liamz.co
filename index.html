@@ -1,33 +1,66 @@
 ---
-layout: base
-categories: page
+title: Liam Z.
 ---
-<section id="intro">
-<p class="lead">This is a place where I post my thoughts and insights. I'm <abbr title="Liam Edwards-Playne / @liamzebedee">Liam Z.</abbr> — learner, hacker, thinker.</p>
-</section>
-
-<section id="select-posts">
-<h3>Interesting.</h3>
-<ul>
-<li><a href="{% post_url 2013-04-27-we-zamaytin %}">We: a magnificent piece of dystopia</a></li>
-<li><a href="{% post_url 2013-06-12-religion-and-respect %}">Religion and Respect</a></li>
+<html lang="mul" dir="ltr">
+<head>
+{% include head.html %}
+<title>Liam Z.</title>
+<link rel="alternate" hreflang="x-default" href="http://{{site.hostname}}/" />
+<link rel="alternate" hreflang="en" href="http://{{site.hostname}}/en/" />
+<link rel="alternate" hreflang="fr" href="http://{{site.hostname}}/fr/" />
+</head>
+<script>
+var lang = navigator.language || navigator.userLanguage;
+// Map of languages I accept and their paths
+var langs = {
+	'en': 'en/',
+	'fr': 'fr/',
+};
+// Gets the most similar language to the client browser 
+// and redirects to the appropriate translation of the site.
+// Defaults to English.
+var locale = langs[lang.split('-')[0]];
+locale = (locale == null) ? langs['en'] : locale;
+window.location.replace(window.location.origin+'/'+locale);
+</script>
+<style>
+body {
+	font-family: sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+h1 {
+	color: #999;
+}
+#languages {
+	display: inline;
+	list-style-type: none;
+	padding-left: 0px;
+}
+#languages li {
+	display: inline-block;
+	padding-right: 2em;
+}
+#languages li:last-child {
+	padding-right: 0em;
+}
+a,
+a:visited,
+a:active {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #0a0a0a;
+	text-decoration: underline;
+}
+</style>
+<body>
+<h1>Liam Z.</h1>
+<ul id="languages">
+	<li lang="en"><h2><a href="/en/" hreflang="en">English</a></li></h2>
+	<!--<li lang="fr"><h2><a href="/fr/" hreflang="fr">Français</a></li></h2>-->
 </ul>
-</section>
-
-<section id="latest-posts">
-<h3>Latest. <small><a href="/posts/">Archives</a></small><a class="pull-right" href="/rss.xml" title="RSS feed"><span class="iconx-feed"></span></a></h3>
-<ul>
-{% for post in site.posts limit: 5 %}
-<li><span class="label label-info">{{ post.category }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
-</section>
-
-<section id="quote-of-the-day">
-<h3>Quote of the day. <small><a href="/quotes/">All quotes</a></small></h3>
-<!-- Default -->
-<blockquote id="quote"><p>I met a man with a dollar. We exchanged dollars. We each still had one dollar. Then I met a man with an idea. We exchanged ideas. Now we each have two ideas.</p></blockquote>
-
-{% include quotes.html %}
-
-</section>
+</body>
+</html>

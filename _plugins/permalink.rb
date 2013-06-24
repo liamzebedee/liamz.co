@@ -1,6 +1,7 @@
 module Jekyll
 	class PermalinkRewriter < Generator
-	safe true
+		safe true
+		priority :low
 	
 		def generate(site)
 			# Until Jekyll allows me to use :slug, I have to resort to this
