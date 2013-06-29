@@ -5,7 +5,6 @@ exclude:
 - README.md
 - rakefile
 - TODO
-- test.html
 
 # Misc.
 markdown: maruku
@@ -13,6 +12,7 @@ markdown: maruku
 permalink: pretty
 timezone: 'Australia/Brisbane'
 
+# Overridden in _plugins/ext.rb for `jekyll build`
 asset_pipeline:
-  bundle: true
-  compress: true
+  bundle: false
+  compress: false

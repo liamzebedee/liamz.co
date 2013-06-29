@@ -69,6 +69,10 @@
 		margin-top: 2em;
 	}
 	.footnotes {
+		hr {
+			margin-top: 2em;
+			margin-bottom: 2em;
+		}
 		ol li p { display: inline; }
 	}
 }
@@ -79,6 +83,15 @@ blockquote p {
 
 blockquote p:last-of-type {
 	margin-bottom: 0px;
+}
+
+s {
+	color: @grayLight !important;
+	margin-bottom: 1em;
+	display: inline-block;
+	* {
+		color: @grayLight !important;
+	}
 }
 
 @import "_assets/css/screen.less";

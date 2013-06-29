@@ -150,14 +150,16 @@ module Jekyll
 	
 	end
 	
-	class Site
-		
-		alias_method :_aggregate_post_info, :aggregate_post_info
-		def aggregate_post_info(post)
-			_aggregate_post_info(post)
-			@tags[post.data['lang']] << post
+	class LanguageTagGenerator < Generator
+		priority :lowest
+		def generate(site)
+			site.posts.each do |post|
+				lang = post.data['lang'].to_s
+				site.tags[lang] ||= []
+				site.tags[lang] << post
+			end
+			#puts site.tags
 		end
-		
 	end
 end
 

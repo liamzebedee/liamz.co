@@ -2,7 +2,6 @@
 layout: post
 title: On failure.
 description: "The difference between failure and success, and the importance of making mistakes."
-tag: en
 ---
 <p class='lead'>I learnt this week the difference between failure and success, and the importance of making mistakes.</p> 
 
@@ -10,11 +9,11 @@ tag: en
 
 
 ### Background
-Being a student of the [International Baccalaureate](https://en.wikipedia.org/wiki/IB_Diploma_Programme)[^ibStudent], a high school curriculum renowned for its difficulty, I have encountered 'failure' countless times this year. 
+<s>Being a student of the <a href="https://en.wikipedia.org/wiki/IB_Diploma_Programme">International Baccalaureate</a>, a high school curriculum renowned for its difficulty, I have encountered 'failure' countless times this year. Last term I hadn't been focusing in French, and as a result of...</s>
 
-Last term I hadn't been focusing in HL French, something not very beneficial when trying to learn a language, especially in a higher-level subject. I had also been getting behind on school work in general, and hadn't had enough family time — it had come down to my **poor time management** and prioritisation skills. These things resulted in a less than optimal term.
+Perhaps that's not the real story behind this post. Admittedly I was quite disappointed in my academic results last term, but the experience that I draw this post from is not that. It was very much a social matter, and after saying some things online that I now regret, it lost me a friendship.
 
-And yet I put failure in quotes, because although I did fail myself in the most literal sense (by not achieving my goals), I consider myself to have succeeded. 
+And yet I consider the outcome of these mistakes to be a success.
 
 
 ### The difference
@@ -26,7 +25,7 @@ Your mistakes don't define you, what you do with them does.[^idea]
 
 
 ### A quote
-Nonetheless, making mistakes is essential to learning. I will end on a favourite quote of mine, which perfectly illustrates my ideas:
+Nonetheless, making mistakes is essential to learning. I will end on a favourite quote of mine, which perfectly illustrates such ideas:
 
 <blockquote><p>
 My dad encouraged us to fail. Growing up, he would ask us what we failed at that week. If we didn't have something, he would be disappointed. It changed my mindset at an early age that failure is not the outcome, failure is not trying. <em>Don't be afraid to fail.</em>
@@ -34,5 +33,4 @@ My dad encouraged us to fail. Growing up, he would ask us what we failed at that
 </blockquote>
 
 
-[^ibStudent]: First year of the Diploma program at this point.
 [^idea]: Part of my new ideology and mid-years resolutions. I should make a post on it later. 
