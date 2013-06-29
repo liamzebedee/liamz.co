@@ -18,7 +18,7 @@ categories: page
 <h3>Latest. <small><a href="/en/posts/">Archives</a></small><a class="pull-right" href="/en/rss.xml" title="RSS feed"><span class="iconx-feed"></span></a></h3>
 <ul>
 {% for post in site.posts limit: 5 %}
-<li><span class="label label-info">{{ post.category }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </section>
