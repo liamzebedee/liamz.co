@@ -29,13 +29,6 @@
 	<!-- Pages and Posts -->
 	
 	<url>
-		<loc>http://0.0.0.0/en/potential/</loc>
-		
-		<lastmod>2013-06-25</lastmod>
-		
-	</url>
-	
-	<url>
 		<loc>http://0.0.0.0/en/on-failure/</loc>
 		
 		<lastmod>2013-06-16</lastmod>
