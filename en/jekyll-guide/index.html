@@ -1,8 +1,202 @@
-<!DOCTYPE html><html dir="ltr" lang="en"><head><title>Ultimate introduction to Jekyll. — Liam Z.</title><meta http-equiv="X-UA-Compatible" content="chrome=1"><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed"><link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Sitemap"><link rel="source" href="https://github.com/liamzebedee/liamz.co" title="Source Code"><link rel="icon" type="image/png" href="/assets/img/icon.png"><link rel="apple-touch-icon" href="/assets/img/icon-touch.png"><link rel="apple-touch-icon-precomposed" href="/assets/img/icon-touch-precomposed.png"><link href='/assets/global-17d523ba70bbe3f2bc777e25ad23f9ed.css' rel='stylesheet' type='text/css'/><meta name="description" content="A detailed introduction and guide for those who've had no prior experience with Jekyll — the magnificent beast which powers both this website and many others."><meta http-equiv="date" content="Thursday, 28 2013 00:00:00 GMT"><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script></head><body><div id="container"><header id="masthead"> <nav id="menu"><ul class="inline" role="menu"><li role="presentation" class="brand"><h1>LIAMZEBEDEE</h1></li><li role="menuitem"> <a href="/en/">Home</a></li><li role="menuitem"> <a href="/en/about/">About</a></li><li role="menuitem"> <a href="/en/contact/">Contact</a></li><li role="menuitem"> <a href="/en/posts/">Posts</a></li><li role="menuitem"> <a href="/en/quotes/">Quotes</a></li></ul> </nav> </header><article id="content" class="post"> <header class="page-header"><h1>Ultimate introduction to Jekyll. <br> <small><time class="timeago" datetime="2013-03-28T00:00:00Z" pubdate>March 28, 2013</time></small></h1> </header><p><strong>Jekyll</strong> is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser <strong>without additional processing</strong>.</p><p>Jekyll at its core is a text transformation engine that operates on files. A Jekyll site is <strong>stored on the filesystem</strong> and processed by the <strong>jekyll</strong> executable to produce a static site, found in the <em>_site</em> directory. Jekyll takes files it deems to be content (which can be written in multiple markup languages), and churns them through a templating engine to produce a webpage.</p><p>Because the site is stored on the filesystem, there are multiple traits you can observe to distinguish the purposes of each file.</p><h3 id='special_files'>Special files</h3><p>These are files that begin with an underscore. Jekyll will ignore any files that begin with an underscore. I call these files ‘special files’ because usually they have some purpose in site generation, but aren’t part of the final site.</p><p>So we are building a site with Jekyll. We start with an empty directory, <em>website</em>. After running <strong>jekyll</strong>, a directory is produced: <em>_site</em>. This directory contains nothing. Why did the directory contain nothing? Because nothing amounts to nothing. The moral of this story is that the <em>website</em> directory contains content — when there is no content, no website is made.</p><p>This time you have done something - you’ve made a very simple “Hello World” webpage, which is saved as <em>index.html</em>. You run <strong>jekyll</strong> and what do you know, that very page has now been copied to <em>_site/index.html</em>. Jekyll will copy all files that <strong>do not begin with an underscore</strong>, and <strong>need not be processed</strong>, to the <em>_site</em> directory.</p><h3 id='yaml_front_matter'>YAML Front Matter</h3><p>But how does Jekyll know what files need to be churned through the templating engine? It is very simple actually, each file that needs to be processed starts with what we call <strong>YAML Front Matter</strong>.</p><p><strong>YAML Front Matter</strong> is a header at the top of a file, written in <a href='https://en.wikipedia.org/wiki/YAML'>YAML</a>, and encased in three dashes at the top and bottom, that determines how a file is processed. An example file, <em>capitalism.md</em>:</p><pre><code>---
+<!DOCTYPE html>
+<!-- TODO lang="en" -->
+<html dir="ltr" lang="en">
+<head>
+
+<title>Ultimate introduction to Jekyll. — Liam Z. </title>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Sitemap">
+<link rel="source" href="https://github.com/liamzebedee/liamz.co" title="Source Code">
+
+<!-- Desktop -->
+<link rel="icon" type="image/png" href="/assets/img/icon.png">
+<!-- iOS -->
+<link rel="apple-touch-icon" href="/assets/img/icon-touch.png">
+<!-- Android -->
+<link rel="apple-touch-icon-precomposed" href="/assets/img/icon-touch-precomposed.png">
+
+<!-- TODO link to other langs using liquid tag -->
+
+
+<link href='/assets/site.css' rel='stylesheet' type='text/css' />
+
+
+<meta name="description" content="A detailed introduction and guide for those who've had no prior experience with Jekyll — the magnificent beast which powers both this website and many others.">
+
+<meta http-equiv="date" content="Thursday, 28 2013 00:00:00 GMT">
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+
+<header id="masthead">
+<nav id="menu">
+	<ul class="inline" role="menu">
+	<li role="presentation" class="brand"><h1>LIAMZEBEDEE</h1></li>
+	
+	
+		<li role="menuitem">
+			<a href="/en/">Home</a>
+		</li>
+	
+		<li role="menuitem">
+			<a href="/en/about/">About</a>
+		</li>
+	
+		<li role="menuitem">
+			<a href="/en/contact/">Contact</a>
+		</li>
+	
+		<li role="menuitem">
+			<a href="/en/posts/">Posts</a>
+		</li>
+	
+		<li role="menuitem">
+			<a href="/en/quotes/">Quotes</a>
+		</li>
+	
+	<!-- TODO do .current menu item in JS, class="active" -->
+	</ul>
+</nav>
+</header>
+
+<article id="content" class="post">
+<header class="page-header">
+	<h1>Ultimate introduction to Jekyll. <br>
+	<small><time class="timeago" datetime="2013-03-28T00:00:00Z" pubdate>March 28, 2013</time></small>
+</h1>
+</header>
+
+<p><strong>Jekyll</strong> is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser <strong>without additional processing</strong>.</p>
+
+<p>Jekyll at its core is a text transformation engine that operates on files. A Jekyll site is <strong>stored on the filesystem</strong> and processed by the <strong>jekyll</strong> executable to produce a static site, found in the <em>_site</em> directory. Jekyll takes files it deems to be content (which can be written in multiple markup languages), and churns them through a templating engine to produce a webpage.</p>
+
+<p>Because the site is stored on the filesystem, there are multiple traits you can observe to distinguish the purposes of each file.</p>
+
+<h3 id='special_files'>Special files</h3>
+
+<p>These are files that begin with an underscore. Jekyll will ignore any files that begin with an underscore. I call these files &#8216;special files&#8217; because usually they have some purpose in site generation, but aren&#8217;t part of the final site.</p>
+
+<p>So we are building a site with Jekyll. We start with an empty directory, <em>website</em>. After running <strong>jekyll</strong>, a directory is produced: <em>_site</em>. This directory contains nothing. Why did the directory contain nothing? Because nothing amounts to nothing. The moral of this story is that the <em>website</em> directory contains content — when there is no content, no website is made.</p>
+
+<p>This time you have done something - you&#8217;ve made a very simple &#8220;Hello World&#8221; webpage, which is saved as <em>index.html</em>. You run <strong>jekyll</strong> and what do you know, that very page has now been copied to <em>_site/index.html</em>. Jekyll will copy all files that <strong>do not begin with an underscore</strong>, and <strong>need not be processed</strong>, to the <em>_site</em> directory.</p>
+
+<h3 id='yaml_front_matter'>YAML Front Matter</h3>
+
+<p>But how does Jekyll know what files need to be churned through the templating engine? It is very simple actually, each file that needs to be processed starts with what we call <strong>YAML Front Matter</strong>.</p>
+
+<p><strong>YAML Front Matter</strong> is a header at the top of a file, written in <a href='https://en.wikipedia.org/wiki/YAML'>YAML</a>, and encased in three dashes at the top and bottom, that determines how a file is processed. An example file, <em>capitalism.md</em>:</p>
+
+<pre><code>---
 layout: post
 ---
-How is **capitalism** shaping government?</code></pre><p>The <strong>YAML Front Matter</strong> is used for setting:</p><ul><li>predefined variables</li><li>custom data of your own</li></ul><p>Now we will move on to discuss the predefined <em>layout</em> variable.</p><h3 id='templating_engine_basics'>Templating engine: basics</h3><p>Every file that contains <strong>YAML Front Matter</strong> is processed by the templating engine. The templating language used is Liquid, which is a very simple and safe language for simple manipulation of data.</p><p>Now back to the <em>layout</em> variable. When we specify this variable, a file will attempted to be loaded from a special directory called <strong>_layouts</strong>. In the above example, we specified ‘post’ to be our layout. When <em>capitalism.md</em> is run through the templating engine, everything except the <strong>YAML Front Matter</strong> will be stored in a <a href='https://github.com/mojombo/jekyll/wiki/Template-Data'>template variable</a> <em>content</em>. So for the layout <em>post</em>:</p><pre><code>&lt;article id="post"&gt;
+How is **capitalism** shaping government?</code></pre>
+
+<p>The <strong>YAML Front Matter</strong> is used for setting:</p>
+
+<ul>
+<li>predefined variables</li>
+
+<li>custom data of your own</li>
+</ul>
+
+<p>Now we will move on to discuss the predefined <em>layout</em> variable.</p>
+
+<h3 id='templating_engine_basics'>Templating engine: basics</h3>
+
+<p>Every file that contains <strong>YAML Front Matter</strong> is processed by the templating engine. The templating language used is Liquid, which is a very simple and safe language for simple manipulation of data.</p>
+
+<p>Now back to the <em>layout</em> variable. When we specify this variable, a file will attempted to be loaded from a special directory called <strong>_layouts</strong>. In the above example, we specified &#8216;post&#8217; to be our layout. When <em>capitalism.md</em> is run through the templating engine, everything except the <strong>YAML Front Matter</strong> will be stored in a <a href='https://github.com/mojombo/jekyll/wiki/Template-Data'>template variable</a> <em>content</em>. So for the layout <em>post</em>:</p>
+
+<pre><code>&lt;article id=&quot;post&quot;&gt;
 {{ content }}
-&lt;/article&gt;</code></pre><p>The file generated, <em>_site/capitalism.html</em>, will look like:</p><pre><code>&lt;article id="post"&gt;
+&lt;/article&gt;</code></pre>
+
+<p>The file generated, <em>_site/capitalism.html</em>, will look like:</p>
+
+<pre><code>&lt;article id=&quot;post&quot;&gt;
 How is &lt;b&gt;capitalism&lt;/b&gt; shaping government?
-&lt;/article&gt;</code></pre><p>What have we learned?</p><ol><li>Jekyll processes all files with YAML Front Matter</li><li>Processed files are structured in a layout heirachy, where their content is assigned to the variable <em>content</em>. The variable <em>layout</em> determines how the file is rendered.</li><li>Depending on the markup language of the file, additional conversions may happen.</li></ol><p>In the previous example, capitalism.html had the word capitalism in bold. The layout that the post used was written in HTML, but the post itself was written in Markdown. This exemplifies despite its simplicity, the powerful nature of Jekyll.</p><p>In this section we created a <strong>page</strong> <em>capitalism.md</em> and a <strong>layout</strong> <em>post</em>.</p><h3 id='templating_engine_advanced'>Templating engine: advanced</h3><p>So far we have learnt about the basics of Jekyll templating. Now we should learn some more about the filesystem structure.</p><p>There are three special files that are yet to be discussed: <em>_config.yml</em>, <em>_includes</em> and <em>_posts/</em>.</p><ol><li>The config file specifies site-wide variables <a href='https://github.com/mojombo/jekyll/wiki/Configuration'>that are used by both Jekyll</a> and can be used by templates. It’s like a global YAML Front Matter.</li><li>The includes directory contains templates that can be used by layouts and posts/pages alike.</li><li>This is the ‘blog-aware’ feature of Jekyll. The posts directory contains posts (e.g. <em>capitalism.md</em>) that are accessible via variables (e.g. they can be iterated) and can also have other meta data tweaked (such as permalink structure and categories).</li></ol><p>Each file in the <em>_posts</em> directory must follow the format of <em>YEAR-MONTH-DAY-title.MARKUP</em>. Each post can set YAML Front Matter <a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'>global variables</a>, of which the following are most popular:</p><ul><li><strong>title</strong> — the title of the post (overrides such specified in the filename)</li><li><strong>date</strong> — the date when the post was published (overrides such specified in the filename)</li><li><strong>categories</strong> — a list of categories the post belongs to (which can also be specified in the directory structure of _posts, but that’s rather unecessary for small blogs)</li><li><strong>layout</strong> — layout to which the post is inserted into</li></ul><p>Lastly, to use Jekyll effectively you should learn how to use the <a href='https://github.com/shopify/liquid/wiki/liquid-for-designers'>Liquid templating language</a>, what powers Jekyll templates.</p><h2 id='conclusion'>Conclusion</h2><p>In this guide I have covered the basic concepts needed to understand how Jekyll websites are implemented. Jekyll is a text transformation engine that operates on files, and uses a combination of the Liquid templating language, YAML Front Matter and underscores to provide a powerful yet simplistic alternative to popular CMSs. Its usage of text files instead of databases is what has garnered the title of “hacker’s blogging framework”, allowing everyone to use their favorite editor.</p><footer> <nav><ul class="pager"><li class="previous disabled"> <a rel="prev" title="">← Previous</a></li><li class="next"> <a href="/en/we-zamaytin/" rel="next" title="We: a magnificent piece of dystopia.">Next →</a></li></ul></nav> </footer></article></div><script src='/assets/global-4ffe7ff15391d97e1d75d989260326ee.js'></script></body></html>
+&lt;/article&gt;</code></pre>
+
+<p>What have we learned?</p>
+
+<ol>
+<li>Jekyll processes all files with YAML Front Matter</li>
+
+<li>Processed files are structured in a layout heirachy, where their content is assigned to the variable <em>content</em>. The variable <em>layout</em> determines how the file is rendered.</li>
+
+<li>Depending on the markup language of the file, additional conversions may happen.</li>
+</ol>
+
+<p>In the previous example, capitalism.html had the word capitalism in bold. The layout that the post used was written in HTML, but the post itself was written in Markdown. This exemplifies despite its simplicity, the powerful nature of Jekyll.</p>
+
+<p>In this section we created a <strong>page</strong> <em>capitalism.md</em> and a <strong>layout</strong> <em>post</em>.</p>
+
+<h3 id='templating_engine_advanced'>Templating engine: advanced</h3>
+
+<p>So far we have learnt about the basics of Jekyll templating. Now we should learn some more about the filesystem structure.</p>
+
+<p>There are three special files that are yet to be discussed: <em>_config.yml</em>, <em>_includes</em> and <em>_posts/</em>.</p>
+
+<ol>
+<li>The config file specifies site-wide variables <a href='https://github.com/mojombo/jekyll/wiki/Configuration'>that are used by both Jekyll</a> and can be used by templates. It&#8217;s like a global YAML Front Matter.</li>
+
+<li>The includes directory contains templates that can be used by layouts and posts/pages alike.</li>
+
+<li>This is the &#8216;blog-aware&#8217; feature of Jekyll. The posts directory contains posts (e.g. <em>capitalism.md</em>) that are accessible via variables (e.g. they can be iterated) and can also have other meta data tweaked (such as permalink structure and categories).</li>
+</ol>
+
+<p>Each file in the <em>_posts</em> directory must follow the format of <em>YEAR-MONTH-DAY-title.MARKUP</em>. Each post can set YAML Front Matter <a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'>global variables</a>, of which the following are most popular:</p>
+
+<ul>
+<li><strong>title</strong> — the title of the post (overrides such specified in the filename)</li>
+
+<li><strong>date</strong> — the date when the post was published (overrides such specified in the filename)</li>
+
+<li><strong>categories</strong> — a list of categories the post belongs to (which can also be specified in the directory structure of _posts, but that&#8217;s rather unecessary for small blogs)</li>
+
+<li><strong>layout</strong> — layout to which the post is inserted into</li>
+</ul>
+
+<p>Lastly, to use Jekyll effectively you should learn how to use the <a href='https://github.com/shopify/liquid/wiki/liquid-for-designers'>Liquid templating language</a>, what powers Jekyll templates.</p>
+
+<h2 id='conclusion'>Conclusion</h2>
+
+<p>In this guide I have covered the basic concepts needed to understand how Jekyll websites are implemented. Jekyll is a text transformation engine that operates on files, and uses a combination of the Liquid templating language, YAML Front Matter and underscores to provide a powerful yet simplistic alternative to popular CMSs. Its usage of text files instead of databases is what has garnered the title of &#8220;hacker&#8217;s blogging framework&#8221;, allowing everyone to use their favorite editor.</p>
+
+<footer>
+	
+	
+	
+	<nav><ul class="pager">
+		<li class="previous disabled">
+			<a  rel="prev" title="">&larr; Previous</a>
+		</li>
+		<li class="next">
+			<a href="/en/we-zamaytin/" rel="next" title="We: a magnificent piece of dystopia.">Next &rarr;</a>
+		</li>
+	</ul></nav>
+	
+</footer>
+
+</article>
+
+</div>
+
+
+<script src='/assets/jquery.timeago.js' type='text/javascript'></script>
+<script src='/assets/bootstrap.min.js' type='text/javascript'></script>
+<script src='/assets/main.js' type='text/javascript'></script>
+
+
+</body>
+</html>
