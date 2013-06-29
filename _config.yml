@@ -14,5 +14,5 @@ timezone: 'Australia/Brisbane'
 
 # Overridden in _plugins/ext.rb for `jekyll build`
 asset_pipeline:
-  bundle: false
-  compress: false
+  bundle: true
+  compress: true
