@@ -3,7 +3,7 @@
 	<!-- Home -->
 	<url>
 		<loc>http://0.0.0.0/</loc>
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -11,7 +11,7 @@
 	<!-- Locales -->
 	<url>
 		<loc>http://0.0.0.0/en/</loc>
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 		<xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0/en/" />
@@ -19,7 +19,7 @@
 	</url>
 	<url>
 		<loc>http://0.0.0.0/fr/</loc>
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 		<xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0/en/" />
@@ -68,7 +68,7 @@
 	<url>
 		<loc>http://0.0.0.0/fr//articles/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -77,7 +77,7 @@
 	<url>
 		<loc>http://0.0.0.0/en//about/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -86,7 +86,7 @@
 	<url>
 		<loc>http://0.0.0.0/fr/index.html</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -95,7 +95,7 @@
 	<url>
 		<loc>http://0.0.0.0/en//atom.xml</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -104,7 +104,7 @@
 	<url>
 		<loc>http://0.0.0.0/en//rss.xml</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -113,7 +113,7 @@
 	<url>
 		<loc>http://0.0.0.0/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -122,7 +122,7 @@
 	<url>
 		<loc>http://0.0.0.0/en/index.html</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -131,7 +131,7 @@
 	<url>
 		<loc>http://0.0.0.0/test/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -140,7 +140,7 @@
 	<url>
 		<loc>http://0.0.0.0/fr//contact/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -149,7 +149,7 @@
 	<url>
 		<loc>http://0.0.0.0/en//posts/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -158,7 +158,7 @@
 	<url>
 		<loc>http://0.0.0.0/fr//moi/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -167,7 +167,7 @@
 	<url>
 		<loc>http://0.0.0.0/fr//rss.xml</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -176,7 +176,7 @@
 	<url>
 		<loc>http://0.0.0.0/fr//citations/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -185,7 +185,7 @@
 	<url>
 		<loc>http://0.0.0.0/en//contact/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -194,7 +194,7 @@
 	<url>
 		<loc>http://0.0.0.0/sitemap.xml</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
@@ -203,7 +203,7 @@
 	<url>
 		<loc>http://0.0.0.0/en//quotes/</loc>
 		
-		<lastmod>2013-06-29</lastmod>
+		<lastmod>2013-07-01</lastmod>
 		
 		
 		
