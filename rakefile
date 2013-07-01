@@ -1,3 +1,6 @@
+# encoding: utf-8
+require 'git'
+
 task :run do
 	system "jekyll serve --watch"
 end
@@ -28,6 +31,31 @@ end
 
 desc 'generate site and push'
 task :gen do
-	system "jekyll build && cp _site.git _site/.git && cd _site && git checkout gh-pages && git add -A && git commit -m \"update site\" && git push origin gh-pages:gh-pages"
+	system "jekyll build" or exit!(1)
+	system "cp _site.git _site/.git && cd _site && git checkout gh-pages && git add -A && git commit -m \"update site\" && git push origin gh-pages:gh-pages" or exit!(1)
 	system "git add -A && git commit -m \"update _site\" && git push origin source:source"
+		
+=begin
+	system "jekyll build" or exit!(1)
+	# Jekyll deletes _site and then rewrites it, which is why we have to backup and put back the .git file
+	system "cp _site.git _site/.git"
+	siteRepo = Git.open (working_dir = './_site')
+	siteRepo.branch('gh-pages').checkout
+	siteRepo.commit_all('update site')
+	begin 
+		siteRepo.push(g.remote('gh-pages:gh-pages')) 
+	rescue 
+		puts 'An error occurred while pushing the generated site — check you inputted the correct credentials, or the server is not down'
+		exit!(1)
+	end
+	
+	repo = Git.open (working_dir = '.')
+	repo.commit_all('update site')
+	begin
+		repo.push(g.remote('source:source'))
+	rescue
+		puts 'An error occurred while pushing the source of the site — check you inputted the correct credentials, or the server is not down'
+		exit!(1)
+	end
+=end
 end

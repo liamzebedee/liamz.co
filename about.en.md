@@ -5,8 +5,8 @@ categories: page
 ---
 <p class="lead">Hi, my name is <strong>Liam Edwards-Playne</strong> and on the net I'm known as <strong>liamzebedee</strong>. I'm a teenager and have been coding since I was 11 with my friend <a href="//hetra.co">Jack</a>. I don't fuck around with superficial crap on my about page, I'd rather you form your own opinion of me. So here's some stuff from my life.</p>
 
-## Free open—source software (FOSS)
-I'm a supporter of and contributor to [free and open—source software](http://www.gnu.org/philosophy/free—sw.html) (that's free as in libre). While I understand that propietary software has its benefits, I truly believe that a FOSS culture is viable.
+## Free open-source software (FOSS)
+I'm a supporter of and contributor to [free and open-source software](http://www.gnu.org/philosophy/free—sw.html) (that's free as in libre). While I understand that propietary software has its benefits, I truly believe that a FOSS culture is viable.
 
 ### Contributions
 I've loved FOSS since I discovered it, practically all the code I write is open unless it's unfinished. Here is a list of things I've built, somewhat in reverse chonological order:
