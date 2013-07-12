@@ -1,66 +1,22 @@
 ---
-title: Liam Z.
+layout: base
+htmlClass: home
 ---
-<html lang="mul" dir="ltr">
-<head>
-{% include head.html %}
-<title>Liam Z.</title>
-<link rel="alternate" hreflang="x-default" href="http://{{site.hostname}}/" />
-<link rel="alternate" hreflang="en" href="http://{{site.hostname}}/en/" />
-<link rel="alternate" hreflang="fr" href="http://{{site.hostname}}/fr/" />
-</head>
-<script>
-var lang = navigator.language || navigator.userLanguage;
-// Map of languages I accept and their paths
-var langs = {
-	'en': 'en/',
-	'fr': 'fr/',
-};
-// Gets the most similar language to the client browser 
-// and redirects to the appropriate translation of the site.
-// Defaults to English.
-var locale = langs[lang.split('-')[0]];
-locale = (locale == null) ? langs['en'] : locale;
-window.location.replace(window.location.origin+'/'+locale);
-</script>
-<style>
-body {
-	font-family: sans-serif;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-h1 {
-	color: #999;
-}
-#languages {
-	display: inline;
-	list-style-type: none;
-	padding-left: 0px;
-}
-#languages li {
-	display: inline-block;
-	padding-right: 2em;
-}
-#languages li:last-child {
-	padding-right: 0em;
-}
-a,
-a:visited,
-a:active {
-	color: #333;
-	text-decoration: none;
-}
-a:hover {
-	color: #0a0a0a;
-	text-decoration: underline;
-}
-</style>
-<body>
-<h1>Liam Z.</h1>
-<ul id="languages">
-	<li lang="en"><h2><a href="/en/" hreflang="en">English</a></li></h2>
-	<li lang="fr"><h2><a href="/fr/" hreflang="fr">Français</a></li></h2>
+<ul class="unstyled archives span10" id="feed">
+	<li id="title"><div class="wrap">
+		<h2 class="pull-left">Activity. <a href="/rss.xml" title="RSS feed"><i class="icon-rss"></i></a></h2> 
+		
+	</div></li>
+	{% for post in site.posts %}
+	<li><div class="wrap">		
+		<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		
+		<div class="meta">
+			<div class="date-published"><time class="timeago" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time>.</div>
+			
+			<span class="category label label-inverse">{{ post.category }}</span>
+			<span class="topic label label-info">{{ post.tag }}</span>
+		</div>
+	</div></li>
+	{% endfor %}
 </ul>
-</body>
-</html>

@@ -2,62 +2,45 @@
 @media (max-width: 33em) {
 
 body {
-	// I'll handle the padding here. 
-	// You stay outta da 'hood.
 	padding: 0 0 0 0;
-	#container {
-		.container-fluid;
-		padding: 0 0 0 0;
-		margin: 0 0 0 0;
-	}
 }
 
-#masthead {
-	.text-center;
-	#menu {
-		ul {
-			.brand {
-				display: block;
-			}
-			a {
-				color: @black;
-			}
+.padding {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+.wrap {
+	.padding;
+}
+
+#sidebar {
+	#grid > .fluid > .row-fluid;
+	display: inline-block;
+	vertical-align: top;
+	
+	border-bottom: 1px solid @grayLighter;
+}
+
+div:not(.home) #sidebar .wrap {
+	#masthead {
+		h1,h2 { display: none; }
+		#portrait {
+			display: block;
+			@length: 192px/3;
+			margin: 0 auto;
+			width: @length;
+			height: @length;
+			.border-radius(@length/2);
+			background-size: @length @length;
 		}
 	}
-	
-	margin-bottom: 1em;
+	nav {display:none}
 }
 
 #content {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	
-	#select-posts {
-		#grid > .fluid > .span(12);
-	}
-	#latest-posts {
-		#grid > .fluid > .span(12);
-	}
-	
-	.archives {
-		li {
-			width: 100%;
-			float: left;
-			margin-bottom: 2em;
-			
-			.date-published {
-				.muted;
-				float: right;
-			}
-			.date-published:before {
-				content: " — ";
-			}
-	
-			.info {
-				text-align: left;
-			}
-		}
-	}
+	#grid > .fluid > .row-fluid;
+	display: inline-block;
+	vertical-align: top;	
 }
 
 }

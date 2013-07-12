@@ -1,96 +1,81 @@
 @import "_assets/css/_bootstrap/bootstrap.less";
 @import "_assets/css/_bootstrap/responsive.less";
 
-@iconSpritePath: "/assets/img/glyphicons-halflings.png";
-@iconWhiteSpritePath: "/assets/img/glyphicons-halflings-white.png";
+//@iconSpritePath: "/assets/img/glyphicons-halflings.png";
+//@iconWhiteSpritePath: "/assets/img/glyphicons-halflings-white.png";
 
 @import "_assets/css/util.less";
 
-#masthead {
-	#menu {
-		a {
-			color: @black;
+#container {
+	.container-fluid;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#sidebar {
+	padding-top: 1em;
+	padding-bottom: 1em;	
+	#portrait {
+		background: url(/assets/img/portrait.png) no-repeat;
+		.box-shadow(0 0 2px rgba(0, 0, 0, .5));
+		
+		
+		@length: 192px;
+		margin: 0 auto;
+		width: @length;
+		height: @length;
+		.border-radius(@length/2);
+		background-size: @length @length;
+	}
+	
+	text-align: center;
+	
+	nav ul {
+		li h3 {
+			padding: 0 0 0 0;
+			margin: 0 0 0 0;
+			a { color: @grayDark; }
 		}
-		h1 {
-			font-size: 1.3em;
-			display: inline;
-			padding-left: 0;
-			color: @grayLight;
-		}
-		.active { font-weight: bold; }
-		margin-bottom: 1em;
 	}
 }
 
 #content {
-	// Holy shit this is awesome. Captures all the links from this domain.
-	a[href^="/"] {
-		.calm-link;
-	}
-
-	h3 small a {
-		color: @grayLight !important;
-	}
-
-	/* Index */
-	#intro {
-		p { margin-bottom: 0; }
-	}
+	padding-top: 1em;
 	
-	#select-posts,
-	#latest-posts {
-		vertical-align: top;
+	#feed {
+		#grid > .fluid > .row-fluid;
+		#grid > .fluid > .span(12);
+		
+		#title {
+			color: @grayLight;
+			text-transform: uppercase;
+		}
+		
 		li {
-			.label {
-				text-transform: uppercase;
+			#grid > .fluid > .row-fluid;
+			
+			float: left;
+			clear: left;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			border-bottom: 1px solid @grayLighter;
+			
+
+			.meta {
+				float: left;
+				#grid > .fluid > .span(3);
+			
+				.date-published { .muted; padding-bottom: 0.5em; }
+				.category,.topic { text-transform: capitalize;}
+			}
+			.title {
+				float: right;
+				#grid > .fluid > .span(9);
+				text-align: left;
+				h3 { margin-top: 0px; padding-top: 0px; }
+				a { color: @black; }
 			}
 		}
-	}
-	
-	#quote-of-the-day {
-		margin-top: 1em;
-		#all-quotes {
-			display: none;
-			visibility: hidden;
-		}
-	}
-}
-
-.post {	
-	// General
-	time abbr {
-		border-bottom: none;
-	}
-	a[rel^="footnote"] {
-		color: @grayLight;
-	}
-	h3 {
-		font-size: 17.5px;
-		margin-top: 2em;
-	}
-	.footnotes {
-		hr {
-			margin-top: 2em;
-			margin-bottom: 2em;
-		}
-		ol li p { display: inline; }
-	}
-}
-
-blockquote p {
-	margin-bottom: 10px;
-}
-
-blockquote p:last-of-type {
-	margin-bottom: 0px;
-}
-
-s {
-	color: @grayLight !important;
-	margin-bottom: 1em;
-	display: inline-block;
-	* {
-		color: @grayLight !important;
 	}
 }
 

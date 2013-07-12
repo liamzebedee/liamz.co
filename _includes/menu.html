@@ -1,0 +1,9 @@
+<nav id="menu">
+	<ul class="unstyled" role="menu">
+	{% for link in site.menu %}
+		<li role="menuitem">
+			<h3><a href="{{ link.url }}">{{ link.text }}</a></h3>
+		</li>
+	{% endfor %}
+	</ul>
+</nav>

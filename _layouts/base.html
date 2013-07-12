@@ -1,24 +1,20 @@
 ---
 layout: default
 ---
-<div id="container">
+<div id="container" class="{{ page.htmlClass }}">
 
-<header id="masthead">
-<nav id="menu">
-	<ul class="inline" role="menu">
-	<li role="presentation" class="brand"><h1>LIAMZEBEDEE</h1></li>
-	{% assign menu = 'site.menu' | t %}
-	{% for link in menu %}
-		<li role="menuitem">
-			<a href="{{ link.url }}">{{ link.text }}</a>
-		</li>
-	{% endfor %}
-	<!-- TODO do .current menu item in JS, class="active" -->
-	</ul>
-</nav>
-</header>
+<aside id="sidebar">
+<div class="wrap">
+	<header id="masthead">
+		<a href="/"><div id="portrait"></div></a>
+		<h1 id="brand">{{ site.title }}</h1>
+		<h2 id="tagline"><small>{{ site.tagline }}</small></h2>
+	</header>
+	{% include menu.html %}
+</div>
+</aside>
 
-<article id="content" class="{{ page.htmlClass }}">
+<article id="content">
 {{ content }}
 </article>
 

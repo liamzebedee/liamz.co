@@ -34,7 +34,7 @@ task :gen do
 	system "jekyll build" or exit!(1)
 	system "cp _site.git _site/.git && cd _site && git checkout gh-pages && git add -A && git commit -m \"update site\" && git push origin gh-pages:gh-pages" or exit!(1)
 	system "git add -A && git commit -m \"update _site\" && git push origin source:source"
-		
+	
 =begin
 	system "jekyll build" or exit!(1)
 	# Jekyll deletes _site and then rewrites it, which is why we have to backup and put back the .git file

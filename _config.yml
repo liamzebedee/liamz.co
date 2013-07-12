@@ -1,3 +1,13 @@
+title: "Home of Liam&nbsp;Z."
+tagline: Learner,&nbsp;hacker,&nbsp;thinker.
+menu:
+  - text: About&nbsp;me.
+    url:  /about/
+  - text: Contact.
+    url:  /contact/
+  - text: Quotes.
+    url:  /quotes/
+
 # Server
 hostname: "liamz.co"
 
