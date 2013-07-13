@@ -1,7 +1,6 @@
 ---
 layout: post
-title: On failure.
-description: "The difference between failure and success, and the importance of making mistakes."
+title: On failure
 
 category: article
 tag: insight

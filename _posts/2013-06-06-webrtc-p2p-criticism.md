@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WebRTC is not true peer-to-peer.
+title: WebRTC is not true peer-to-peer
 description: "I debunk some myths surrounding WebRTC being the P2P platform of the future."
 
 category: article

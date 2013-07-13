@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "We: a magnificent piece of dystopia."
+title: "We: a magnificent piece of dystopia"
 description: "I ask you: what have people – from the very cradle – prayed for, dreamed about, and agonised over? They have wanted someone, anyone, to tell them once and for all what happiness is – and then attach them to this happiness with a chain... What are we doing now, if it isn't this?"
 
 category: article

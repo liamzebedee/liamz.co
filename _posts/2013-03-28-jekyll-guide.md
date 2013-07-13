@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ultimate introduction to Jekyll.
+title: Ultimate introduction to Jekyll
 description: "A detailed introduction and guide for those who've had no prior experience with Jekyll — the magnificent beast which powers both this website and many others."
 
 category: guide

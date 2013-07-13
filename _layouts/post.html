@@ -1,14 +1,16 @@
 ---
 layout: base
 htmlClass: post
-category: post
 ---
 <div class="wrap">
-<header>
-	<h1>{{ page.title }}<br>
-	<small><time class="timeago" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time></small>
-	</h1>
+<header>	
+	<span class="category label">{{ page.category }}</span>
+	<span class="topic label">{{ page.tag }}</span>
+	<span class="muted">
+		— <time class="timeago" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time>
+	</span>
 	
+	<h1>{{ page.title }}</h1>	
 </header>
 
 {{ content }}
