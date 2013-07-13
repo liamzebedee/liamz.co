@@ -26,6 +26,10 @@
 		height: @length;
 		.border-radius(@length/2);
 		background-size: @length @length;
+		
+		&:hover {
+			.box-shadow(0 0 8px rgba(0, 0, 0, .5));
+		}
 	}
 	
 	text-align: center;
@@ -76,6 +80,42 @@
 				a { color: @black; }
 			}
 		}
+	}
+}
+
+.post #content {
+	max-width: 33em;
+	
+	a[rel^="footnote"] {
+		color: @gray;
+	}
+	h3 {
+		font-size: 17.5px;
+		margin-top: 2em;
+	}
+	.footnotes {
+		hr {
+			margin-top: 2em;
+			margin-bottom: 2em;
+		}
+		ol li p { display: inline; }
+	}
+}
+
+blockquote p {
+	margin-bottom: 10px;
+}
+
+blockquote p:last-of-type {
+	margin-bottom: 0px;
+}
+
+s {
+	color: @grayLight !important;
+	margin-bottom: 1em;
+	display: inline-block;
+	* {
+		color: @grayLight !important;
 	}
 }
 
