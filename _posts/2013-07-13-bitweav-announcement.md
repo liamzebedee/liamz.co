@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Announcing BitWeav
+description: March 2013 I started work on a project to revolutionise peer-to-peer communications, and today I would love to announce I have finished the whitepaper for BitWeav.
 
 category: news
 tag: tech
