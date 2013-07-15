@@ -1,10 +1,14 @@
 @import "_assets/css/_bootstrap/bootstrap.less";
 @import "_assets/css/_bootstrap/responsive.less";
 
-//@iconSpritePath: "/assets/img/glyphicons-halflings.png";
-//@iconWhiteSpritePath: "/assets/img/glyphicons-halflings-white.png";
+@iconSpritePath: "/assets/img/glyphicons-halflings.png";
+@iconWhiteSpritePath: "/assets/img/glyphicons-halflings-white.png";
 
 @import "_assets/css/util.less";
+
+#page {
+	#grid > .fluid > .row-fluid;
+}
 
 #container {
 	.container-fluid;
@@ -13,8 +17,9 @@
 }
 
 #sidebar {
+	float: left;
 	padding-top: 1em;
-	padding-bottom: 1em;	
+	padding-bottom: 1em;
 	#portrait {
 		background: url(/assets/img/portrait.png) no-repeat;
 		.box-shadow(0 0 2px rgba(0, 0, 0, .5));
@@ -35,15 +40,23 @@
 	text-align: center;
 	
 	nav ul {
+		li {
+			padding-bottom: 1em;
+		}
 		li h3 {
 			padding: 0 0 0 0;
 			margin: 0 0 0 0;
+			line-height: 25.5px;
 			a { color: @grayDark; }
 		}
 	}
 }
 
 #content {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+	font-size: 16px;
+	line-height: 24px;	
+	
 	padding-top: 1em;
 	
 	#feed {
@@ -78,7 +91,6 @@
 				text-align: left;
 				h3 { margin-top: 0px; padding-top: 0px; }
 				a { color: @black; }
-				a:after { content: "." }
 			}
 		}
 	}
@@ -94,10 +106,26 @@
 	a[rel^="footnote"] {
 		color: @gray;
 	}
-	h3 {
-		font-size: 17.5px;
+	
+	h2 {
 		margin-top: 2em;
 	}
+	
+	h3 {
+		font-size: 20.5px;
+	}
+	
+	a {
+		color: rgb(51, 51, 51);
+		text-decoration: underline;
+		&:hover {
+		}
+		&:visited,
+		&:focus {
+			color: rgb(51, 51, 51);
+		}
+	}
+	
 	.footnotes {
 		hr {
 			margin-top: 2em;
@@ -105,6 +133,13 @@
 		}
 		ol li p { display: inline; }
 	}
+	
+	padding-bottom: 5em;
+}
+
+q {
+	&:before { content: "“"; }
+	&:after { content: "”"; }
 }
 
 blockquote p {

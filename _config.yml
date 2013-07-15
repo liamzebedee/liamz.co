@@ -1,11 +1,15 @@
 title: "Home of Liam&nbsp;Z."
 tagline: Learner,&nbsp;hacker,&nbsp;thinker.
+description: "Home of Liam Z. — learner, hacker, thinker."
+
 menu:
-  - text: About&nbsp;me.
+  - text: About&nbsp;me
     url:  /about/
-  - text: Contact.
+  - text: Endeavours
+    url:  /endeavours/
+  - text: Contact
     url:  /contact/
-  - text: Quotes.
+  - text: Quotes
     url:  /quotes/
 
 # Server

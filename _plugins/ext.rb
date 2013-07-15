@@ -1,5 +1,4 @@
 require 'jekyll_asset_pipeline'
-require 'jekyll-i18n'
 require 'jekyll-press'
 module Jekyll
 	module Commands

@@ -1,20 +1,25 @@
 ---
 layout: base
 htmlClass: post
+schema: Article
 ---
 <div class="wrap">
-<header>	
+<header>
 	<span class="category label">{{ page.category }}</span>
 	<span class="topic label">{{ page.tag }}</span>
-	<span class="muted">
-		— <time class="timeago" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time>
+	<span class="muted">— 
+		<time class="timeago" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate itemprop="datePublished">{{ page.date | date_to_string }}</time>
 	</span>
 	
-	<h1>{{ page.title }}</h1>	
+	<h1 itemprop="headline">{{ page.title }}</h1>	
 </header>
 
+<div itemprop="articleBody">
 {{ content }}
+</div>
 
+<!--
 <footer>
 </footer>
+-->
 </div>

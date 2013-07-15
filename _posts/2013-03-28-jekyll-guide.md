@@ -12,14 +12,14 @@ Jekyll at its core is a text transformation engine that operates on files. A Jek
 
 Because the site is stored on the filesystem, there are multiple traits you can observe to distinguish the purposes of each file. 
 
-### Special files
+## Special files
 These are files that begin with an underscore. Jekyll will ignore any files that begin with an underscore. I call these files 'special files' because usually they have some purpose in site generation, but aren't part of the final site.
 
 So we are building a site with Jekyll. We start with an empty directory, *website*. After running **jekyll**, a directory is produced: *\_site*. This directory contains nothing. Why did the directory contain nothing? Because nothing amounts to nothing. The moral of this story is that the *website* directory contains content — when there is no content, no website is made. 
 
 This time you have done something - you've made a very simple "Hello World" webpage, which is saved as *index.html*. You run **jekyll** and what do you know, that very page has now been copied to *\_site/index.html*. Jekyll will copy all files that **do not begin with an underscore**, and **need not be processed**, to the *\_site* directory. 
 
-### YAML Front Matter
+## YAML Front Matter
 But how does Jekyll know what files need to be churned through the templating engine? It is very simple actually, each file that needs to be processed starts with what we call **YAML Front Matter**. 
 
 **YAML Front Matter** is a header at the top of a file, written in [YAML](https://en.wikipedia.org/wiki/YAML), and encased in three dashes at the top and bottom, that determines how a file is processed. An example file, *capitalism.md*:
@@ -36,7 +36,7 @@ The **YAML Front Matter** is used for setting:
 
 Now we will move on to discuss the predefined *layout* variable. 
 
-### Templating engine: basics
+## Templating engine: basics
 Every file that contains **YAML Front Matter** is processed by the templating engine. The templating language used is Liquid, which is a very simple and safe language for simple manipulation of data. 
 
 Now back to the *layout* variable. When we specify this variable, a file will attempted to be loaded from a special directory called **\_layouts**. In the above example, we specified 'post' to be our layout. When *capitalism.md* is run through the templating engine, everything except the **YAML Front Matter** will be stored in a [template variable](https://github.com/mojombo/jekyll/wiki/Template-Data) *content*. So for the layout *post*:
@@ -61,7 +61,7 @@ In the previous example, capitalism.html had the word capitalism in bold. The la
 
 In this section we created a **page** *capitalism.md* and a **layout** *post*.
 
-### Templating engine: advanced
+## Templating engine: advanced
 So far we have learnt about the basics of Jekyll templating. Now we should learn some more about the filesystem structure.
 
 There are three special files that are yet to be discussed: *\_config.yml*, *\_includes* and *\_posts/*. 

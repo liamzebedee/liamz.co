@@ -13,15 +13,19 @@ body {
 	.padding;
 }
 
+#content {
+	#grid > .fluid > .row-fluid;
+	vertical-align: top;
+	margin: 0 auto;
+}
+
 #sidebar {
 	#grid > .fluid > .row-fluid;
-	display: inline-block;
 	vertical-align: top;
-	
 	border-bottom: 1px solid @grayLighter;
 }
 
-div:not(.home) #sidebar .wrap {
+body:not(.home) #sidebar .wrap {
 	#masthead {
 		h1,h2 { display: none; }
 		#portrait {
@@ -35,12 +39,6 @@ div:not(.home) #sidebar .wrap {
 		}
 	}
 	nav {display:none}
-}
-
-#content {
-	#grid > .fluid > .row-fluid;
-	vertical-align: top;
-	margin: 0 auto;
 }
 
 }

@@ -1,21 +1,36 @@
-<title>{%if page.title == null %}{{ site.title }}{%else %}{{ page.title }} — Liam Z.{% endif %}</title>
+<!-- Title -->
+{% if page.title %}
+	{% capture title %}{{ page.title }} — {{ site.title | replace:'&nbsp;',' ' }}{% endcapture %}
+{% else %}
+	{% capture title %}{{ site.title }}{% endcapture %}
+{% endif %}
+
+<title>{{ title }}</title>
 
 <meta content="{{ site.title | replace:'&nbsp;',' ' }}" property="og:site_name">
-{% if page.title %}
-  <meta content="{{ page.title }} — Liam Z." property="og:title">
-{% else %}
-  <meta content="{{ site.title }}" property="og:title">
-{% endif %}
-{% if page.title %}
+<meta content="{{ title }}" property="og:title">
+
+{% if page.id %}
   <meta content="article" property="og:type">
 {% else %}
   <meta content="website" property="og:type">
 {% endif %}
-{% if page.description %}
-  <meta content="{{ page.description }}" property="og:description">
+
+
+<!-- Description -->
+{% if page.excerpt %}
+	{% capture description %}{{ page.excerpt | strip_html | markdownify }}{% endcapture %}
+{% else if if page.description %}
+	{% capture description %}{{ page.description }}{% endcapture %}
 {% else %}
-  <meta content="{{ site.description }}" property="og:description">
+	{% capture description %}{{ site.description }}{% endcapture %}
 {% endif %}
+
+<meta name="description" content="{{ description }}">
+<meta property="og:description" content="{{ description }}">
+
+
+<!-- Other fields. -->
 {% if page.url %}
   <meta content="http://{{ site.hostname }}{{ page.url }}" property="og:url">
 {% endif %}
@@ -31,9 +46,6 @@
   <meta content="{{ page.tag }}" property="article:tag">
 {% endif %}
 
-<!--
-<meta name="description" content="{%if page.description %}{{ page.description }}{%else if page.excerpt %} {{ page.excerpt | strip_html }}}{%else%}{{ site.description }}{% endif %}">
--->
 {% if page.date %}
 <meta http-equiv="date" content="{{ page.date | date: '%A, %d %Y %H:%M:%S GMT' }}">
 {% endif %}

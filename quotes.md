@@ -1,6 +1,11 @@
 ---
-layout: post
+layout: page
+categories: pages
+lastmod: "2013-07-15T10:00:00Z"
+schema: Article
+
 title: Quotes
+description: "I'm an avid collector of quotes, these are my favourites."
 ---
 <p class='lead'>A collection of interesting quotes I started accumulating <time class="timeago" datetime="2013-05-01T00:00:00Z">on May 1, 2013</time>.</p>
 

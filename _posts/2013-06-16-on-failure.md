@@ -10,7 +10,7 @@ tag: insight
 **Failure** is what happens when you make mistakes and don't learn from them. **Success** is when you do.
 
 
-### Background
+## Background
 <s>Being a student of the <a href="https://en.wikipedia.org/wiki/IB_Diploma_Programme">International Baccalaureate</a>, a high school curriculum renowned for its difficulty, I have encountered 'failure' countless times this year. Last term I hadn't been focusing in French, and as a result of...</s>
 
 Perhaps that's not the real story behind this post. Admittedly I was quite disappointed in my academic results last term, but the experience that I draw this post from is not that. It was very much a social matter, and after saying some things online that I now regret, it lost me a friendship.
@@ -18,7 +18,7 @@ Perhaps that's not the real story behind this post. Admittedly I was quite disap
 And yet I consider the outcome of these mistakes to be a success.
 
 
-### The difference
+## The difference
 The difference between failure and success is what you do with your mistakes.
 
 A success reflects and learns from their mistakes, understanding how and why they occurred, and employs strategies to ensure they don't commit them again. 
@@ -26,7 +26,7 @@ A success reflects and learns from their mistakes, understanding how and why the
 Your mistakes don't define you, what you do with them does.[^idea]
 
 
-### A quote
+## A quote
 Nonetheless, making mistakes is essential to learning. I will end on a favourite quote of mine, which perfectly illustrates such ideas:
 
 <blockquote><p>

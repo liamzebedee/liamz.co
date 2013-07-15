@@ -1,18 +1,19 @@
 ---
 layout: base
 htmlClass: home
+schema: Blog
 ---
-<ul class="unstyled archives span10" id="feed">
-	<li id="title"><div class="wrap">
+<ul class="unstyled archives" id="feed">
+	<li id="title"><header class="wrap">
 		<h2 class="pull-left">Activity. <a href="/rss.xml" title="RSS feed"><i class="icon-rss"></i></a></h2> 
-		
-	</div></li>
+	</header></li>
+	
 	{% for post in site.posts %}
-	<li><div class="wrap">		
-		<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	<li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="wrap">		
+		<h3 class="title" itemprop="headline"><a itemprop="url" href="{{ post.url }}">{{ post.title }}</a></h3>
 		
 		<div class="meta">
-			<div class="date-published"><time class="timeago" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time>.</div>
+			<div class="date-published"><time itemprop="datePublished" class="timeago" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time>.</div>
 			
 			<span class="category label label-inverse">{{ post.category }}</span>
 			<span class="topic label label-info">{{ post.tag }}</span>
