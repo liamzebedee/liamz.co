@@ -1,5 +1,5 @@
 require 'jekyll_asset_pipeline'
-require 'jekyll-press'
+#require 'jekyll-press'
 module Jekyll
 	module Commands
 		# I overwrite this here so we only do heavy work (like compressing HTML and stuff)
