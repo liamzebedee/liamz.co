@@ -104,7 +104,19 @@
 	max-width: 33em;
 	
 	a[rel^="footnote"] {
-		color: @gray;
+		color: @gray !important;
+		padding-right: 0.2em;
+		text-decoration: none;
+		&:before {
+			content: "[";
+		}
+		&:after {
+			content: "]";
+		}
+		&:hover {
+			color: @black !important;
+			//text-decoration: underline;
+		}
 	}
 	
 	h2 {

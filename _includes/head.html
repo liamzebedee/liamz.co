@@ -18,10 +18,10 @@
 
 
 <!-- Description -->
-{% if page.excerpt %}
-	{% capture description %}{{ page.excerpt | strip_html | markdownify }}{% endcapture %}
-{% else if if page.description %}
+{% if page.description %}
 	{% capture description %}{{ page.description }}{% endcapture %}
+{% else if page.excerpt %}
+	{% capture description %}{{ page.excerpt | markdownify | strip_html }}{% endcapture %}
 {% else %}
 	{% capture description %}{{ site.description }}{% endcapture %}
 {% endif %}
@@ -33,10 +33,10 @@
 <!-- Other fields. -->
 {% if page.url %}
   <meta content="http://{{ site.hostname }}{{ page.url }}" property="og:url">
-{% endif %}
+{% endif %}	
 {% if page.date %}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="http://{{ site.hostname }}/about/" property="article:author">
+  <meta http-equiv="date" content="{{ page.date | date: '%A, %d %Y %H:%M:%S GMT' }}">
 {% endif %}
   <meta content="http://{{ site.hostname }}/assets/img/portrait.png" property="og:image">
 {% if page.category %}
@@ -46,13 +46,9 @@
   <meta content="{{ page.tag }}" property="article:tag">
 {% endif %}
 
-{% if page.date %}
-<meta http-equiv="date" content="{{ page.date | date: '%A, %d %Y %H:%M:%S GMT' }}">
-{% endif %}
-
 <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Sitemap">
-<link rel="source" href="https://github.com/liamzebedee/liamz.co" title="Source Code">
+<link rel="source" href="https://github.com/liamzebedee/jekyll-html5-template" title="Source Code">
 
 <!-- Desktop -->
 <link rel="icon" type="image/png" href="/assets/img/portrait-round.png">

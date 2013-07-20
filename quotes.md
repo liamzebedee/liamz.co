@@ -150,6 +150,10 @@ When you are content to be simply yourself and don’t compare or compete, every
 </p><small>Lao Tzu, Tao Te Ching</small>
 </blockquote></li>
 
+<li><blockquote><p>
+Be the change you want to see in the world.
+</p></blockquote></li>
+
 <!--
 	Uncited
 <li><blockquote><p>
