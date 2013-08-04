@@ -1,6 +1,6 @@
 ---
 layout: page
-categories: pages
+category: pages
 lastmod: "2013-07-15T10:00:00Z"
 schema: Article
 

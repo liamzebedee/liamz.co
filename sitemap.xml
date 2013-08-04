@@ -11,6 +11,7 @@ layout: nil
 		<priority>1.0</priority>
 	</url>
 
+	<!-- Posts -->
 	{% for page in site.posts %}
 	<url>
 		<loc>http://{{ site.host }}{{ page.url }}</loc>
@@ -23,8 +24,10 @@ layout: nil
 		{% endif %}
 	</url>
 	{% endfor %}
-
+	
+	<!-- Pages -->
 	{% for page in site.pages %}
+	{% if page.category == 'pages' %}
 	<url>
 		<loc>http://{{ site.host }}{{ page.url }}</loc>
 		{% if page.last_updated %}
@@ -37,6 +40,7 @@ layout: nil
 		{% if page.changefreq %}<changefreq>{{ page.changefreq }}</changefreq>{% endif %}
 		{% if page.priority %}<priority>{{ page.priority }}</priority>{% endif %}
 	</url>
+	{% endif %}
 	{% endfor %}
 
 </urlset>

@@ -1,8 +1,9 @@
 # encoding: utf-8
 require 'git'
 
+task :default => :run
 task :run do
-	system "jekyll serve --watch"
+	system "jekyll serve --watch --trace"
 end
 
 desc 'Initialise the git repository'

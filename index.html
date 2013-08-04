@@ -3,12 +3,24 @@ layout: base
 htmlClass: home
 schema: Blog
 ---
+<nav><div class="wrap">
+<ul class="inline unstyled" id="misc-pages" role="menu">
+<li id="title"><h2>For Something Different.</h2></li>
+{% for link in site.menu_pages %}
+	<li role="menuitem" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		<h3 class="title" itemprop="headline"><a itemprop="url" href="{{ link.url }}">{{ link.text }}</a></h3>
+	</li>
+{% endfor %}
+</ul></div>
+</nav>
+
 <ul class="unstyled archives" id="feed">
 	<li id="title"><header class="wrap">
-		<h2 class="pull-left">Activity. <a href="/rss.xml" title="RSS feed"><i class="icon-rss"></i></a></h2> 
+		<h2 class="pull-left">Blog. <a href="/rss.xml" title="RSS feed"><i class="icon-rss"></i></a></h2> 
 	</header></li>
 	
 	{% for post in site.posts %}
+	{% if post.categories contains 'ramblings' %} {% continue %} {% endif %}
 	<li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="wrap">		
 		<h3 class="title" itemprop="headline"><a itemprop="url" href="{{ post.url }}">{{ post.title }}</a></h3>
 		

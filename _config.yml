@@ -9,8 +9,14 @@ menu:
     url:  /endeavours/
   - text: Contact
     url:  /contact/
-  - text: Quotes
-    url:  /quotes/
+
+menu_pages:
+  - text: FavouriteQuotes
+    url: /quotes/
+  - text: FavouriteXKCDs
+    url: /xkcd-favourites/
+  - text: RamblingsInRawText
+    url: /ramblings-in-raw-text/
 
 # Server
 hostname: "liamz.co"
