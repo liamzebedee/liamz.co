@@ -8913,12 +8913,25 @@ a.badge:focus {
     overflow: visible !important;
   }
 }
-.iconxx-feed {
-  background-size: 32px 32px;
-  background-image: url("/assets/img/icon-feed.gif");
+q:before {
+  content: "“";
+}
+q:after {
+  content: "”";
+}
+blockquote p {
+  margin-bottom: 10px;
+}
+blockquote p:last-of-type {
+  margin-bottom: 0px;
+}
+s {
+  color: #999999 !important;
+  margin-bottom: 1em;
   display: inline-block;
-  width: 32px;
-  height: 32px;
+}
+s * {
+  color: #999999 !important;
 }
 #page {
   width: 100%;
@@ -13762,6 +13775,30 @@ a.badge:focus {
 #content #feed #title a {
   color: #555555;
 }
+#content #ramblings li {
+  clear: both;
+  display: block;
+  padding-bottom: 2em;
+}
+#content #ramblings li span {
+  width: 22.92817679558011%;
+  *width: 22.87498530621841%;
+  float: left;
+}
+#content #ramblings li a {
+  width: 74.30939226519337%;
+  *width: 74.25620077583166%;
+  float: right;
+}
+#content #good-reads a {
+  text-decoration: none;
+}
+#content #good-reads a:hover {
+  text-decoration: underline;
+}
+#content #good-reads a:visited {
+  color: #000000;
+}
 .rambling {
   font: 22px/1.4 Helvetica, arial, freesans, clean, sans-serif;
 }
@@ -13802,7 +13839,7 @@ a.badge:focus {
 }
 .post #content .wrap a:visited,
 .post #content .wrap a:focus {
-  color: #333333;
+  color: #666666;
 }
 .post #content .wrap .footnotes hr {
   margin-top: 2em;
@@ -13810,26 +13847,6 @@ a.badge:focus {
 }
 .post #content .wrap .footnotes ol li p {
   display: inline;
-}
-q:before {
-  content: "“";
-}
-q:after {
-  content: "”";
-}
-blockquote p {
-  margin-bottom: 10px;
-}
-blockquote p:last-of-type {
-  margin-bottom: 0px;
-}
-s {
-  color: #999999 !important;
-  margin-bottom: 1em;
-  display: inline-block;
-}
-s * {
-  color: #999999 !important;
 }
 /* Portrait tablet to landscape and desktop... */
 @media (min-width: 801px) {

@@ -5,9 +5,18 @@
 <title>Home of Liam Z.</title>
 <description>Home of Liam Z. — learner, hacker, thinker.</description>
 <link>http://liamz.co</link>
-<lastBuildDate>Sun, 04 Aug 2013 17:19:25 +1000</lastBuildDate>
+<lastBuildDate>Wed, 07 Aug 2013 18:00:08 +1000</lastBuildDate>
 <language>en</language>
 
+
+<item>
+	<title>Strange dreams.</title>
+	<link>http://liamz.co/ramblings-in-raw-text/strange-dreams/</link>
+	<guid>/ramblings-in-raw-text/strange-dreams</guid>
+	<pubDate>2013-08-04 00:00:00 +1000</pubDate>
+	<description>I had a dream last night that I was looking for cheese and feta triangles. Like, I had a real good craving for them. That was the entire basis of the dream. Just searching for this mystical food.</description>
+	<category>ramblings, </category>
+</item>
 
 <item>
 	<title>Our perception of time</title>
@@ -32,7 +41,7 @@
 	<link>http://liamz.co/ramblings-in-raw-text/bitweav-ramblings/</link>
 	<guid>/ramblings-in-raw-text/bitweav-ramblings</guid>
 	<pubDate>2013-07-21 00:00:00 +1000</pubDate>
-	<description>Well today I woke up to find that some glorious bastard had posted the BitWeav whitepaper draft to /r/darknetplan. I had only just put up the website last week so that my school could view the whitepaper for my EE topic, dammit. Then the other night Google Scholar had found the paper. It seems SEO always works against me sometimes.</description>
+	<description>Well today I woke up to find that some glorious bastard had posted the BitWeav whitepaper [draft] to /r/darknetplan. I had only just put up the website last week so that my school could view the whitepaper for my EE topic, dammit. Then the other night Google Scholar had found the paper. It seems SEO always works against me sometimes.</description>
 	<category>ramblings, </category>
 </item>
 

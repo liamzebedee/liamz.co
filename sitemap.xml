@@ -3,12 +3,19 @@
 
 	<url>
 		<loc>http://0.0.0.0/</loc>
-		<lastmod>2013-08-04</lastmod>
+		<lastmod>2013-08-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 
 	<!-- Posts -->
+	
+	<url>
+		<loc>http://0.0.0.0/ramblings-in-raw-text/strange-dreams/</loc>
+		
+		<lastmod>2013-08-04</lastmod>
+		
+	</url>
 	
 	<url>
 		<loc>http://0.0.0.0/ramblings-in-raw-text/perception-of-time/</loc>
@@ -87,7 +94,7 @@
 	<url>
 		<loc>http://0.0.0.0/contact/</loc>
 		
-		<lastmod>2013-08-04</lastmod>
+		<lastmod>2013-08-07</lastmod>
 		
 		
 		
@@ -98,7 +105,7 @@
 	<url>
 		<loc>http://0.0.0.0/rss.xml</loc>
 		
-		<lastmod>2013-08-04</lastmod>
+		<lastmod>2013-08-07</lastmod>
 		
 		
 		
@@ -109,7 +116,7 @@
 	<url>
 		<loc>http://0.0.0.0/quotes/</loc>
 		
-		<lastmod>2013-08-04</lastmod>
+		<lastmod>2013-08-07</lastmod>
 		
 		
 		
@@ -120,11 +127,13 @@
 	<url>
 		<loc>http://0.0.0.0/about/</loc>
 		
-		<lastmod>2013-08-04</lastmod>
+		<lastmod>2013-08-07</lastmod>
 		
 		
 		
 	</url>
+	
+	
 	
 	
 	
@@ -137,7 +146,7 @@
 	<url>
 		<loc>http://0.0.0.0/xkcd-favourites/</loc>
 		
-		<lastmod>2013-08-04</lastmod>
+		<lastmod>2013-08-07</lastmod>
 		
 		
 		
@@ -148,7 +157,7 @@
 	<url>
 		<loc>http://0.0.0.0/endeavours/</loc>
 		
-		<lastmod>2013-08-04</lastmod>
+		<lastmod>2013-08-07</lastmod>
 		
 		
 		
