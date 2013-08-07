@@ -17,6 +17,8 @@ menu_pages:
     url: /xkcd-favourites/
   - text: RamblingsInRawText
     url: /ramblings-in-raw-text/
+  - text: GoodReads
+    url: /good-reads/
 
 # Server
 hostname: "liamz.co"

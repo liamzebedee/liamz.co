@@ -1,12 +1,21 @@
-// iconx because Bootstrap has a selector for icon-*
-.iconxx-feed {
-	@length: 32px;
-	background-size: @length @length;
-	// Source: https://en.wikipedia.org/wiki/File:Feed-icon.svg
-	// XXX make this dynamic. I got it working in Chrome with SVG background-image
-	// but not in FF. Probably best to use CSS3. 
-	background-image: url("/assets/img/icon-feed.gif");
+q {
+	&:before { content: "“"; }
+	&:after { content: "”"; }
+}
+
+blockquote p {
+	margin-bottom: 10px;
+}
+
+blockquote p:last-of-type {
+	margin-bottom: 0px;
+}
+
+s {
+	color: @grayLight !important;
+	margin-bottom: 1em;
 	display: inline-block;
-	width: @length;
-	height: @length;
+	* {
+		color: @grayLight !important;
+	}
 }

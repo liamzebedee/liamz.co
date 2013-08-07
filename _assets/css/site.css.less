@@ -121,6 +121,28 @@
 			a { color: @gray; }
 		}
 	}
+	
+	#ramblings {
+		li {
+			clear: both;
+			display: block;
+			span { #grid > .fluid > .span(3); float: left; }
+			a { #grid > .fluid > .span(9); float: right; }
+			padding-bottom: 2em;
+		}
+	}
+	
+	#good-reads {
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+			&:visited {
+				color: @black;
+			}
+		}
+	}
 }
 
 .rambling {
@@ -165,7 +187,7 @@
 		}
 		&:visited,
 		&:focus {
-			color: rgb(51, 51, 51);
+			color: lighten(rgb(51, 51, 51), 20%);
 		}
 	}
 	
@@ -178,28 +200,6 @@
 	}
 	
 	padding-bottom: 5em;
-}
-
-q {
-	&:before { content: "“"; }
-	&:after { content: "”"; }
-}
-
-blockquote p {
-	margin-bottom: 10px;
-}
-
-blockquote p:last-of-type {
-	margin-bottom: 0px;
-}
-
-s {
-	color: @grayLight !important;
-	margin-bottom: 1em;
-	display: inline-block;
-	* {
-		color: @grayLight !important;
-	}
 }
 
 @import "_assets/css/screen.less";

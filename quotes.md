@@ -152,6 +152,10 @@ When you are content to be simply yourself and don’t compare or compete, every
 Be the change you want to see in the world.
 </p></blockquote></li>
 
+<li><blockquote><p>
+The basic idea of Gandhi's approach to fighting is to redirect the focus of a fight from persons to principles. Gandhi called it satyagraha: “insistence on truth” or “grasping onto principles”.
+</p></blockquote></li>
+
 <!--
 	Uncited
 <li><blockquote><p>

@@ -5,7 +5,7 @@ htmlClass: post
 <div class="wrap">
 <header>
 	<span class="muted">
-		Last updated <time class="timeago" datetime="{{ page.lastmod }}" pubdate itemprop="dateModified"></time>
+		Last updated <time class="timeago" datetime="{{ page.lastmod }}" pubdate itemprop="dateModified">{{ page.lastmod | date_to_string }}</time>
 	</span>
 	
 	<h1 itemprop="headline">{{ page.title }}</h1>	
