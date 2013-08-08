@@ -13781,13 +13781,13 @@ s * {
   padding-bottom: 2em;
 }
 #content #ramblings li span {
-  width: 22.92817679558011%;
-  *width: 22.87498530621841%;
+  width: 31.491712707182323%;
+  *width: 31.43852121782062%;
   float: left;
 }
 #content #ramblings li a {
-  width: 74.30939226519337%;
-  *width: 74.25620077583166%;
+  width: 65.74585635359117%;
+  *width: 65.69266486422946%;
   float: right;
 }
 #content #good-reads a {
@@ -13801,6 +13801,7 @@ s * {
 }
 .rambling {
   font: 22px/1.4 Helvetica, arial, freesans, clean, sans-serif;
+  max-width: 30em;
 }
 .post #content .wrap {
   max-width: 33em;
