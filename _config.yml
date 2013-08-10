@@ -19,6 +19,8 @@ menu_pages:
     url: /ramblings-in-raw-text/
   - text: GoodReads
     url: /good-reads/
+  - text: NiceFilms
+    url: /nice-films/
 
 # Server
 hostname: "liamz.co"
