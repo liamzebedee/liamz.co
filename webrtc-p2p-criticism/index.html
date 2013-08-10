@@ -7,10 +7,10 @@
 	
 
 
-<title>WebRTC is not true peer-to-peer — Liam Z.</title>
+<title>WebRTC is not true peer-to-peer — Home of Liam Z.</title>
 
 <meta content="Home of Liam Z." property="og:site_name">
-<meta content="WebRTC is not true peer-to-peer — Liam Z." property="og:title">
+<meta content="WebRTC is not true peer-to-peer — Home of Liam Z." property="og:title">
 
 
   <meta content="article" property="og:type">
@@ -18,6 +18,11 @@
 
 
 <!-- Description -->
+Why should you care? Because, we are hindering exciting innovation in browser-based P2P, that which might provide magnificently simple solutions to problems such as [sharing documents](https://xkcd.com/949/).
+
+[^addIceCandidate]: the WebRTC API has few tutorials for people coming from a BSD sockets background, but basically how this works is you use the [addIceCandidate](http://www.w3.org/TR/webrtc/#widl-RTCPeerConnection-addIceCandidate-void-RTCIceCandidate-candidate) function to add a remote endpoint (RTCIceCandidate object) for the peer you will be connecting to.
+[^createOffer]: see the [createAnswer](http://dev.w3.org/2011/webrtc/editor/webrtc.html#widl-RTCPeerConnection-createOffer-void-RTCSessionDescriptionCallback-successCallback-RTCPeerConnectionErrorCallback-failureCallback-MediaConstraints-constraints) documentation
+[^sdpBlob]: RTCSessionDescription is just a wrapper for an [SDP Blob](https://en.wikipedia.org/wiki/Session_Description_Protocol), which is a really simple text-based format.
 
 	
 
@@ -28,13 +33,13 @@
 
 <!-- Other fields. -->
 
-  <meta content="http://liamz.co/webrtc-p2p-criticism/" property="og:url">
-	
+  <meta content="http:///webrtc-p2p-criticism/" property="og:url">
+
 
   <meta content="2013-06-06T00:00:00+10:00" property="article:published_time">
   <meta http-equiv="date" content="Thursday, 06 2013 00:00:00 GMT">
 
-  <meta content="http://liamz.co/assets/img/portrait.png" property="og:image">
+  <meta content="http:///assets/img/portrait.png" property="og:image">
 
   <meta content="article" property="article:section">
 
@@ -50,7 +55,6 @@
 <link rel="icon" type="image/png" href="/assets/img/portrait-round.png">
 <!-- iOS, Android -->
 <link rel="apple-touch-icon-precomposed" href="/assets/img/portrait.png">
-
 
 <link href='/assets/site.css' rel='stylesheet' type='text/css' />
 
