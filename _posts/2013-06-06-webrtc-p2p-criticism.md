@@ -6,7 +6,7 @@ description: "I debunk some myths surrounding WebRTC being the P2P platform of t
 category: article
 tag: tech
 ---
-<p class='lead'>Why should you care? Because, we are hindering exciting innovation in browser-based P2P, that which might provide magnificently simple solutions to problems such as <a href="https://xkcd.com/949/" title="relevant xkcd">sharing documents</a></p>
+Why should you care? Because, we are hindering exciting innovation in browser-based P2P, that which might provide magnificently simple solutions to problems such as [sharing documents](https://xkcd.com/949/).
 
 *In short:* WebRTC renders the bootstrapping process of peer-to-peer applications (wherein you join the network by initially connecting to a node and asking them for peers) unusable because the initial connection set-up is dependent on **centralised** servers.
 

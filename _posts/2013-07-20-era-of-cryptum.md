@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The era of Cryptum
+description: "A detailed story of what was my longest and most loved project, my old website, Cryptum"
 
 category: article
 tag: tech

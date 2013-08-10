@@ -1,10 +1,14 @@
 ---
 layout: post
 title: Announcing BitWeav
-description: March 2013 I started work on a project to revolutionise peer-to-peer communications, and today I would love to announce I have finished the whitepaper for BitWeav.
 
 category: news
 tag: tech
+---
+<div class="alert alert-block">
+This post is now out of date, and is kept here for prosperity's sake. Please visit the <a href="http://bitweav.org">official BitWeav website</a> for the newest information.
+</div>
+
 ---
 <p class="lead"><time class="timeago" datetime="2013-03-12T16:30:00Z">March 2013</time> I started work on a project to revolutionise peer-to-peer communications, and today I would love to announce I have finished the <a href="http://bitweav.co/july-2013/whitepaper.pdf">whitepaper</a> for BitWeav.</p>
 
@@ -32,7 +36,7 @@ Now you understand the basics of BitWeav's functionality and philosophy, I implo
 
 While I have my full intentions to implement BitWeav, with my iB Diploma getting in the way, the product might not come as quickly as I would like. That is why I need you. 
 
-As Gandhi almost[^misquote] once said:
+As Gandhi almost once said:[^misquote]
 > Be the change you want to see in this world.
 
 [^misquote]: It is apparently a misquote, see [WikiQuote for more info](https://en.wikiquote.org/wiki/Mahatma_Gandhi#Disputed).

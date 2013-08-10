@@ -6,6 +6,11 @@ description: "A detailed introduction and guide for those who've had no prior ex
 category: guide
 tag: tech
 ---
+<div class="alert alert-block">
+This guide has been superceded by the <a href="http://jekyllrb.com">official Jekyll website</a>, but I'll leave it here for properity's sake.
+</div>
+
+---
 **Jekyll** is a website generation framework written in Ruby. The philosophy of Jekyll is simplicity. Jekyll generates static websites that require no server-side generation; the output of a Jekyll site can be served to a web browser **without additional processing**.
 
 Jekyll at its core is a text transformation engine that operates on files. A Jekyll site is **stored on the filesystem** and processed by the **jekyll** executable to produce a static site, found in the *\_site* directory. Jekyll takes files it deems to be content (which can be written in multiple markup languages), and churns them through a templating engine to produce a webpage. 

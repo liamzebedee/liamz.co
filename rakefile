@@ -38,7 +38,7 @@ task :gen do
 end
 
 # Post-specific
-task :article do
+task :post do
 	time = Time.new
 	postDatename = time.strftime("%Y-%m-%d")
 	postFilename = "_posts/#{postDatename}-.md"

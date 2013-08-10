@@ -27,7 +27,9 @@ module JekyllAssetPipeline
         tree = parser.parse(@content)
         tree.to_css
       rescue => e
+      	puts "\n----------------------------"
         puts "Less Exception: #{e.message}"
+        puts "\n----------------------------"
       end
     end
   end
