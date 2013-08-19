@@ -1,0 +1,7 @@
+heavy_build: false
+
+hostname: "127.0.0.1"
+
+asset_pipeline:
+  bundle: false
+  compress: false

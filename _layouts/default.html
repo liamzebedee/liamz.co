@@ -8,7 +8,7 @@
 {% if page.title %}
 	{% capture title %}{{ page.title }} — {{ site.title | replace:'&nbsp;',' ' }}{% endcapture %}
 {% else %}
-	{% capture title %}{{ site.title }} — {{ site.description }}{% endcapture %}
+	{% capture title %}{{ site.title }} — {{ site.tagline }}{% endcapture %}
 {% endif %}
 
 <title>{{ title }}</title>

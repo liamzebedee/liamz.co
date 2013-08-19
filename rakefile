@@ -3,7 +3,7 @@ require 'git'
 
 task :default => :run
 task :run do
-	system "jekyll serve --watch --trace"
+	system "jekyll serve --watch --trace --drafts --config _config.yml,_config-dev.yml"
 end
 
 desc 'Initialise the git repository'
@@ -32,16 +32,15 @@ end
 
 desc 'generate site and push'
 task :gen do
-	system "jekyll build" or exit!(1)
+	system "jekyll build --config _config.yml" or exit!(1)
 	system "cp _site.git _site/.git && cd _site && git checkout gh-pages && git add -A && git commit -m \"update site\" && git push origin gh-pages:gh-pages" or exit!(1)
 	system "git add -A && git commit -m \"update _site\" && git push origin source:source"
 end
 
-# Post-specific
-task :post do
+def newPost(dir)
 	time = Time.new
 	postDatename = time.strftime("%Y-%m-%d")
-	postFilename = "_posts/#{postDatename}-.md"
+	postFilename = "#{dir}/#{postDatename}-.md"
 	File.open(postFilename, "a") do |file| 
 		file.write(<<-eos
 ---
@@ -56,6 +55,15 @@ tag:
 		eos
 		)
 	end
+end
+
+# Post-specific
+task :post do
+	newPost "_posts"
+end
+
+task :draft do
+	newPost "_drafts"
 end
 
 task :ramble do

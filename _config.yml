@@ -36,7 +36,8 @@ markdown: maruku
 permalink: pretty
 timezone: 'Australia/Brisbane'
 
-# Overridden in _plugins/ext.rb for `jekyll build`
+# Overridden in _config-dev.yml and _plugins/ext.rb for `jekyll build`
+heavy_build: true
 asset_pipeline:
-  bundle: false
-  compress: false
+  bundle: true
+  compress: true
