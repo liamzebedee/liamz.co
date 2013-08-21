@@ -5,10 +5,13 @@
 <head>
 
 <!-- Title -->
+<!-- On homepage: "Home of Liam (liamzebedee) Edwards-Playne — Learner, hacker, thinker."
+     On pages: "title | Liam (liamzebedee) Edwards-Playne"
+-->
 {% if page.title %}
-	{% capture title %}{{ page.title }} — {{ site.title | replace:'&nbsp;',' ' }}{% endcapture %}
+	{% capture title %}{{ page.title }} — Liam Z. Edwards-Playne{% endcapture %}
 {% else %}
-	{% capture title %}{{ site.title }} — {{ site.tagline }}{% endcapture %}
+	{% capture title %}{{ site.description }}{% endcapture %}
 {% endif %}
 
 <title>{{ title }}</title>
