@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Lessons learned from BitWeav — Part. 1"
+
+category: article
+tag: "Product design"
+---
+I have a new approach to BitWeav's product design that focuses on the user\: I've decided to design the BitWeav project from a topdown perspective. Instead of implementing the backend daemon first and then changing it later to support features needed by the frontend graphical client, I'm designing the graphical client first. I've already seen some of the benefits of doing this: when I was sketching the UI the other day, I found that I needed to implement a favourites mechanism. I knew that this was an essential part of the micropublishing framework, so I had to implement it at daemon level later. This is where my new top-down approach has improved the workflow: I'm spending more time **designing for the user**, and less time **designing for the computer**. Now this won't work in all situations: when you're under constraint by time or resources, and you haven't devised a complete solution outline (like a design document, a whitepaper), you need to know the extent to what you're doing before doing the frontend stuff first.
+
+I've also had an epiphany about how I can make the user experience more natural and holistic. Before, you see, I had an entire button in the menu bar for displaying a 'Write' dialog. It contained fields for the message it's in reply to, a thread it could be part of, as well as a language field. Finally there was the textarea, for the actual content of the message. What was the problem? The entire nature of this control was apart from the crowd; it didn't unite contextually with the various pages of the application. No-one is going to reply to a message by clicking write and then inserting the message's ID. No-one cares what thread they are replying on, they just want to be able to distinguish between the various items of conversation they've had. So here's what I did: I **united the write dialog with the rest of the interface and made it context-based**. Now to reply to something, it's simply a button below the message.
+
+Thirdly, I am reminded of how analysis enables deepeer appreciation of things. While building the BitWeav graphical client, I've taken a lot of inspiration from Twitter. This is partly due to my lacking in design skills (something I would love to improve), but is mainly because of how wonderful Twitter is. It's just the small things that I, a novice, wouldn't think of at first. For example, the textarea for writing a message. Previously I had set a textarea of around 5 rows which would be enough to fit the maximum of 200 characters I had set for message composition. This wasn't optimal for two reasons as these 5 rows consumed a lot of vertical space, and it wasn't certain that all 200 chars would be used. So instead I mimicked what Twitter did: they kept the textarea to a single row, and as the user typed more characters it expanded accordingly — it's this simple detail that helps construct the user experience. For another example, take a look at how content is displayed. My initial instinct was to utilise the largest vertical space possible, displaying content in three to four columns. Still, given my previous discovery I thought it was worth looking into [why Twitter only uses one column for the feed](http://ux.stackexchange.com/questions/43891/1-column-vs-n-column-timelines-news-feeds):
+
+> If the items in the timeline are arranged in chronological order, that order should immediately obvious in the layout.
+> ...
+> A single timeline cannot be presented over multiple columns without inducing a level of confusion.
+
+Of course! The very nature of microblogging plays significantly into the aspect of time. With a number of extra columns it would be undeniably confusing to the user, both for navigation and chronology of events.
+
+Through analysis we can discover these subtle choices and thus greater appreicate the work. I've found this same idea in literature as well: when I first read [We]({% post_url 2013-04-27-we-zamyatin %}), I thought it was a reasonably good novel. It wasn't until I understood the context in which it was written, and had analysed the various themes and motifs that I began to recognise what a great work it was. Subtle details contained only in single sentences, such as how the citizens of the city consume a petroleum-based food, that aid in constructing whole motifs of how these people were units in a machine, their food source being that of machines. So that is my objective for this month: to greater appreciate things through greater attention to the world around me.
+
+---
+
+On another note, I've stumbled upon a friendly way to pitch BitWeav: the first open microblogging network built entirely by those who use it. It resembles the philosophy of the [IndieWeb](http://indiewebcamp.com/); an indie Twitter if you may?

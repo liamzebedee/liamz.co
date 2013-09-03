@@ -3,11 +3,11 @@ require 'git'
 
 task :default => :run
 task :run do
-	system "jekyll serve --watch --trace --drafts --config _config.yml,_config-dev.yml"
+	system "jekyll serve --watch --trace --config _config.yml,_config-dev.yml"
 end
 
 desc 'Initialise the git repository'
-task :init do 
+task :init do
 	system "git init && git checkout -b source"
 	system "git remote add origin https://github.com/liamzebedee/liamz.co.git"
 	system "git add -A"
@@ -41,15 +41,15 @@ def newPost(dir)
 	time = Time.new
 	postDatename = time.strftime("%Y-%m-%d")
 	postFilename = "#{dir}/#{postDatename}-.md"
-	File.open(postFilename, "a") do |file| 
+	File.open(postFilename, "a") do |file|
 		file.write(<<-eos
 ---
 layout: post
-title: 
-description: 
+title:
+description:
 
-category: 
-tag: 
+category:
+tag:
 ---
 
 		eos
@@ -69,12 +69,12 @@ end
 task :ramble do
 	postDatename = Time.new.strftime("%Y-%m-%d")
 	postFilename = "_posts/ramblings/#{postDatename}-.md"
-	File.open(postFilename, "a") do |file| 
+	File.open(postFilename, "a") do |file|
 		file.write(<<-eos
 ---
 layout: rambling
 category: ramblings
-title: 
+title:
 ---
 
 		eos

@@ -17,5 +17,5 @@ When I was 5 years old, my mother always told me that happiness was the key to l
 </p><small>John Lennon</small>
 </blockquote>
 
-[^taylor]: 
+[^taylor]:
 Frederic Taylor was a man who basically started the [efficiency movement](https://en.wikipedia.org/wiki/Scientific_management). He contributed his ideals of improving overall worker productivity in the workplace by timing each task and refining its process to get it done faster. I originally learnt about him through [reading We]({% post_url 2013-04-27-we-zamyatin %}), as he is portrayed as one of their great figures of mankind.

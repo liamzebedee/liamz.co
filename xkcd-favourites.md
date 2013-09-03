@@ -1,7 +1,7 @@
 ---
 layout: page
 category: pages
-lastmod: "2013-08-04T10:00:00Z"
+lastmod: "2013-09-02T10:00:00Z"
 schema: Article
 
 title: Favourite XKCDs
@@ -19,4 +19,7 @@ A collection of my favourite comics from my favourite website — [XKCD](http://
 ---
 
 ![A bunch of rocks](http://imgs.xkcd.com/comics/a_bunch_of_rocks.png)
+---
+
+![Monster](http://imgs.xkcd.com/comics/monster.png)
 ---
