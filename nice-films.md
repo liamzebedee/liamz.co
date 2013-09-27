@@ -8,6 +8,7 @@ title: Nice films
 description: "A variety of films I like. I update this list pretty frequently as I like watching films."
 ---
 <p class="lead">A variety of films I like. I update this list pretty frequently as I like watching films (reverse chronological order).</p>
+ - [American Beauty](http://www.imdb.com/title/tt0169547)
  - [Garden State](http://www.imdb.com/title/tt0333766/)
  - [God Bless America](http://www.imdb.com/title/tt1912398/)
  - [The Breakfast Club](http://www.imdb.com/title/tt0088847/)

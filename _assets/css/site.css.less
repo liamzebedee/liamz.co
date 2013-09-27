@@ -23,22 +23,25 @@
 	#portrait {
 		background: url(/assets/img/portrait.png) no-repeat;
 		.box-shadow(0 0 2px rgba(0, 0, 0, .5));
-		
-		
+
+
 		@length: 192px;
 		margin: 0 auto;
 		width: @length;
 		height: @length;
 		.border-radius(@length/2);
 		background-size: @length @length;
-		
+
 		&:hover {
 			.box-shadow(0 0 8px rgba(0, 0, 0, .5));
 		}
 	}
-	
+  #tagline {
+    line-height: 24px;
+  }
+
 	text-align: center;
-	
+
 	nav ul {
 		li {
 			padding-bottom: 1em;
@@ -55,10 +58,10 @@
 #content {
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
 	font-size: 16px;
-	line-height: 24px;	
-	
+	line-height: 24px;
+
 	padding-top: 0.5em;
-	
+
 	#misc-pages {
 		#grid > .fluid > .row-fluid;
 		#grid > .fluid > .span(12);
@@ -77,32 +80,32 @@
 			margin-top: 0em;
 		}
 		a { color: @black; }
-		
+
 		margin-bottom: 1em;
 	}
-	
+
 	#misc-pages,
 	#feed {
 		#title { color: @grayLight; font-variant: small-caps; }
 	}
-	
+
 	#feed {
 		#grid > .fluid > .row-fluid;
 		#grid > .fluid > .span(12);
-		
+
 		li {
 			#grid > .fluid > .row-fluid;
-			
+
 			float: left;
 			clear: left;
 			padding-top: 0.5em;
 			padding-bottom: 0.5em;
 			border-bottom: 1px solid @grayLighter;
-			
+
 			.meta {
 				float: left;
 				#grid > .fluid > .span(3);
-			
+
 				.date-published { .muted; padding-bottom: 0.5em; }
 				.category,.topic { text-transform: capitalize;}
 			}
@@ -114,14 +117,14 @@
 				a { color: @black; }
 			}
 		}
-		
+
 		#title {
 			padding-top: 0px;
 			padding-bottom: 0px;
 			a { color: @gray; }
 		}
 	}
-	
+
 	#ramblings {
 		li {
 			clear: both;
@@ -131,7 +134,7 @@
 			padding-bottom: 2em;
 		}
 	}
-	
+
 	#good-reads {
 		a {
 			text-decoration: none;
@@ -156,7 +159,7 @@
 		.category,.topic { text-transform: capitalize;}
 	}
 	max-width: 33em;
-	
+
 	a[rel^="footnote"] {
 		color: @gray !important;
 		padding-right: 0.2em;
@@ -172,15 +175,15 @@
 			//text-decoration: underline;
 		}
 	}
-	
+
 	h2 {
 		margin-top: 2em;
 	}
-	
+
 	h3 {
 		font-size: 20.5px;
 	}
-	
+
 	a {
 		color: rgb(51, 51, 51);
 		text-decoration: underline;
@@ -191,7 +194,7 @@
 			color: lighten(rgb(51, 51, 51), 20%);
 		}
 	}
-	
+
 	.footnotes {
 		hr {
 			margin-top: 2em;
@@ -199,7 +202,7 @@
 		}
 		ol li p { display: inline; }
 	}
-	
+
 	padding-bottom: 5em;
 }
 
