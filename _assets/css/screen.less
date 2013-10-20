@@ -1,28 +1,59 @@
 /* Portrait tablet to landscape and desktop... */
-@media (min-width: 801px) {
+@media (min-width: 900px) {
+  .padding {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .wrap {
+    .padding;
+  }
 
-.padding {
-	padding-left: 2em;
-	padding-right: 2em;
-}
-.wrap {
-	.padding;
-}
+  .home #content {
+    #grid > .fluid > .row-fluid;
 
-#sidebar {
-	#grid > .fluid > .row-fluid;
-	#grid > .fluid > .span(3);
-	display: inline-block;
-	vertical-align: top;
-	
-	border-right: 1px solid @grayLighter;
-}
+    #banner {
+      #grid > .fluid > .span(12);
+      .inner {
+        #grid > .fluid > .row-fluid;
+        article {
+          #grid > .fluid > .offset(2);
+          #grid > .fluid > .span(8);
+        }
+      }
+    }
+    main {
+      #grid > .fluid > .offset(2);
+      #grid > .fluid > .span(8);
+    }
+  }
 
-#content {
-	#grid > .fluid > .row-fluid;
-	#grid > .fluid > .span(9);
-	display: inline-block;
-	vertical-align: top;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+  #sidebar {
+  #grid > .fluid > .row-fluid;
+  #grid > .fluid > .span(3);
+  display: inline-block;
+  vertical-align: top;
+
+  border-right: 1px solid @grayLighter;
+}*/
+
+
 
 }

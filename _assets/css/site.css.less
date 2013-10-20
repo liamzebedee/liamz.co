@@ -16,29 +16,74 @@
 	margin: 0 0 0 0;
 }
 
+#portrait {
+  background: url('/assets/img/portrait.png') no-repeat;
+  .box-shadow(0 0 2px rgba(0, 0, 0, .5));
+
+  @length: 96px;
+  margin: 0 auto;
+  width: @length;
+  height: @length;
+  .border-radius(@length/8);
+  background-size: @length @length;
+
+  &:hover {
+    .box-shadow(0 0 8px rgba(0, 0, 0, .5));
+  }
+}
+
+.home #content {
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  font-size: 16px;
+  line-height: 24px;
+
+
+  #banner {
+    background-image: url('/assets/img/africa-damn.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: right bottom;
+
+    .inner {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      // Thanks Twitter, I love you.
+      background: linear-gradient(to bottom, transparent 0px, rgba(0, 0, 0, 0.55) 100%) repeat scroll 0% 0% transparent;
+
+      article {
+        #portrait {
+          float: left;
+          border: 4px solid rgb(255, 255, 255);
+        }
+        #details {
+          padding-left: 1em;
+          float: left;
+          h1, a { color: white; }
+          h1 {
+            margin-top: 0px;
+            small { color: @grayLighter; }
+          }
+        }
+      }
+    }
+
+  }
+
+  main {}
+}
+
+/*
 #sidebar {
 	float: left;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	#portrait {
-		background: url(/assets/img/portrait.png) no-repeat;
-		.box-shadow(0 0 2px rgba(0, 0, 0, .5));
 
+	a { color: @grayDark; }
 
-		@length: 192px;
-		margin: 0 auto;
-		width: @length;
-		height: @length;
-		.border-radius(@length/2);
-		background-size: @length @length;
-
-		&:hover {
-			.box-shadow(0 0 8px rgba(0, 0, 0, .5));
-		}
+	#tagline {
+		line-height: 24px;
 	}
-  #tagline {
-    line-height: 24px;
-  }
 
 	text-align: center;
 
@@ -205,6 +250,7 @@
 
 	padding-bottom: 5em;
 }
+*/
 
 @import "_assets/css/screen.less";
 @import "_assets/css/mobile.less";

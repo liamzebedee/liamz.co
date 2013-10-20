@@ -1,13 +1,13 @@
 ---
 layout: page
 category: pages
-lastmod: "2013-09-01T10:00:00Z"
+lastmod: "2013-10-20T10:00:00Z"
 schema: Article
 
-title: Nice films
-description: "A variety of films I like. I update this list pretty frequently as I love watching films."
+title: Good Films
+description: "I love watching films. Here are some of my favourites:"
 ---
-<p class="lead">A variety of films I like. I update this list pretty frequently as I love watching films (reverse chronological order).</p>
+<p class="lead">I love watching films. Here are some of my favourites in reverse chronological order:</p>
  - [The Truman Show](www.imdb.com/title/tt0120382/)
  - [American Beauty](http://www.imdb.com/title/tt0169547)
  - [Garden State](http://www.imdb.com/title/tt0333766/)

@@ -1,5 +1,5 @@
 heavy_build: false
-
+port: 80
 hostname: "127.0.0.1"
 
 asset_pipeline:

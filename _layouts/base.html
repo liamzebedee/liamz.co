@@ -3,16 +3,15 @@ layout: default
 ---
 <div id="page">
 
+{% if page.nomenu != true %}
 <aside id="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
 <div class="wrap">
 	<header id="masthead" itemscope itemtype="http://schema.org/WPHeader">
 		<a href="/"><div id="portrait"></div></a>
-		<h1 id="brand">{{ site.title }}</h1>
-        <h2 id="tagline"><small>{{ site.tagline }} I'm building <a href="http://bitweav.org">an alternative to Twitter</a>.</small></h2>
 	</header>
-	{% include menu.html %}
 </div>
 </aside>
+{% endif %}
 
 <article id="content" {% if page.schema %} itemscope itemtype="http://schema.org/{{ page.schema }}" {% endif %}>
 {{ content }}

@@ -1,13 +1,13 @@
 ---
 layout: page
 category: pages
-lastmod: "2013-09-02T10:00:00Z"
+lastmod: "2013-10-20T10:00:00Z"
 schema: Article
 
-title: Favourite XKCDs
-description: "Just a collection of my favourite comics from my favourite website."
+title: Good Laughs
+description: "Just a collection of things that make me laugh."
 ---
-A collection of my favourite comics from my favourite website — [XKCD](http://xkcd.com).
+A collection of things that make me laugh — most of them are [XKCD](http://xkcd.com) comics.
 
 ![The end is not for a while](http://imgs.xkcd.com/comics/the_end_is_not_for_a_while.png)
 ---

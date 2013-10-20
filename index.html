@@ -1,35 +1,43 @@
 ---
 layout: base
 htmlClass: home
-schema: Blog
+nomenu: true
 ---
-<nav><div class="wrap">
-<ul class="inline unstyled" id="misc-pages" role="menu">
-<li id="title"><h2>For Something Different.</h2></li>
-{% for link in site.menu_pages %}
-	<li role="menuitem" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		<h3 class="title" itemprop="headline"><a itemprop="url" href="{{ link.url }}">{{ link.text }}</a></h3>
-	</li>
-{% endfor %}
-</ul></div>
-</nav>
+<!-- For those who care, this is iteration 14 of my website -->
+<header id="banner" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="inner">
+        <article>
+            <div id="portrait"></div>
+            <div id="details">
+                <h1>Liam Edwards-Playne <small>16yo</small></h1>
+                <nav>
+                <ul class="inline" id="menu">
+                    <li><a href="https://github.com/liamzebedee">Code</a></li>
+                    <li><a href="https://twitter.com/liamzebedee">Twitter</a></li>
+                    <li><a href="https://au.linkedin.com/in/liamedwardsplayne">LinkedIn</a></li>
+                    <li><a href="mailto:liamzebedee@yahoo.com.au" rel="nofollow">Email</a></li>
+                    <li><a href="/blog/">Writings</a></li>
+                    <li><a href="/about/">About Me</a></li>
+                </ul>
+                </nav>
+            </div>
+        </article>
+    </div>
+</header>
 
-<ul class="unstyled archives" id="feed">
-	<li id="title"><header class="wrap">
-		<h2 class="pull-left">Blog. <a href="/rss.xml" title="RSS feed"><i class="icon-rss"></i></a></h2> 
-	</header></li>
-	
-	{% for post in site.posts %}
-	{% if post.categories contains 'ramblings' %} {% continue %} {% endif %}
-	<li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="wrap">		
-		<h3 class="title" itemprop="headline"><a itemprop="url" href="{{ post.url }}">{{ post.title }}</a></h3>
-		
-		<div class="meta">
-			<div class="date-published"><time itemprop="datePublished" class="timeago" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time>.</div>
-			
-			<span class="category label label-inverse">{{ post.category }}</span>
-			<span class="topic label label-info">{{ post.tag }}</span>
-		</div>
-	</div></li>
-	{% endfor %}
-</ul>
+<main>
+    <p>My principle objectives in life are to:</p>
+    <ul>
+        <li><p>foster relationships with other people</p></li>
+        <li><p>love what I do and do what I love</p></li>
+        <li><p>do things that are of significance/importance</p></li>
+        <li><p>never stop learning and invest myself in various diciplines</p></li>
+    </ul>
+
+    <p>Most significantly, I’m a self-taught programmer since I was 11, and am an experienced in a wide variety of platforms/languages. Technology changes fast, so I’d rather be a ‘jack of all trades’, using whichever tool gets the job done effectively and promptly.</p>
+    <p>I’m also interested in entrepeneurship and technology startups — information technology now underlies nearly every industry on Earth — it’s a limitless space of problems to be solved. The issue is just discovering opportunity.</p>
+
+    <p>Currently I’m spending my time building an alternative to Twitter called <a href="http://bitweav.org">BitWeav</a> and studying my iB Diploma at <a href="http://qasmt.eq.edu.au">the smartest and most wonderful school in Queensland</a>.</p>
+
+    <p>I’m always open to talking with new interesting people; please don’t hesitate to <a href="/contact">contact me</a>.</p>
+</main>
