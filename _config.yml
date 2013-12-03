@@ -1,26 +1,5 @@
-title: "Home of Liam&nbsp;Z."
-tagline: Learner,&nbsp;hacker,&nbsp;thinker.
-description: "Home of Liam Z. Edwards-Playne — learner, hacker, thinker."
-
-menu:
-  - text: About&nbsp;me
-    url:  /about/
-  - text: Endeavours
-    url:  /endeavours/
-  - text: Contact
-    url:  /contact/
-
-menu_pages:
-  - text: FavouriteQuotes
-    url: /quotes/
-  - text: FavouriteXKCDs
-    url: /xkcd-favourites/
-  - text: RamblingsInRawText
-    url: /ramblings-in-raw-text/
-  - text: GoodReads
-    url: /good-reads/
-  - text: NiceFilms
-    url: /nice-films/
+title: "Home of Liam Zebedee"
+description: "Home of Liam Zebedee"
 
 # Server
 hostname: "liamz.co"
@@ -32,12 +11,11 @@ exclude:
 
 # Misc.
 markdown: maruku
-# We still need this line below, for _plugins/permalink.rb
 permalink: pretty
 timezone: 'Australia/Brisbane'
 
 # Overridden in _config-dev.yml and _plugins/ext.rb for `jekyll build`
 heavy_build: true
 asset_pipeline:
-  bundle: true
-  compress: true
+  bundle: false
+  compress: false

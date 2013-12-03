@@ -5,18 +5,15 @@
 <head>
 
 <!-- Title -->
-<!-- On homepage: "Home of Liam (liamzebedee) Edwards-Playne — Learner, hacker, thinker."
-     On pages: "title | Liam (liamzebedee) Edwards-Playne"
--->
 {% if page.title %}
-	{% capture title %}{{ page.title }} — Liam Z. Edwards-Playne{% endcapture %}
+	{% capture title %}{{ page.title }} — Liam Zebedee{% endcapture %}
 {% else %}
-	{% capture title %}{{ site.description }}{% endcapture %}
+	{% capture title %}{{ site.title }}{% endcapture %}
 {% endif %}
 
 <title>{{ title }}</title>
 
-<meta content="{{ site.title | replace:'&nbsp;',' ' }}" property="og:site_name">
+<meta content="{{ site.title }}" property="og:site_name">
 <meta content="{{ title }}" property="og:title">
 
 {% if page.id %}
@@ -80,15 +77,13 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
 <body id="container" class="{{ page.htmlClass }}" itemscope itemtype="http://schema.org/WebPage">
 
 {{ content }}
 
 {% javascript_asset_tag global %}
-- "/_assets/js/jquery.timeago.js"
-- "/_assets/js/bootstrap.min.js"
 - "_assets/js/main.js"
 {% endjavascript_asset_tag %}
 

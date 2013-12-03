@@ -1,256 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:400,700|Cabin:400,500);
 @import "_assets/css/_bootstrap/bootstrap.less";
-@import "_assets/css/_bootstrap/responsive.less";
+
+@font-family-sans-serif: 'Cabin', sans-serif;
+@font-family-serif: 'Lobster Two', cursive;
+
+@base-font-family: @font-family-sans-serif;
+@headings-font-family: @font-family-serif;
+
+@font-size-base: 16px;
 
 @iconSpritePath: "/assets/img/glyphicons-halflings.png";
 @iconWhiteSpritePath: "/assets/img/glyphicons-halflings-white.png";
 
 @import "_assets/css/util.less";
 
-#page {
-	#grid > .fluid > .row-fluid;
-}
-
 #container {
-	.container-fluid;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
+	.container;
+	.container-liquid;
 }
 
-#portrait {
-  background: url('/assets/img/portrait.png') no-repeat;
-  .box-shadow(0 0 2px rgba(0, 0, 0, .5));
+#portrait-image {
+	.box-shadow(0 0 2px rgba(0, 0, 0, .5));
+	.img-responsive;
 
-  @length: 96px;
-  margin: 0 auto;
-  width: @length;
-  height: @length;
-  .border-radius(@length/8);
-  background-size: @length @length;
+	@length: 96px;
+	margin: 0 auto;
+	width: @length;
+	height: auto;
+	border-radius: @length/8;
+	background-size: @length @length;
+	
+	border: 4px solid rgb(255, 255, 255);
+	
+	&:hover {
+		.box-shadow(0 0 8px rgba(0, 0, 0, .5));
+	}
+}
 
-  &:hover {
-    .box-shadow(0 0 8px rgba(0, 0, 0, .5));
-  }
+.sbadge {
+	display: inline-block;
+	@l: 32px;
+	width: @l;
+	height: @l;
+	
+	a {
+		vertical-align: middle;
+		img { 
+			width: @l;
+			height: @l;
+		}
+	}
+}
+
+.sbadge-linkedin {
+	@width: 128px/4;
+	@height: 106px/4;
+	width: @width; height: @height;
+	a img { width: @width; height: @height; }
 }
 
 .home #content {
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
-  font-size: 16px;
-  line-height: 24px;
-
-
-  #banner {
-    background-image: url('/assets/img/africa-damn.jpg');
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position: right bottom;
-
-    .inner {
-      padding-top: 1em;
-      padding-bottom: 1em;
-      margin-bottom: 1em;
-      // Thanks Twitter, I love you.
-      background: linear-gradient(to bottom, transparent 0px, rgba(0, 0, 0, 0.55) 100%) repeat scroll 0% 0% transparent;
-
-      article {
-        #portrait {
-          float: left;
-          border: 4px solid rgb(255, 255, 255);
-        }
-        #details {
-          padding-left: 1em;
-          float: left;
-          h1, a { color: white; }
-          h1 {
-            margin-top: 0px;
-            small { color: @grayLighter; }
-          }
-        }
-      }
-    }
-
-  }
-
-  main {}
-}
-
-/*
-#sidebar {
-	float: left;
-	padding-top: 1em;
-	padding-bottom: 1em;
-
-	a { color: @grayDark; }
-
-	#tagline {
-		line-height: 24px;
-	}
-
-	text-align: center;
-
-	nav ul {
-		li {
-			padding-bottom: 1em;
-		}
-		li h3 {
-			padding: 0 0 0 0;
-			margin: 0 0 0 0;
-			line-height: 25.5px;
-			a { color: @grayDark; }
-		}
-	}
-}
-
-#content {
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
-	font-size: 16px;
-	line-height: 24px;
-
-	padding-top: 0.5em;
-
-	#misc-pages {
-		#grid > .fluid > .row-fluid;
-		#grid > .fluid > .span(12);
-		margin-bottom: 0px;
-		font-variant: small-caps;
-		h2,h3 {
-			font-size: 19px;
-			line-height: 16px;
-		}
-		li {
-			padding-left: 0px;
-			padding-right: 10px;
-		}
-		h3 {
-			margin-bottom: 0em;
-			margin-top: 0em;
-		}
-		a { color: @black; }
-
-		margin-bottom: 1em;
-	}
-
-	#misc-pages,
-	#feed {
-		#title { color: @grayLight; font-variant: small-caps; }
-	}
-
-	#feed {
-		#grid > .fluid > .row-fluid;
-		#grid > .fluid > .span(12);
-
-		li {
-			#grid > .fluid > .row-fluid;
-
-			float: left;
-			clear: left;
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
-			border-bottom: 1px solid @grayLighter;
-
-			.meta {
-				float: left;
-				#grid > .fluid > .span(3);
-
-				.date-published { .muted; padding-bottom: 0.5em; }
-				.category,.topic { text-transform: capitalize;}
-			}
-			.title {
-				float: right;
-				#grid > .fluid > .span(9);
-				text-align: left;
-				h3 { margin-top: 0px; padding-top: 0px; }
-				a { color: @black; }
-			}
-		}
-
-		#title {
-			padding-top: 0px;
-			padding-bottom: 0px;
-			a { color: @gray; }
-		}
-	}
-
-	#ramblings {
-		li {
-			clear: both;
-			display: block;
-			span { #grid > .fluid > .span(4); float: left; }
-			a { #grid > .fluid > .span(8); float: right; }
-			padding-bottom: 2em;
-		}
-	}
-
-	#good-reads {
-		a {
-			text-decoration: none;
-			&:hover {
-				text-decoration: underline;
-			}
-			&:visited {
-				color: @black;
-			}
-		}
-	}
-}
-
-.rambling {
-	font: 22px/1.4 Helvetica,arial,freesans,clean,sans-serif;
-	max-width: 30em;
-}
-
-.post #content .wrap {
+	@offset: 1;
 	header {
-		h1 {margin-top: 1em;}
-		.category,.topic { text-transform: capitalize;}
-	}
-	max-width: 33em;
-
-	a[rel^="footnote"] {
-		color: @gray !important;
-		padding-right: 0.2em;
-		text-decoration: none;
-		&:before {
-			content: "[";
-		}
-		&:after {
-			content: "]";
-		}
-		&:hover {
-			color: @black !important;
-			//text-decoration: underline;
-		}
-	}
-
-	h2 {
-		margin-top: 2em;
-	}
-
-	h3 {
-		font-size: 20.5px;
-	}
-
-	a {
-		color: rgb(51, 51, 51);
-		text-decoration: underline;
-		&:hover {
-		}
-		&:visited,
-		&:focus {
-			color: lighten(rgb(51, 51, 51), 20%);
+		background-image: url("/assets/img/africa-damn.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: right bottom;
+		.row;
+		
+		& > .shadow-overlay {
+			background: linear-gradient(to bottom, transparent 0px, rgba(0, 0, 0, 0.55) 100%) repeat scroll 0px 0px transparent;
+			display: flex;
+			
+			& > .inner-padding {
+				margin: 0 auto;
+				.make-md-column(4);
+				
+				#portrait {
+					.row;
+					padding-top: 1em;
+				}
+				#details {
+					.row;
+					text-align: center;
+					h1 {
+						color: white; 
+						small { clear: both; display: block; }
+					}
+				}
+			}
 		}
 	}
-
-	.footnotes {
-		hr {
-			margin-top: 2em;
-			margin-bottom: 2em;
+	
+	#intro {
+		.row;
+		.inner-padding {
+			.make-md-column-offset(@offset);
+			.make-md-column(10);
 		}
-		ol li p { display: inline; }
 	}
-
-	padding-bottom: 5em;
+	
+	#profiles {
+		.row;
+		.inner-padding {
+			.make-md-column-offset(1);
+			.make-md-column(10);
+			padding-top: 1em;
+			ul {
+				width: 100%;
+				text-align: center;
+				li { display: inline-block; }
+			}
+		}
+	}
+	
+	#other-things {
+		.row;
+		.inner-padding {
+			.make-md-column-offset(@offset);
+			.make-md-column(10);
+			img { padding: 0.5em; }
+		}
+	}
+	
+	footer { margin-top: 3em; margin-bottom: 1em; }
 }
-*/
 
 @import "_assets/css/screen.less";
 @import "_assets/css/mobile.less";

@@ -3,16 +3,6 @@ layout: default
 ---
 <div id="page">
 
-{% if page.nomenu != true %}
-<aside id="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
-<div class="wrap">
-	<header id="masthead" itemscope itemtype="http://schema.org/WPHeader">
-		<a href="/"><div id="portrait"></div></a>
-	</header>
-</div>
-</aside>
-{% endif %}
-
 <article id="content" {% if page.schema %} itemscope itemtype="http://schema.org/{{ page.schema }}" {% endif %}>
 {{ content }}
 </article>
