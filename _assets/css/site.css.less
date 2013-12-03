@@ -14,6 +14,8 @@
 
 @import "_assets/css/util.less";
 
+
+
 #container {
 	.container;
 	.container-liquid;
@@ -62,10 +64,7 @@
 .home #content {
 	@offset: 1;
 	header {
-		background-image: url("/assets/img/africa-damn.jpg");
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: right bottom;
+		background: #666 url("/assets/img/africa-damn.jpg") no-repeat fixed right bottom;
 		.row;
 		
 		& > .shadow-overlay {
@@ -119,7 +118,7 @@
 		.inner-padding {
 			.make-md-column-offset(@offset);
 			.make-md-column(10);
-			img { padding: 0.5em; }
+			img { padding: 0.5em; .img-responsive; }
 		}
 	}
 	
