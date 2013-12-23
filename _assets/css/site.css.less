@@ -2,23 +2,19 @@
 @import "_assets/css/_bootstrap/bootstrap.less";
 
 @font-family-sans-serif: 'Cabin', sans-serif;
-@font-family-serif: 'Lobster Two', cursive;
+@font-family-serif: 'Lobster Two', sans-serif;
 
 @base-font-family: @font-family-sans-serif;
 @headings-font-family: @font-family-serif;
 
 @font-size-base: 16px;
 
-@iconSpritePath: "/assets/img/glyphicons-halflings.png";
-@iconWhiteSpritePath: "/assets/img/glyphicons-halflings-white.png";
+@icon-font-path: "/assets/font/";
 
 @import "_assets/css/util.less";
 
-
-
 #container {
-	.container;
-	.container-liquid;
+	.container-fixed;
 }
 
 #portrait-image {
@@ -61,8 +57,20 @@
 	a img { width: @width; height: @height; }
 }
 
-.home #content {
-	@offset: 1;
+@offset: 1;
+
+#footer {
+	.row;
+	.inner {
+		margin-top: 5em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		.make-md-column(12);
+		background-color: @gray-lighter;
+	}
+}
+
+#content {
 	header {
 		background: #666 url("/assets/img/africa-damn.jpg") no-repeat fixed right bottom;
 		.row;
@@ -112,7 +120,17 @@
 			}
 		}
 	}
-	
+}
+
+.freelance #content {
+	article {
+		.row;
+		.make-md-column-offset(@offset);
+		.make-md-column(10);
+	}
+}
+
+.home #content {
 	#other-things {
 		.row;
 		.inner-padding {
@@ -121,8 +139,6 @@
 			img { padding: 0.5em; .img-responsive; }
 		}
 	}
-	
-	footer { margin-top: 3em; margin-bottom: 1em; }
 }
 
 @import "_assets/css/screen.less";
