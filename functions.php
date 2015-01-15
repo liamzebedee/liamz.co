@@ -93,11 +93,11 @@ add_action( 'widgets_init', 'liamz_widgets_init' );
  */
 function liamz_scripts() {
 	wp_enqueue_style( 'liamz-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'liamz-style-main', get_template_directory_uri() . '/style-main.css' );
+	wp_enqueue_style( 'liamz-style-main', get_template_directory_uri() . '/styles/main.css' );
 
-	wp_enqueue_script( 'liamz-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'liamz-navigation', get_template_directory_uri() . '/js/wp/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'liamz-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'liamz-skip-link-focus-fix', get_template_directory_uri() . '/js/wp/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
