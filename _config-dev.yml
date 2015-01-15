@@ -1,7 +1,0 @@
-heavy_build: false
-port: 12341
-hostname: "127.0.0.1"
-
-asset_pipeline:
-  bundle: false
-  compress: false

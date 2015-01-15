@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url('styles/bootstrap.css');
+
+@font-face {
+    font-family: 'TeX Gyre Heros';
+    src: url('fonts/texgyreheros-regular.otf');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TeX Gyre Heros BoldItalic';
+    src: url('fonts/texgyreheros-bolditalic.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TeX Gyre Heros Italic';
+    src: url('fonts/texgyreheros-italic.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TeX Gyre Heros';
+    src: url('fonts/texgyreheros-bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+body {
+	font-family: 'TeX Gyre Heros', sans-serif;
+	color: #323232;
+	line-height: 1;
+	font-size: 42px;
+}
+
+h1 {
+	font-size: 92px;
+	padding-bottom: 0.1em;
+	margin-top: 0.1em;
+}
+
+h2 {
+	font-size: 72px;
+	color: #ea4858;
+}
+
+h1.lead {
+	margin-bottom: 0em;
+}
+
+h2,h3 {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+}
+
+h1 em,
+h2 em,
+h3 em {
+	font-style: normal;
+	font-weight: 700;
+}
+
+p.lead {
+	font-size: 56px;
+	margin-bottom: 0.5em;
+}
+
+ul.fancy {
+	list-style: none;
+	margin-left: 0em;
+}
+ul.fancy li:before {
+   content: "\00BB";
+   padding-right: 0.5em;
+}
+ul.fancy li {
+	margin-bottom: 0.5em;
+}
+
+nav ul {
+	list-style: none;
+	margin-left: 0em;
+	color: #666;
+}
+nav ul li:first-child {
+	margin-left: 0em;
+}
+nav ul li {
+	margin-left: 1em;
+}
+nav ul li {
+	display: inline;
+	text-transform: uppercase;
+}
+nav ul li h3 {
+	display: inline;
+}
