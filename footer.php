@@ -2,20 +2,24 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the #content div and all content after
+ * Contains the closing of the class=site-inner div and all content after
  *
- * @package liamz
+ * @package Omega
  */
 ?>
+		<?php do_action( 'omega_after_main' ); ?>
 
-	</div><!-- #content -->
+	</div><!-- .site-inner -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<?php 
+	do_action( 'omega_before_footer' ); 
+	do_action( 'omega_footer' ); 
+	do_action( 'omega_after_footer' ); 
+	?>
+
+</div><!-- .site-container -->
+
+<?php do_action( 'omega_after' ); ?>
 
 <?php wp_footer(); ?>
 

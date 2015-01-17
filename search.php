@@ -1,45 +1,20 @@
 <?php
 /**
- * The template for displaying search results pages.
+ * The template for displaying Search Results pages.
  *
- * @package liamz
+ * @package Omega
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<main class="<?php echo omega_apply_atomic( 'main_class', 'content' );?>" <?php omega_attr( 'content' ); ?>>
 
-		<?php if ( have_posts() ) : ?>
+		<?php do_action( 'omega_before_content' ); ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'liamz' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+		<?php do_action( 'omega_content' ); ?>
+		
+		<?php do_action( 'omega_after_content' ); ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'content', 'search' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php liamz_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
+	</main><!-- .content -->
+	
 <?php get_footer(); ?>

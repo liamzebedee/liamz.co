@@ -1,133 +1,79 @@
 <?php
-/**
- * liamz functions and definitions
- *
- * @package liamz
- */
+/* Load Omega theme framework. */
+require ( trailingslashit( get_template_directory() ) . 'lib/framework.php' );
+new Omega();
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
-}
-
-if ( ! function_exists( 'liamz_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
+ * Note that this function is hooked into the after_setup_theme hook, which runs
+ * before the init hook. The init hook is too late for some features, such as indicating
+ * support post thumbnails.
  */
-function liamz_setup() {
+function omega_theme_setup() {
 
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on liamz, use a find and replace
-	 * to change 'liamz' to the name of your theme in all the template files
-	 */
-	load_theme_textdomain( 'liamz', get_template_directory() . '/languages' );
+	/* Load omega functions */
+	require get_template_directory() . '/lib/hooks.php';
+	
+	/* The best thumbnail/image script ever. */
+	add_theme_support( 'get-the-image' );
+	
+	/* Load scripts. */
+	add_theme_support( 
+		'omega-scripts', 
+		array( 'comment-reply' ) 
+	);
+	
+	add_theme_support( 'omega-theme-settings' );
 
-	// Add default posts and comments RSS feed links to head.
+	add_theme_support( 'omega-content-archives' );
+
+	/* Enable custom template hierarchy. */
+	//add_theme_support( 'omega-template-hierarchy' );
+
+	/* Enable theme layouts (need to add stylesheet support). */
+	add_theme_support( 
+		'theme-layouts', 
+		array(
+			'1c'        => __( 'Content',           'omega' ),
+			'2c-l'      => __( 'Content / Sidebar', 'omega' ),
+			'2c-r'      => __( 'Sidebar / Content', 'omega' )
+		),
+		array( 'default' => is_rtl() ? '2c-r' :'2c-l', 'customize' => true ) 
+	);
+	
+		
+	/* implement editor styling, so as to make the editor content match the resulting post output in the theme. */
+	add_editor_style();
+
+	/* Support pagination instead of prev/next links. */
+	add_theme_support( 'loop-pagination' );	
+
+	/* Better captions for themes to style. */
+	add_theme_support( 'cleaner-caption' );
+
+	/* Add default posts and comments RSS feed links to <head>.  */
 	add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	//add_theme_support( 'post-thumbnails' );
+	/* Enable wraps */
+	add_theme_support( 'omega-wraps' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'liamz' ),
-	) );
+	/* Enable custom post */
+	add_theme_support( 'omega-custom-post' );
+	
+	/* Enable custom css */
+	add_theme_support( 'omega-custom-css' );
+	
+	/* Enable custom logo */
+	add_theme_support( 'omega-custom-logo' );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
-	) );
+	/* Enable child themes page */
+	add_theme_support( 'omega-child-page' );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See http://codex.wordpress.org/Post_Formats
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
-	) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'liamz_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+	/* Handle content width for embeds and images. */
+	omega_set_content_width( 640 );
+
 }
-endif; // liamz_setup
-add_action( 'after_setup_theme', 'liamz_setup' );
 
-/**
- * Register widget area.
- *
- * @link http://codex.wordpress.org/Function_Reference/register_sidebar
- */
-function liamz_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'liamz' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-}
-add_action( 'widgets_init', 'liamz_widgets_init' );
-
-/**
- * Enqueue scripts and styles.
- */
-function liamz_scripts() {
-	wp_enqueue_style( 'liamz-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'liamz-style-main', get_template_directory_uri() . '/styles/main.css' );
-
-	wp_enqueue_script( 'liamz-navigation', get_template_directory_uri() . '/js/wp/navigation.js', array(), '20120206', true );
-
-	wp_enqueue_script( 'liamz-skip-link-focus-fix', get_template_directory_uri() . '/js/wp/skip-link-focus-fix.js', array(), '20130115', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'liamz_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
-//require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/inc/extras.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';
-
-add_filter( 'show_admin_bar', '__return_false' );
+add_action( 'after_setup_theme', 'omega_theme_setup' );

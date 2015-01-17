@@ -7,29 +7,21 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package liamz
+ * @package Omega
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<main  class="<?php echo omega_apply_atomic( 'main_class', 'content' );?>" <?php omega_attr( 'content' ); ?>>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php 
+		do_action( 'omega_before_content' ); 
 
-				<?php get_template_part( 'content', 'page' ); ?>
+		do_action( 'omega_content' ); 
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+		do_action( 'omega_after_content' ); 
+		?>
 
-			<?php endwhile; // end of the loop. ?>
+	</main><!-- .content -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

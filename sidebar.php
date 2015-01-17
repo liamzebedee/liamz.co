@@ -1,15 +1,20 @@
 <?php
 /**
- * The sidebar containing the main widget area.
+ * The Sidebar containing the main widget areas.
  *
- * @package liamz
+ * @package Omega
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
-?>
+if ( is_active_sidebar( 'primary' ) ) : ?>	
 
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</div><!-- #secondary -->
+	<aside class="<?php echo omega_apply_atomic( 'sidebar_class', 'sidebar sidebar-primary widget-area' );?>" <?php omega_attr( 'sidebar' ); ?>>
+	
+		<?php do_action( 'before_primary' ); ?>
+
+		<?php dynamic_sidebar( 'primary' ); ?>
+
+		<?php do_action( 'after_primary' ); ?>
+
+  	</aside><!-- .sidebar -->
+
+<?php endif;  ?>
